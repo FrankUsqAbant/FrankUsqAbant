@@ -18,7 +18,7 @@ You can find me 🌎:
 -[Instagram](https://www.instagram.com/frank_usqabanto/)
 -[LinkedIn](https://www.linkedin.com/in/frank-usquiza-abanto-3919841b2/)
 
-[![FrankUsqAbant github stats](https://github-readme-stats.vercel.app/api?username=FrankUsqAbant)](https://github.com/anuraghazra/github-readme-stats)
+[![FrankUsqAbant github stats](https://github-readme-stats.vercel.app/api?username=FrankUsqAbant)](https://github.com/FrankUsqAbant/)
 
 
 
