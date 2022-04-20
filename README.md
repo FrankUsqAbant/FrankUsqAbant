@@ -1,14 +1,22 @@
-### Hi there 👋
+### Hi, I'm Frank👋
+
+> ![Fran](https://user-images.githubusercontent.com/90288287/164196860-6308b8e7-a3d1-40a9-8b2f-783560aee9dd.jpg)
 
 ```js
 const frank = {
-  pronouns: "he" | "hem",
+  pronouns: "he" | "him",
   code: [Javascript, Typescript, HTML, CSS, Python],
   tools: [React, Node, Storybook, Styled-Components, Jest, Docker],
   
 }
 ```
 
+You can find me 🌎:
+-[Twitter](https://twitter.com/FrankUsqAbanto)
+-[Youtube](https://www.youtube.com/channel/UCJDLlGf9h5hm3IM32Wr7auw)
+-[Facebook](https://www.facebook.com/FrankUsqAbanto)
+-[Instagram](https://www.instagram.com/frank_usqabanto/)
+-[LinkedIn](https://www.linkedin.com/in/frank-usquiza-abanto-3919841b2/)
 <!--
 **FrankUsqAbant/FrankUsqAbant** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
