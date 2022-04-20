@@ -1,5 +1,14 @@
 ### Hi there 👋
 
+```js
+const frank = {
+  pronouns: "he" | "hem",
+  code: [Javascript, Typescript, HTML, CSS, Python],
+  tools: [React, Node, Storybook, Styled-Components, Jest, Docker],
+  
+}
+```
+
 <!--
 **FrankUsqAbant/FrankUsqAbant** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
