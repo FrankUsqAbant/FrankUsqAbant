@@ -7,7 +7,7 @@ Web Developer and Designer
 I have been learning to program for 2 years. I started with HTML, CSS, JavaScript thus becoming my passion. I think for a developer your only limit is your imagination. And I love the community that it has generated from all for one and one for all. Never stop learning, and continue for more knowledge...
 
 * 🌍  I'm based in Perú
-* 🖥️  See my portfolio at [MyPortfolio](http://frankusqabant.github.io/pagina-taller-maquetacion/)
+* 🖥️  See my portfolio at [MyPortfolio](https://frankusqabant.github.io/pagina-maquetacion-cv/)
 * ✉️  You can contact me at [usquizafranquer@gmail.com](mailto:usquizafranquer@gmail.com)
 * 🤝  I'm open to collaborating on interesting projects
 * ⚡  I like reading, watching documentaries about the cosmos and the world of development.
