@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="Frank Abanto" src="https://github.com/FrankUsqAbant/FrankUsqAbant/blob/main/github.gif?raw=true" width='100%'>
+  <img alt="Frank Abanto" src="https://github.com/FrankUsqAbant/FrankUsqAbant/blob/main/Github-Portada.gif?raw=true">
 </p>
 
 <p align="center">
