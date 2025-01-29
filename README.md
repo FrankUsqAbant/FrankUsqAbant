@@ -4,7 +4,7 @@
 
 <p align="center">
   <img alt="Sergie Code" src="https://raw.githubusercontent.com/sergiecode/sergiecode/main/Hand%20Wave.gif" width='40' align="left">
-  <h2>Hi, My name is Frank Abanto</h2>
+  <h2>Hey everyone! I'm Frank Abanto</h2>
 </p>
 
 <!-- 
