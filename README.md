@@ -15,7 +15,7 @@ I think for a developer your only limit is your imagination. And I love the comm
 * 🤝  I'm open to collaborating on interesting projects
 
 ### Socials
-<p align="center">
+<p align="center" style="text-decoration: none; margin: 0; padding: 0;">
   <a href="https://www.youtube.com/@frankabanto" target="_blank"><img src="https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white" alt="YouTube"></a>
   <a href="https://www.linkedin.com/in/frankabanto/" target="_blank"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
   <a href="https://www.instagram.com/frank_abant" target="_blank"><img src="https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white" alt="Instagram"></a>
@@ -37,7 +37,7 @@ I think for a developer your only limit is your imagination. And I love the comm
 <!-- ![Frank Abanto' GitHub stats](https://github-readme-stats.vercel.app/api?username=FrankUsqAbant&show_icons=true&theme=dark) 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=FrankUsqAbant&layout=compact&theme=dark) -->
 
-<p align="center" text-decoration: none;>
+<p align="center">
   <a href="https://github.com/FrankUsqAbant">
     <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api?username=FrankUsqAbant&show_icons=true&theme=algolia&include_all_commits=true&count_private=true">
     <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=FrankUsqAbant&layout=compact&langs_count=8&theme=algolia">
@@ -71,7 +71,7 @@ I think for a developer your only limit is your imagination. And I love the comm
 ![Notion](https://img.shields.io/badge/Notion-%23000000.svg?style=for-the-badge&logo=notion&logoColor=white)
 -->
 
-<p align="center" text-decoration: none;>
+<p align="center" style="text-decoration: none; margin: 0; padding: 0; border: none; display: inline-block;">
   <a href="https://www.w3.org/html/" target="_blank">
   <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
 </a>
