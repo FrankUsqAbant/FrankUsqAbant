@@ -313,13 +313,26 @@ def generate_languages_html():
     detected = get_all_languages()
     # Mezcla lenguajes detectados + herramientas fijas (sin duplicados)
     all_icons = detected + [t for t in FIXED_TOOLS if t not in detected]
-    icons_str = ",".join(all_icons)
-    perline   = min(len(all_icons), 8)
+    
+    # Generar etiquetas img individuales con espaciado
+    # Usamos height=45 para que sean consistentes y elegantes
+    img_tags = []
+    for icon in all_icons:
+        img_tags.append(
+            f'<img src="https://skillicons.dev/icons?i={icon}&theme=dark" height="45" alt="{icon}">'
+        )
+    
+    # Unir con espacios para el espaciado
+    # Repetimos la lista 2 veces para simular desplazamiento infinito fluido
+    spaced_icons = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".join(img_tags)
+    infinite_content = f"{spaced_icons}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{spaced_icons}"
+    
     return (
-        '<p align="center">\n'
-        f'  <img src="https://skillicons.dev/icons?i={icons_str}&perline={perline}"'
-        ' alt="Tech Stack">\n'
-        '</p>'
+        '<div align="center">\n'
+        '  <marquee behavior="scroll" direction="left" scrollamount="7" width="100%">\n'
+        f'    {infinite_content}\n'
+        '  </marquee>\n'
+        '</div>'
     )
 
 

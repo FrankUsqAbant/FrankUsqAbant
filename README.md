@@ -47,11 +47,9 @@ Programar es lo más parecido que tenemos a la **magia en el mundo real**. Mi mi
 
 ## 🛠️ Tecnologías
 
-<div align="center">
-  <marquee behavior="scroll" direction="left" scrollamount="10" width="100%">
-    <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,tailwind,sass,figma,git,github,vscode,vercel,notion,py,nodejs,mongodb,postman,redux,vite&perline=20&theme=dark" alt="Tech Stack">
-  </marquee>
-</div>
+<!-- LANGUAGES:START -->
+<p align="center"><em>⚙️ Cargando tecnologías...</em></p>
+<!-- LANGUAGES:END -->
 
 <br>
 
