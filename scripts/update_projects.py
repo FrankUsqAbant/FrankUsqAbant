@@ -213,12 +213,12 @@ def lang_badge(language):
 
 
 def build_project_card(repo):
-    """Genera el HTML de una tarjeta de proyecto con diseño Premium."""
+    """Genera el HTML de una tarjeta de proyecto Premium en Español."""
     name         = repo["name"]
     display      = name.replace("-", " ").replace("_", " ").title()
-    description  = (repo.get("description") or "Proyecto sin descripción.").replace('"', "'")
-    if len(description) > 85:
-        description = description[:82] + "..."
+    description  = (repo.get("description") or "Sin descripción del proyecto.").replace('"', "'")
+    if len(description) > 75:
+        description = description[:72] + "..."
     
     language     = repo.get("language") or ""
     repo_url     = repo["html_url"]
@@ -228,38 +228,42 @@ def build_project_card(repo):
     image_url    = extract_image(readme_text, name)
     live_url     = extract_live_url(readme_text, repo_homepage)
 
-    # Botones con diseño unificado
+    # Botones estilizados como opciones de visita
     repo_btn = (
         f'<a href="{repo_url}">'
-        f'<img src="https://img.shields.io/badge/⚡_Código-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo">'
+        f'<img src="https://img.shields.io/badge/⚡_Código-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repositorio">'
         f'</a>'
     )
     
     live_btn = ""
     if live_url:
         live_btn = (
-            f'&nbsp;&nbsp;'
+            f'&nbsp;'
             f'<a href="{live_url}">'
-            f'<img src="https://img.shields.io/badge/🌐_Visit_Web-00d8ff?style=for-the-badge&logo=vercel&logoColor=black" alt="Live">'
+            f'<img src="https://img.shields.io/badge/🌐_Web-00d8ff?style=for-the-badge&logo=vercel&logoColor=black" alt="Sitio">'
             f'</a>'
         )
 
     return f"""\
 <td width="33%" align="center" valign="top">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=00d8ff&height=60&section=header&reversal=true&animation=fadeIn" width="100%" alt="header">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=00d8ff&height=35&section=header&reversal=true" width="100%" alt="cabecera">
 <br>
 <a href="{live_url or repo_url}">
-  <img src="{image_url}" width="100%" height="auto" style="border-radius:10px; border: 1px solid #30363d; aspect-ratio: 16/9; object-fit: cover;" alt="{display}">
+  <img src="{image_url}" width="100%" style="border-radius:12px; border: 1px solid #30363d; aspect-ratio: 16/9; object-fit: cover;" alt="{display}">
 </a>
 <br><br>
 <strong>{display}</strong><br>
-<div style="height: 45px; overflow: hidden; margin-bottom: 10px;">
+<div style="height: 40px; overflow: hidden; margin-top: 5px;">
   <sub>{description}</sub>
 </div>
-{lang_badge(language)}&nbsp;<img src="https://img.shields.io/github/stars/{USERNAME}/{name}?style=flat-square&color=ffd700&labelColor=0d1117" alt="Stars">
+<br>
+{lang_badge(language)}&nbsp;<img src="https://img.shields.io/github/stars/{USERNAME}/{name}?style=flat-square&color=ffd700&labelColor=0d1117&label=⭐" alt="Estrellas">
 <br><br>
-{repo_btn}{live_btn}
-<br><br>
+<p align="center">
+  {repo_btn}
+  {live_btn}
+</p>
+<br>
 </td>"""
 
 
