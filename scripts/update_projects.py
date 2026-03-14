@@ -203,22 +203,13 @@ def lang_badge(language):
     """Genera un badge shields.io para el lenguaje."""
     if not language:
         return ""
-    if language in LANG_DATA:
-        color, logo, _ = LANG_DATA[language]
-        return (f'<img src="https://img.shields.io/badge/{language}-{color}'
-                f'?style=flat-square&logo={logo}&logoColor=white" alt="{language}">')
-    # Lenguaje desconocido → badge genérico cyan
-    return (f'<img src="https://img.shields.io/badge/{language}-00d8ff'
-            f'?style=flat-square&logoColor=white" alt="{language}">')
-
-
-def build_project_card(repo):
-    """Genera el HTML de una tarjeta de proyecto Premium en Español."""
+    if ldef build_project_card(repo):
+    """Genera el HTML de una tarjeta de proyecto Premium en Español v3."""
     name         = repo["name"]
     display      = name.replace("-", " ").replace("_", " ").title()
     description  = (repo.get("description") or "Sin descripción del proyecto.").replace('"', "'")
-    if len(description) > 75:
-        description = description[:72] + "..."
+    if len(description) > 60:
+        description = description[:57] + "..."
     
     language     = repo.get("language") or ""
     repo_url     = repo["html_url"]
@@ -228,44 +219,45 @@ def build_project_card(repo):
     image_url    = extract_image(readme_text, name)
     live_url     = extract_live_url(readme_text, repo_homepage)
 
-    # Botones como opciones claras de navegación
+    # Botones estilizados y compactos
     repo_btn = (
         f'<a href="{repo_url}">'
-        f'<img src="https://img.shields.io/badge/⚡_VISITAR_REPO-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repositorio">'
+        f'<img src="https://img.shields.io/badge/Código-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo">'
         f'</a>'
     )
     
     live_btn = ""
     if live_url:
         live_btn = (
-            f'<br><br>'
+            f'&nbsp;&nbsp;'
             f'<a href="{live_url}">'
-            f'<img src="https://img.shields.io/badge/🌐_IR_A_LA_WEB-00d8ff?style=for-the-badge&logo=vercel&logoColor=black" alt="Sitio Web">'
+            f'<img src="https://img.shields.io/badge/Web-00d8ff?style=for-the-badge&logo=vercel&logoColor=black" alt="Web">'
             f'</a>'
         )
 
+    # Usamos una cabecera más estable sin texto dinámico pesado para evitar broken images
+    # El brillo (shimmer) se mantiene para la "iluminación"
     return f"""\
 <td width="33.33%" align="center" valign="top">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=00d8ff&height=45&section=header&reversal=true&animation=shimmer&text={display}&fontSize=20&fontAlignY=60" width="100%" alt="header">
-<br>
-<a href="{live_url or repo_url}">
-  <img src="{image_url}" width="100%" height="160px" style="border-radius:12px; border: 1px solid #30363d; object-fit: cover; box-shadow: 0 10px 20px rgba(0,0,0,0.5);" alt="{display}">
-</a>
-<br><br>
-<div style="height: 60px; overflow: hidden; margin: 10px 5px;">
-  <sub>{description}</sub>
+<div style="border: 2px solid #00d8ff; border-radius: 15px; background: #0d1117; padding: 0 0 15px 0; overflow: hidden; margin: 5px;">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=00d8ff&height=40&section=header&reversal=true&animation=shimmer" width="100%" alt="shimmer">
+  <br>
+  <h4 align="center" style="margin: 5px 0;">{display}</h4>
+  <a href="{live_url or repo_url}">
+    <img src="{image_url}" width="90%" height="140px" style="border-radius:10px; object-fit: cover; border: 1px solid #30363d;" alt="{display}">
+  </a>
+  <br>
+  <div style="height: 45px; overflow: hidden; padding: 0 10px;">
+    <small>{description}</small>
+  </div>
+  <p align="center">
+    {lang_badge(language)}
+  </p>
+  <hr style="border: 0.1px solid #30363d; margin: 10px;">
+  <p align="center">
+    {repo_btn}{live_btn}
+  </p>
 </div>
-<br>
-<p align="center">
-  {lang_badge(language)}
-</p>
-<hr style="border: 0.2px solid #30363d; opacity: 0.3;">
-<p align="center">
-  <small>¿Qué deseas visitar?</small><br><br>
-  {repo_btn}
-  {live_btn}
-</p>
-<br>
 </td>"""
 
 
@@ -284,10 +276,10 @@ def generate_projects_html(repos):
     for i in range(0, len(cards), 3):
         chunk = cards[i:i+3]
         while len(chunk) < 3:
-            chunk.append('<td width="33%"></td>')
+            chunk.append('<td width="33.33%"></td>')
         rows += "<tr>\n" + "\n".join(chunk) + "\n</tr>\n"
 
-    return f'<table border="0" width="100%" cellpadding="10" cellspacing="0">\n{rows}</table>'
+    return f'<table border="0" width="100%" cellpadding="0" cellspacing="15">\n{rows}</table>'
 
 
 # ── 2. Language Icons ──────────────────────────────────────────────────────────
@@ -317,7 +309,25 @@ def generate_languages_html():
         "Tools": ["git", "github", "vscode", "vercel", "notion", "postman"]
     }
     
-    html = '<table border="0" width="100%" cellpadding="0" cellspacing="10">\n<tr>\n'
+    html = '<table border="0" width="100%" cellpadding="0" cellspacing="20">\n<tr>\n'
+    
+    for title, icons in categories.items():
+        icons_str = ",".join(icons)
+        html += f"""\
+<td width="33.33%" valign="top" align="center">
+  <div style="background: #0d1117; border: 2px solid #30363d; border-radius: 12px; padding: 20px; min-height: 180px;">
+    <h3 align="center" style="margin-top: 0; color: #00d8ff;">{title}</h3>
+    <br>
+    <p align="center">
+      <img src="https://skillicons.dev/icons?i={icons_str}&perline=3&theme=dark" alt="{title}">
+    </p>
+  </div>
+</td>
+"""
+    
+    html += "</tr>\n</table>"
+    return html
+dding="0" cellspacing="10">\n<tr>\n'
     
     for title, icons in categories.items():
         icons_str = ",".join(icons)
