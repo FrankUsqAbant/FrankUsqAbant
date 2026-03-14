@@ -13,7 +13,7 @@
   </a>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <a href="https://www.linkedin.com/in/frankabanto/">
-    <img src="https://cdn.simpleicons.org/linkedin/0A66C2" width="42" height="42" alt="LinkedIn">
+    <img src="images/linkedin.svg" width="42" height="42" alt="LinkedIn">
   </a>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <a href="https://www.instagram.com/abantofrank12">
