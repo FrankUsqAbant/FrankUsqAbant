@@ -147,36 +147,41 @@ def to_absolute(url, repo_name, default_branch="main"):
     return f"https://raw.githubusercontent.com/{USERNAME}/{repo_name}/{default_branch}/{clean}"
 
 
-def extract_image(readme_text, repo_name):
-    """Extrae la primera imagen del README (HTML o Markdown)."""
-    # Intentar detectar la rama por si acaso (podríamos hacer un request extra, 
-    # pero por ahora probamos main y si falla en el render de GitHub se verá roto, 
-    # o simplemente usamos main por defecto ya que es lo moderno)
-    branch = "main"
+def extract_image(readme_text, repo_name, branch="main"):
+    """Extrae la imagen más representativa del README."""
+    # Buscar patrones de imagen (Markdown o HTML)
+    patterns = [
+        r'<img[^>]+src=["\']([^"\']+)["\']',     # HTML img
+        r'!\[[^\]]*\]\(([^)\s]+)'                  # Markdown img
+    ]
     
-    # <img src="...">
-    m = re.search(r'<img[^>]+src=["\']([^"\']+)["\']', readme_text, re.IGNORECASE)
-    if m:
-        return to_absolute(m.group(1), repo_name, branch)
-    # ![alt](url)
-    m = re.search(r'!\[[^\]]*\]\(([^)\s]+)', readme_text)
-    if m:
-        return to_absolute(m.group(1), repo_name, branch)
+    for p in patterns:
+        matches = re.finditer(p, readme_text, re.IGNORECASE)
+        for m in matches:
+            img_url = m.group(1)
+            # Ignorar insignias/badges comunes
+            if any(x in img_url.lower() for x in ["img.shields.io", "badge", "skillicons.dev", "github-readme-stats"]):
+                continue
+            return to_absolute(img_url, repo_name, branch)
+            
     # Fallback: imagen social de GitHub
     return f"https://opengraph.githubassets.com/1/{USERNAME}/{repo_name}"
 
 
-def extract_live_url(readme_text):
-    """Intenta encontrar el link del sitio live en el README."""
+def extract_live_url(readme_text, repo_homepage=None):
+    """Encuentra el link live, priorizando el homepage del repo."""
+    if repo_homepage and "github.com" not in repo_homepage:
+        return repo_homepage
+
     # Patrón 1: texto tipo [Live Demo](https://...)
     p1 = re.compile(
-        r'\[(?:[^\]]{0,40}(?:live|demo|sitio|ver|visit|web|página|page)[^\]]{0,40})\]'
+        r'\[(?:[^\]]{0,40}(?:live|demo|sitio|ver|visit|web|página|page|despliegue)[^\]]{0,40})\]'
         r'\((https?://(?!github\.com)[^)]+)\)',
         re.IGNORECASE,
     )
     # Patrón 2: icono/palabra clave seguida de URL
     p2 = re.compile(
-        r'(?:live demo|live site|ver sitio|demo|🌐|👉|deployed)[^\n]{0,60}'
+        r'(?:live demo|live site|ver sitio|demo|🌐|👉|deployed|desplegado en)[^\n]{0,60}'
         r'(https?://(?!github\.com)[^\s)"\']+)',
         re.IGNORECASE,
     )
@@ -209,26 +214,33 @@ def lang_badge(language):
 
 def build_project_card(repo):
     """Genera el HTML de una tarjeta de proyecto con diseño Premium."""
-    name        = repo["name"]
-    display     = name.replace("-", " ").replace("_", " ").title()
-    description = (repo.get("description") or "Proyecto sin descripción.").replace('"', "'")
+    name         = repo["name"]
+    display      = name.replace("-", " ").replace("_", " ").title()
+    description  = (repo.get("description") or "Proyecto sin descripción.").replace('"', "'")
     if len(description) > 85:
         description = description[:82] + "..."
     
-    language    = repo.get("language") or ""
-    repo_url    = repo["html_url"]
+    language     = repo.get("language") or ""
+    repo_url     = repo["html_url"]
+    repo_homepage = repo.get("homepage")
 
-    readme_text = fetch_readme_text(name)
-    image_url   = extract_image(readme_text, name)
-    live_url    = extract_live_url(readme_text)
+    readme_text  = fetch_readme_text(name)
+    image_url    = extract_image(readme_text, name)
+    live_url     = extract_live_url(readme_text, repo_homepage)
 
-    # Botón live (opcional) con nuevo estilo
+    # Botones con diseño unificado
+    repo_btn = (
+        f'<a href="{repo_url}">'
+        f'<img src="https://img.shields.io/badge/⚡_Código-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo">'
+        f'</a>'
+    )
+    
     live_btn = ""
     if live_url:
         live_btn = (
-            f'\n&nbsp;'
+            f'&nbsp;&nbsp;'
             f'<a href="{live_url}">'
-            f'<img src="https://img.shields.io/badge/演示_Live-00d8ff?style=for-the-badge&logo=vercel&logoColor=black" alt="Live">'
+            f'<img src="https://img.shields.io/badge/🌐_Visit_Web-00d8ff?style=for-the-badge&logo=vercel&logoColor=black" alt="Live">'
             f'</a>'
         )
 
@@ -236,16 +248,17 @@ def build_project_card(repo):
 <td width="33%" align="center" valign="top">
 <img src="https://capsule-render.vercel.app/api?type=rect&color=00d8ff&height=4" width="100%" alt="─">
 <br>
-<a href="{repo_url}">
-  <img src="{image_url}" width="100%" style="border-radius:10px; border: 1px solid #30363d;" alt="{display}">
+<a href="{live_url or repo_url}">
+  <img src="{image_url}" width="100%" height="auto" style="border-radius:10px; border: 1px solid #30363d; aspect-ratio: 16/9; object-fit: cover;" alt="{display}">
 </a>
 <br><br>
 <strong>{display}</strong><br>
-<p height="40px"><sub>{description}</sub></p>
-<br>
+<div style="height: 45px; overflow: hidden; margin-bottom: 10px;">
+  <sub>{description}</sub>
+</div>
 {lang_badge(language)}&nbsp;<img src="https://img.shields.io/github/stars/{USERNAME}/{name}?style=flat-square&color=ffd700&labelColor=0d1117" alt="Stars">
 <br><br>
-<a href="{repo_url}"><img src="https://img.shields.io/badge/⚡_Repo-000000?style=for-the-badge&logo=github&logoColor=white" alt="Repo"></a>{live_btn}
+{repo_btn}{live_btn}
 <br><br>
 </td>"""
 
