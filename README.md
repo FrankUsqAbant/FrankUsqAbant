@@ -48,9 +48,114 @@ Programar es lo más parecido que tenemos a la **magia en el mundo real**. Mi mi
 <p align="right"><sub>Actualización automática inteligente ✨</sub></p>
 
 <!-- PROJECTS:START -->
-<div align="center">
-  <p align="center"><em>⚙️ Sincronizando tus mejores repositorios...</em></p>
+<table border="0" width="100%" cellpadding="0" cellspacing="15">
+<tr>
+<td width="33.33%" align="center" valign="top">
+<div style="border: 2px solid #00d8ff; border-radius: 15px; background: #0d1117; padding: 0 0 15px 0; overflow: hidden; margin: 5px;">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=00d8ff&height=40&section=header&reversal=true&animation=shimmer" width="100%" alt="shimmer">
+  <br>
+  <h4 align="center" style="margin: 5px 0;">Frankusqabant</h4>
+  <a href="https://capsule-render.vercel.app/api?type=waving&color=00d8ff&height=45&section=header&reversal=true&animation=shimmer">
+    <img src="https://raw.githubusercontent.com/FrankUsqAbant/FrankUsqAbant/main/images/banner.png" width="90%" height="140px" style="border-radius:10px; object-fit: cover; border: 1px solid #30363d;" alt="Frankusqabant">
+  </a>
+  <br>
+  <div style="height: 45px; overflow: hidden; padding: 0 10px;">
+    <small>This is my personal repo for README</small>
+  </div>
+  <p align="center"><img src="https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white" alt="Python"></p>
+  <hr style="border: 0.1px solid #30363d; margin: 10px;">
+  <p align="center"><a href="https://github.com/FrankUsqAbant/FrankUsqAbant"><img src="https://img.shields.io/badge/Código-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo"></a>&nbsp;&nbsp;<a href="https://capsule-render.vercel.app/api?type=waving&color=00d8ff&height=45&section=header&reversal=true&animation=shimmer"><img src="https://img.shields.io/badge/Web-00d8ff?style=for-the-badge&logo=vercel&logoColor=black" alt="Web"></a></p>
 </div>
+</td>
+<td width="33.33%" align="center" valign="top">
+<div style="border: 2px solid #00d8ff; border-radius: 15px; background: #0d1117; padding: 0 0 15px 0; overflow: hidden; margin: 5px;">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=00d8ff&height=40&section=header&reversal=true&animation=shimmer" width="100%" alt="shimmer">
+  <br>
+  <h4 align="center" style="margin: 5px 0;">Simple Yoga Elite</h4>
+  <a href="https://simple-yoga-elite.netlify.app/">
+    <img src="https://raw.githubusercontent.com/FrankUsqAbant/simple-yoga-elite/main/protocol-aurora/public/hero_meditation.png" width="90%" height="140px" style="border-radius:10px; object-fit: cover; border: 1px solid #30363d;" alt="Simple Yoga Elite">
+  </a>
+  <br>
+  <div style="height: 45px; overflow: hidden; padding: 0 10px;">
+    <small>Santuario de Yoga Elite - Protocolo Aurora v15.0. Experie...</small>
+  </div>
+  <p align="center"><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=white" alt="JavaScript"></p>
+  <hr style="border: 0.1px solid #30363d; margin: 10px;">
+  <p align="center"><a href="https://github.com/FrankUsqAbant/simple-yoga-elite"><img src="https://img.shields.io/badge/Código-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo"></a>&nbsp;&nbsp;<a href="https://simple-yoga-elite.netlify.app/"><img src="https://img.shields.io/badge/Web-00d8ff?style=for-the-badge&logo=vercel&logoColor=black" alt="Web"></a></p>
+</div>
+</td>
+<td width="33.33%" align="center" valign="top">
+<div style="border: 2px solid #00d8ff; border-radius: 15px; background: #0d1117; padding: 0 0 15px 0; overflow: hidden; margin: 5px;">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=00d8ff&height=40&section=header&reversal=true&animation=shimmer" width="100%" alt="shimmer">
+  <br>
+  <h4 align="center" style="margin: 5px 0;">Expense Tracker Ocr</h4>
+  <a href="https://github.com/FrankUsqAbant/expense-tracker-ocr">
+    <img src="https://raw.githubusercontent.com/FrankUsqAbant/expense-tracker-ocr/main/public/preview.png" width="90%" height="140px" style="border-radius:10px; object-fit: cover; border: 1px solid #30363d;" alt="Expense Tracker Ocr">
+  </a>
+  <br>
+  <div style="height: 45px; overflow: hidden; padding: 0 10px;">
+    <small>Sin descripción del proyecto.</small>
+  </div>
+  <p align="center"><img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript"></p>
+  <hr style="border: 0.1px solid #30363d; margin: 10px;">
+  <p align="center"><a href="https://github.com/FrankUsqAbant/expense-tracker-ocr"><img src="https://img.shields.io/badge/Código-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo"></a></p>
+</div>
+</td>
+</tr>
+<tr>
+<td width="33.33%" align="center" valign="top">
+<div style="border: 2px solid #00d8ff; border-radius: 15px; background: #0d1117; padding: 0 0 15px 0; overflow: hidden; margin: 5px;">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=00d8ff&height=40&section=header&reversal=true&animation=shimmer" width="100%" alt="shimmer">
+  <br>
+  <h4 align="center" style="margin: 5px 0;">Document Student</h4>
+  <a href="https://FrankUsqAbant.github.io/document-student/">
+    <img src="https://raw.githubusercontent.com/FrankUsqAbant/document-student/main/public/header-preview.png" width="90%" height="140px" style="border-radius:10px; object-fit: cover; border: 1px solid #30363d;" alt="Document Student">
+  </a>
+  <br>
+  <div style="height: 45px; overflow: hidden; padding: 0 10px;">
+    <small>Sin descripción del proyecto.</small>
+  </div>
+  <p align="center"><img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript"></p>
+  <hr style="border: 0.1px solid #30363d; margin: 10px;">
+  <p align="center"><a href="https://github.com/FrankUsqAbant/document-student"><img src="https://img.shields.io/badge/Código-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo"></a>&nbsp;&nbsp;<a href="https://FrankUsqAbant.github.io/document-student/"><img src="https://img.shields.io/badge/Web-00d8ff?style=for-the-badge&logo=vercel&logoColor=black" alt="Web"></a></p>
+</div>
+</td>
+<td width="33.33%" align="center" valign="top">
+<div style="border: 2px solid #00d8ff; border-radius: 15px; background: #0d1117; padding: 0 0 15px 0; overflow: hidden; margin: 5px;">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=00d8ff&height=40&section=header&reversal=true&animation=shimmer" width="100%" alt="shimmer">
+  <br>
+  <h4 align="center" style="margin: 5px 0;">Predictordepartidos</h4>
+  <a href="https://frankusqabant.github.io/PredictorDePartidos/](https://frankusqabant.github.io/PredictorDePartidos/">
+    <img src="https://opengraph.githubassets.com/1/FrankUsqAbant/PredictorDePartidos" width="90%" height="140px" style="border-radius:10px; object-fit: cover; border: 1px solid #30363d;" alt="Predictordepartidos">
+  </a>
+  <br>
+  <div style="height: 45px; overflow: hidden; padding: 0 10px;">
+    <small>Sin descripción del proyecto.</small>
+  </div>
+  <p align="center"><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=white" alt="JavaScript"></p>
+  <hr style="border: 0.1px solid #30363d; margin: 10px;">
+  <p align="center"><a href="https://github.com/FrankUsqAbant/PredictorDePartidos"><img src="https://img.shields.io/badge/Código-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo"></a>&nbsp;&nbsp;<a href="https://frankusqabant.github.io/PredictorDePartidos/](https://frankusqabant.github.io/PredictorDePartidos/"><img src="https://img.shields.io/badge/Web-00d8ff?style=for-the-badge&logo=vercel&logoColor=black" alt="Web"></a></p>
+</div>
+</td>
+<td width="33.33%" align="center" valign="top">
+<div style="border: 2px solid #00d8ff; border-radius: 15px; background: #0d1117; padding: 0 0 15px 0; overflow: hidden; margin: 5px;">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=00d8ff&height=40&section=header&reversal=true&animation=shimmer" width="100%" alt="shimmer">
+  <br>
+  <h4 align="center" style="margin: 5px 0;">Proyecto Curso Html</h4>
+  <a href="https://frankusqabant.github.io/proyecto-curso-html/">
+    <img src="https://raw.githubusercontent.com/sergiecode/proyecto-curso-html/master/assets/img/captura-pantalla-glottis.png" width="90%" height="140px" style="border-radius:10px; object-fit: cover; border: 1px solid #30363d;" alt="Proyecto Curso Html">
+  </a>
+  <br>
+  <div style="height: 45px; overflow: hidden; padding: 0 10px;">
+    <small>Sin descripción del proyecto.</small>
+  </div>
+  <p align="center"><img src="https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML"></p>
+  <hr style="border: 0.1px solid #30363d; margin: 10px;">
+  <p align="center"><a href="https://github.com/FrankUsqAbant/proyecto-curso-html"><img src="https://img.shields.io/badge/Código-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo"></a>&nbsp;&nbsp;<a href="https://frankusqabant.github.io/proyecto-curso-html/"><img src="https://img.shields.io/badge/Web-00d8ff?style=for-the-badge&logo=vercel&logoColor=black" alt="Web"></a></p>
+</div>
+</td>
+</tr>
+</table>
 <!-- PROJECTS:END -->
 
 <br>
@@ -94,7 +199,37 @@ Programar es lo más parecido que tenemos a la **magia en el mundo real**. Mi mi
 ## 🛠️ Tecnologías
 
 <!-- LANGUAGES:START -->
-<p align="center"><em>⚙️ Cargando tecnologías...</em></p>
+<table border="0" width="100%" cellpadding="0" cellspacing="15">
+<tr>
+<td width="33.33%" valign="top">
+  <div style="border: 2px solid #00d8ff; border-radius: 15px; background: #0d1117; overflow: hidden; height: 100%;">
+    <img src="https://capsule-render.vercel.app/api?type=waving&color=00d8ff&height=40&section=header&reversal=true&animation=shimmer&text=FRONTEND&fontSize=18&fontAlignY=60" width="100%" alt="light">
+    <div style="padding: 15px; text-align: center;">
+      <p align="center" style="color: #00d8ff; margin-bottom: 10px;"><strong>🎨 FRONTEND</strong></p>
+      <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,tailwind,sass,redux,vite,figma&perline=3&theme=dark" alt="icons">
+    </div>
+  </div>
+</td>
+<td width="33.33%" valign="top">
+  <div style="border: 2px solid #00d8ff; border-radius: 15px; background: #0d1117; overflow: hidden; height: 100%;">
+    <img src="https://capsule-render.vercel.app/api?type=waving&color=00d8ff&height=40&section=header&reversal=true&animation=shimmer&text=BACKEND&fontSize=18&fontAlignY=60" width="100%" alt="light">
+    <div style="padding: 15px; text-align: center;">
+      <p align="center" style="color: #00d8ff; margin-bottom: 10px;"><strong>⚙️ BACKEND</strong></p>
+      <img src="https://skillicons.dev/icons?i=py,nodejs,mongodb&perline=3&theme=dark" alt="icons">
+    </div>
+  </div>
+</td>
+<td width="33.33%" valign="top">
+  <div style="border: 2px solid #00d8ff; border-radius: 15px; background: #0d1117; overflow: hidden; height: 100%;">
+    <img src="https://capsule-render.vercel.app/api?type=waving&color=00d8ff&height=40&section=header&reversal=true&animation=shimmer&text=TOOLS&fontSize=18&fontAlignY=60" width="100%" alt="light">
+    <div style="padding: 15px; text-align: center;">
+      <p align="center" style="color: #00d8ff; margin-bottom: 10px;"><strong>🛠️ TOOLS</strong></p>
+      <img src="https://skillicons.dev/icons?i=git,github,vscode,vercel,notion,postman&perline=3&theme=dark" alt="icons">
+    </div>
+  </div>
+</td>
+</tr>
+</table>
 <!-- LANGUAGES:END -->
 
 <br>
