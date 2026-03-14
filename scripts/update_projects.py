@@ -327,16 +327,16 @@ if __name__ == "__main__":
     readme = read_readme()
 
     # ── Proyectos
-    print(f'🔍 Buscando repos con topic "featured" para @{USERNAME}...')
+    print(f'🔍 Buscando repositorios para @{USERNAME}...')
     repos = get_featured_repos()
-    print(f"✅ {len(repos)} repos encontrados.")
+    print(f"✅ {len(repos)} repositorios encontrados.")
     projects_html = generate_projects_html(repos)
     readme = inject_section(readme, PROJ_START, PROJ_END, projects_html)
 
     # ── Lenguajes
-    print("🎨 Actualizando iconos de lenguajes...")
+    print("🎨 Actualizando tecnologías e iconos...")
     langs_html = generate_languages_html()
     readme = inject_section(readme, LANG_START, LANG_END, langs_html)
 
     write_readme(readme)
-    print("🚀 README.md actualizado correctamente.")
+    print("🚀 README.md actualizado con éxito y localizado. ¡Todo listo!")

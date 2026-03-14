@@ -103,18 +103,20 @@ Programar es lo más parecido que tenemos a la **magia en el mundo real**. Mi mi
 
 <br>
 
-## 📊 GitHub Stats
+## 📊 Estadísticas de GitHub
 
 <p align="center">
-  <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=FrankUsqAbant&layout=compact&langs_count=8&theme=algolia&hide_border=true&bg_color=0D1117" alt="Top Languages">
+  <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=FrankUsqAbant&show_icons=true&theme=algolia&rank_icon=github&hide_border=true&bg_color=0D1117" alt="Frank Stats">
+  &nbsp;&nbsp;
+  <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=FrankUsqAbant&layout=compact&langs_count=8&theme=algolia&hide_border=true&bg_color=0D1117" alt="Lenguajes Top">
 </p>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=FrankUsqAbant&theme=algolia&bg_color=0D1117&hide_border=true&area=true" width="100%" alt="Activity Graph">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=FrankUsqAbant&theme=algolia&bg_color=0D1117&hide_border=true&area=true" width="100%" alt="Gráfico de Actividad">
 </p>
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=FrankUsqAbant&theme=algolia&no-bg=true&margin-w=15&row=1" alt="GitHub Trophies">
+  <img src="https://github-profile-trophy.vercel.app/?username=FrankUsqAbant&theme=algolia&no-bg=true&margin-w=15&row=1" alt="Trofeos GitHub">
 </p>
 
 <br>
@@ -123,5 +125,5 @@ Programar es lo más parecido que tenemos a la **magia en el mundo real**. Mi mi
   <img src="https://capsule-render.vercel.app/api?type=waving&color=00d8ff&height=120&section=footer" width="100%" alt="Footer">
 </p>
 <p align="center">
-  <sub>Hecho con ❤️ y mucho ☕ por <strong>Frank Abanto</strong></sub>
+  <sub>Hecho con ❤️ y mucho de código por <strong>Frank Abanto</strong></sub>
 </p>
