@@ -9,15 +9,15 @@
 
 <p align="center">
   <a href="https://www.youtube.com/@abantofrank12">
-    <img src="https://cdn.simpleicons.org/youtube/FF0000" width="36" height="36" alt="YouTube">
+    <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" height="32" alt="YouTube">
   </a>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;
   <a href="https://www.linkedin.com/in/frankabanto/">
-    <img src="https://cdn.simpleicons.org/linkedin/0A66C2" width="36" height="36" alt="LinkedIn">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" height="32" alt="LinkedIn">
   </a>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;
   <a href="https://www.instagram.com/abantofrank12">
-    <img src="https://cdn.simpleicons.org/instagram/E4405F" width="36" height="36" alt="Instagram">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" height="32" alt="Instagram">
   </a>
 </p>
 
@@ -80,7 +80,7 @@ Programar es lo más parecido que tenemos a la **magia en el mundo real**. Mi mi
 <tr>
 <td align="center" colspan="3">
 <br>
-<img src="https://capsule-render.vercel.app/api?type=rect&color=FF0000&height=3" width="50%" alt="divider">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=FF0000&height=35&section=header&reversal=true" width="100%" alt="cabecera">
 <br><br>
 <img src="https://cdn.simpleicons.org/youtube/FF0000" width="52" height="52" alt="YouTube">
 <br><br>

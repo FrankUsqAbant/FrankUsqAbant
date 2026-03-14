@@ -246,7 +246,7 @@ def build_project_card(repo):
 
     return f"""\
 <td width="33%" align="center" valign="top">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=00d8ff&height=40&section=header&reversal=true&animation=fadeIn" width="100%" alt="header">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=00d8ff&height=40&section=header&reversal=true&animation=shimmer" width="100%" alt="header">
 <br>
 <a href="{live_url or repo_url}">
   <img src="{image_url}" width="100%" height="160px" style="border-radius:15px; border: 2px solid #30363d; object-fit: cover; box-shadow: 0 4px 8px rgba(0,0,0,0.4);" alt="{display}">
