@@ -1,0 +1,44 @@
+name: 🤖 Auto-update README
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"   # Cada 6 horas
+  push:
+    branches: [main]
+  workflow_dispatch:          # También se puede correr manualmente desde GitHub
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write         # Necesario para hacer commit al README
+
+    steps:
+      - name: ⬇️ Checkout repositorio
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 🐍 Configurar Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 📦 Instalar dependencias
+        run: pip install requests
+
+      - name: 🚀 Actualizar Featured Projects + Lenguajes
+        run: python scripts/update_projects.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 📺 Actualizar Videos de YouTube
+        run: python scripts/update_youtube.py
+
+      - name: 💾 Commit y push de cambios
+        run: |
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add README.md
+          git diff --staged --quiet || git commit -m "🤖 Auto-update README [skip ci]"
+          git push
