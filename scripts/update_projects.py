@@ -98,8 +98,11 @@ def inject_section(readme, start_marker, end_marker, new_content):
 # ── 1. Featured Projects ───────────────────────────────────────────────────────
 
 def get_featured_repos():
-    """Devuelve los repos públicos con topic 'featured', ordenados por actualización."""
+    """Devuelve los repos con topic 'featured', o los más estrellados/recientes si no hay ninguno."""
     repos, page = [], 1
+    featured_repos = []
+    all_public_repos = []
+
     while True:
         url = (f"https://api.github.com/users/{USERNAME}/repos"
                f"?type=public&sort=updated&per_page=100&page={page}")
@@ -107,16 +110,24 @@ def get_featured_repos():
         if not data:
             break
         for repo in data:
+            all_public_repos.append(repo)
+            # Solo pedimos topics si estamos buscando destacados
             t = get(
                 f"https://api.github.com/repos/{USERNAME}/{repo['name']}/topics",
                 headers=HEADERS_TOPICS,
             )
             if "featured" in t.get("names", []):
-                repos.append(repo)
+                featured_repos.append(repo)
         page += 1
         if len(data) < 100:
             break
-    return repos
+    
+    if featured_repos:
+        return featured_repos
+    
+    # Fallback: Top 6 repos públicos más recientes
+    print("⚠️ No se encontraron repos con topic 'featured'. Seleccionando automáticos...")
+    return all_public_repos[:6]
 
 
 def fetch_readme_text(repo_name):
@@ -197,10 +208,13 @@ def lang_badge(language):
 
 
 def build_project_card(repo):
-    """Genera el HTML de una tarjeta de proyecto."""
+    """Genera el HTML de una tarjeta de proyecto con diseño Premium."""
     name        = repo["name"]
     display     = name.replace("-", " ").replace("_", " ").title()
     description = (repo.get("description") or "Proyecto sin descripción.").replace('"', "'")
+    if len(description) > 85:
+        description = description[:82] + "..."
+    
     language    = repo.get("language") or ""
     repo_url    = repo["html_url"]
 
@@ -208,31 +222,30 @@ def build_project_card(repo):
     image_url   = extract_image(readme_text, name)
     live_url    = extract_live_url(readme_text)
 
-    # Botón live (opcional)
+    # Botón live (opcional) con nuevo estilo
     live_btn = ""
     if live_url:
         live_btn = (
             f'\n&nbsp;'
             f'<a href="{live_url}">'
-            f'<img src="https://img.shields.io/badge/🌐_Ver_Sitio-00d8ff'
-            f'?style=for-the-badge&logoColor=black" alt="Ver Sitio">'
+            f'<img src="https://img.shields.io/badge/演示_Live-00d8ff?style=for-the-badge&logo=vercel&logoColor=black" alt="Live">'
             f'</a>'
         )
 
     return f"""\
 <td width="33%" align="center" valign="top">
-<img src="https://capsule-render.vercel.app/api?type=rect&color=00d8ff&height=3" width="100%" alt="─">
+<img src="https://capsule-render.vercel.app/api?type=rect&color=00d8ff&height=4" width="100%" alt="─">
 <br>
 <a href="{repo_url}">
-  <img src="{image_url}" width="100%" alt="{display}">
+  <img src="{image_url}" width="100%" style="border-radius:10px; border: 1px solid #30363d;" alt="{display}">
 </a>
 <br><br>
 <strong>{display}</strong><br>
-<sub>{description}</sub>
+<p height="40px"><sub>{description}</sub></p>
+<br>
+{lang_badge(language)}&nbsp;<img src="https://img.shields.io/github/stars/{USERNAME}/{name}?style=flat-square&color=ffd700&labelColor=0d1117" alt="Stars">
 <br><br>
-{lang_badge(language)}&nbsp;<img src="https://img.shields.io/github/stars/{USERNAME}/{name}?style=flat-square&color=ffd700&labelColor=000" alt="Stars">&nbsp;<img src="https://img.shields.io/github/forks/{USERNAME}/{name}?style=flat-square&color=00d8ff&labelColor=000" alt="Forks">
-<br><br>
-<a href="{repo_url}"><img src="https://img.shields.io/badge/⚡_Código-000000?style=for-the-badge&logo=github&logoColor=white" alt="Repositorio"></a>{live_btn}
+<a href="{repo_url}"><img src="https://img.shields.io/badge/⚡_Repo-000000?style=for-the-badge&logo=github&logoColor=white" alt="Repo"></a>{live_btn}
 <br><br>
 </td>"""
 

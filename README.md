@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/FrankUsqAbant/FrankUsqAbant/main/images/banner.png" width="100%" alt="Frank Abanto Banner">
+  <img src="images/banner.png" width="100%" alt="Franquer Abanto Banner">
 </p>
 
-<h1 align="center">Frank Abanto</h1>
+<h1 align="center">Franquer Abanto</h1>
 <p align="center">
   <em>Software Engineer &nbsp;·&nbsp; Frontend Specialist &nbsp;·&nbsp; AI Content Creator</em>
 </p>
@@ -47,11 +47,9 @@ Programar es lo más parecido que tenemos a la **magia en el mundo real**. Mi mi
 
 ## 🛠️ Tech Stack
 
-<!-- LANGUAGES:START -->
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,tailwind,sass,figma,git,github,vscode,vercel,notion&perline=7" alt="Tech Stack">
-</p>
-<!-- LANGUAGES:END -->
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,tailwind,sass,figma,git,github,vscode,vercel,notion,py,nodejs,mongodb,postman,redux,vite&perline=10&theme=dark" alt="Tech Stack">
+</div>
 
 <br>
 
@@ -59,12 +57,12 @@ Programar es lo más parecido que tenemos a la **magia en el mundo real**. Mi mi
 
 <br>
 
-## 🚀 Featured Projects
+## 🚀 Proyectos Destacados
 
-<p align="right"><sub>Se actualizan automáticamente ✨ — Agrega el topic <code>featured</code> a tus repos</sub></p>
+<p align="right"><sub>Actualización automática inteligente ✨</sub></p>
 
 <!-- PROJECTS:START -->
-<p align="center"><em>⚙️ Cargando proyectos destacados...</em></p>
+<p align="center"><em>⚙️ Sincronizando tus mejores repositorios...</em></p>
 <!-- PROJECTS:END -->
 
 <br>
