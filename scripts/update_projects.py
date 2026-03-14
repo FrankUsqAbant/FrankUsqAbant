@@ -179,21 +179,22 @@ def generate_projects_html(repos):
 # ── 2. Language Icons ──────────────────────────────────────────────────────────
 
 def generate_languages_html():
-    # Definición de categorías según la imagen del usuario
+    # Definición de categorías optimizada
     categories = {
         "🎨 FRONTEND": ["html", "css", "js", "ts", "react", "nextjs", "tailwind", "sass", "redux", "vite", "figma"],
         "⚙️ BACKEND": ["py", "nodejs", "mongodb"],
         "🛠️ TOOLS": ["git", "github", "vscode", "vercel", "notion", "postman"]
     }
     
-    html = '<table border="0" width="100%" cellpadding="0" cellspacing="15">\n<tr>\n'
+    html = '<table border="0" width="100%" cellpadding="0" cellspacing="10">\n<tr>\n'
     
     for title, icons in categories.items():
         icons_str = ",".join(icons)
         html += f"""\
 <td width="33.33%" valign="top">
-  <div style="background: linear-gradient(135deg, #0d1117 0%, #161b22 100%); border: 2px solid #00d8ff; border-radius: 15px; padding: 20px; box-shadow: 0 8px 32px rgba(0, 216, 255, 0.15); min-height: 280px; text-align: center;">
-    <img src="https://capsule-render.vercel.app/api?type=rect&color=00d8ff&height=20&text={title}&fontSize=14&fontAlignY=50&animation=shimmer" width="100%" alt="{title}">
+  <div style="border: 1.5px solid #30363d; border-radius: 12px; padding: 15px; background: #0d1117; text-align: center;">
+    <h4 align="center" style="color: #00d8ff; margin-bottom: 5px;">{title}</h4>
+    <img src="https://capsule-render.vercel.app/api?type=rect&color=00d8ff&height=2&animation=shimmer" width="100%" alt="divider">
     <br><br>
     <img src="https://skillicons.dev/icons?i={icons_str}&perline=3&theme=dark" alt="icons">
   </div>

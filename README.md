@@ -1,10 +1,8 @@
-<img src="https://capsule-render.vercel.app/api?type=rect&color=00d8ff&height=10&section=header&animation=shimmer" width="100%" alt="neon_top">
-
 <p align="center">
-  <img src="images/banner.png" width="100%" alt="Franquer Abanto Banner" style="border: 2px solid #00d8ff; border-radius: 10px; box-shadow: 0 0 20px #00d8ff;">
+  <img src="images/banner.png" width="100%" alt="Franquer Abanto Banner">
 </p>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=00d8ff&height=10&section=footer&animation=shimmer" width="100%" alt="neon_bottom">
+<img src="https://capsule-render.vercel.app/api?type=rect&color=00d8ff&height=3&animation=shimmer" width="100%" alt="thin_neon_divider">
 
 <h1 align="center">Franquer Abanto</h1>
 <p align="center">
@@ -13,15 +11,15 @@
 
 <p align="center">
   <a href="https://www.youtube.com/@abantofrank12">
-    <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" height="35" alt="YouTube">
+    <img src="https://cdn.simpleicons.org/youtube/FF0000" width="38" height="38" alt="YouTube">
   </a>
-  &nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <a href="https://www.linkedin.com/in/frankabanto/">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" height="35" alt="LinkedIn">
+    <img src="https://cdn.simpleicons.org/linkedin/0077B5" width="38" height="38" alt="LinkedIn">
   </a>
-  &nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <a href="https://www.instagram.com/abantofrank12">
-    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" height="35" alt="Instagram">
+    <img src="https://cdn.simpleicons.org/instagram/E4405F" width="38" height="38" alt="Instagram">
   </a>
 </p>
 
