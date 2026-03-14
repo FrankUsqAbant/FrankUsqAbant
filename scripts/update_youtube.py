@@ -15,6 +15,7 @@ Uso:
     python scripts/update_youtube.py
 """
 
+import re
 import requests
 import xml.etree.ElementTree as ET
 
