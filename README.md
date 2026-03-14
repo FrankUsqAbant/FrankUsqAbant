@@ -43,18 +43,6 @@ Programar es lo más parecido que tenemos a la **magia en el mundo real**. Mi mi
 
 <br>
 
-## 🛠️ Tecnologías
-
-<!-- LANGUAGES:START -->
-<p align="center"><em>⚙️ Cargando tecnologías...</em></p>
-<!-- LANGUAGES:END -->
-
-<br>
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=00d8ff&height=2" width="100%" alt="divider">
-
-<br>
-
 ## 🚀 Proyectos Destacados
 
 <p align="right"><sub>Actualización automática inteligente ✨</sub></p>
@@ -96,6 +84,18 @@ Programar es lo más parecido que tenemos a la **magia en el mundo real**. Mi mi
 </tr>
 </table>
 <!-- YOUTUBE:END -->
+
+<br>
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=00d8ff&height=2" width="100%" alt="divider">
+
+<br>
+
+## 🛠️ Tecnologías
+
+<!-- LANGUAGES:START -->
+<p align="center"><em>⚙️ Cargando tecnologías...</em></p>
+<!-- LANGUAGES:END -->
 
 <br>
 
