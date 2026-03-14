@@ -2,7 +2,7 @@
   <img src="images/banner.png" width="100%" alt="Franquer Abanto Banner">
 </p>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=00d8ff&height=3&animation=shimmer" width="100%" alt="thin_neon_divider">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=00d8ff&height=45&section=header&reversal=true&animation=shimmer" width="100%" alt="glow_lighting">
 
 <h1 align="center">Franquer Abanto</h1>
 <p align="center">
@@ -15,7 +15,7 @@
   </a>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <a href="https://www.linkedin.com/in/frankabanto/">
-    <img src="https://cdn.simpleicons.org/linkedin/0077B5" width="38" height="38" alt="LinkedIn">
+    <img src="images/linkedin.svg" width="38" height="38" alt="LinkedIn">
   </a>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <a href="https://www.instagram.com/abantofrank12">
