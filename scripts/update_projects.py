@@ -181,24 +181,21 @@ def generate_projects_html(repos):
 def generate_languages_html():
     # Definición de categorías según la imagen del usuario
     categories = {
-        "🎨 Frontend": ["html", "css", "js", "ts", "react", "nextjs", "tailwind", "sass", "redux", "vite", "figma"],
-        "⚙️ Backend": ["py", "nodejs", "mongodb"],
-        "🛠️ Tools": ["git", "github", "vscode", "vercel", "notion", "postman"]
+        "🎨 FRONTEND": ["html", "css", "js", "ts", "react", "nextjs", "tailwind", "sass", "redux", "vite", "figma"],
+        "⚙️ BACKEND": ["py", "nodejs", "mongodb"],
+        "🛠️ TOOLS": ["git", "github", "vscode", "vercel", "notion", "postman"]
     }
     
-    html = '<table border="0" width="100%" cellpadding="0" cellspacing="20">\n<tr>\n'
+    html = '<table border="0" width="100%" cellpadding="0" cellspacing="15">\n<tr>\n'
     
     for title, icons in categories.items():
         icons_str = ",".join(icons)
         html += f"""\
-<td width="33.33%" valign="top" align="center">
-  <div style="background: #0d1117; border: 2px solid #00d8ff; border-radius: 12px; padding: 25px; box-shadow: 0 4px 15px rgba(0, 216, 255, 0.2); min-height: 250px;">
-    <h3 align="center" style="margin-top: 0; color: #00d8ff; font-family: sans-serif;">{title}</h3>
-    <img src="https://capsule-render.vercel.app/api?type=rect&color=00d8ff&height=2&width=50" alt="divider">
+<td width="33.33%" valign="top">
+  <div style="background: linear-gradient(135deg, #0d1117 0%, #161b22 100%); border: 2px solid #00d8ff; border-radius: 15px; padding: 20px; box-shadow: 0 8px 32px rgba(0, 216, 255, 0.15); min-height: 280px; text-align: center;">
+    <img src="https://capsule-render.vercel.app/api?type=rect&color=00d8ff&height=20&text={title}&fontSize=14&fontAlignY=50&animation=shimmer" width="100%" alt="{title}">
     <br><br>
-    <p align="center">
-      <img src="https://skillicons.dev/icons?i={icons_str}&perline=3&theme=dark" alt="{title.split()[-1]}">
-    </p>
+    <img src="https://skillicons.dev/icons?i={icons_str}&perline=3&theme=dark" alt="icons">
   </div>
 </td>
 """
