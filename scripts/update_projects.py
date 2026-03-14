@@ -245,23 +245,23 @@ def build_project_card(repo):
         )
 
     return f"""\
-<td width="33%" align="center" valign="top">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=00d8ff&height=40&section=header&reversal=true&animation=shimmer" width="100%" alt="header">
+<td width="33.33%" align="center" valign="top">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=00d8ff&height=45&section=header&reversal=true&animation=shimmer&text={display}&fontSize=20&fontAlignY=60" width="100%" alt="header">
 <br>
 <a href="{live_url or repo_url}">
-  <img src="{image_url}" width="100%" height="160px" style="border-radius:15px; border: 2px solid #30363d; object-fit: cover; box-shadow: 0 4px 8px rgba(0,0,0,0.4);" alt="{display}">
+  <img src="{image_url}" width="100%" height="160px" style="border-radius:12px; border: 1px solid #30363d; object-fit: cover; box-shadow: 0 10px 20px rgba(0,0,0,0.5);" alt="{display}">
 </a>
 <br><br>
-<h3 align="center">{display}</h3>
-<div style="height: 50px; overflow: hidden; margin-top: -10px;">
+<div style="height: 60px; overflow: hidden; margin: 10px 5px;">
   <sub>{description}</sub>
 </div>
 <br>
 <p align="center">
-  {lang_badge(language)}&nbsp;<img src="https://img.shields.io/github/stars/{USERNAME}/{name}?style=flat-square&color=ffd700&labelColor=0d1117&label=⭐" alt="Estrellas">
+  {lang_badge(language)}
 </p>
-<hr style="border: 0.5px solid #30363d;">
+<hr style="border: 0.2px solid #30363d; opacity: 0.3;">
 <p align="center">
+  <small>¿Qué deseas visitar?</small><br><br>
   {repo_btn}
   {live_btn}
 </p>
@@ -310,30 +310,30 @@ def get_all_languages():
 
 
 def generate_languages_html():
-    detected = get_all_languages()
-    # Mezcla lenguajes detectados + herramientas fijas (sin duplicados)
-    all_icons = detected + [t for t in FIXED_TOOLS if t not in detected]
+    # Definición de categorías según la imagen del usuario
+    categories = {
+        "Frontend": ["html", "css", "js", "ts", "react", "nextjs", "tailwind", "sass", "redux", "vite", "figma"],
+        "Backend": ["py", "nodejs", "mongodb"],
+        "Tools": ["git", "github", "vscode", "vercel", "notion", "postman"]
+    }
     
-    # Generar etiquetas img individuales con espaciado
-    # Usamos height=45 para que sean consistentes y elegantes
-    img_tags = []
-    for icon in all_icons:
-        img_tags.append(
-            f'<img src="https://skillicons.dev/icons?i={icon}&theme=dark" height="45" alt="{icon}">'
-        )
+    html = '<table border="0" width="100%" cellpadding="0" cellspacing="10">\n<tr>\n'
     
-    # Unir con espacios para el espaciado
-    # Repetimos la lista 2 veces para simular desplazamiento infinito fluido
-    spaced_icons = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".join(img_tags)
-    infinite_content = f"{spaced_icons}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{spaced_icons}"
+    for title, icons in categories.items():
+        icons_str = ",".join(icons)
+        html += f"""\
+<td width="33.33%" valign="top">
+  <div style="background: #0d1117; border: 1px solid #30363d; border-radius: 10px; padding: 15px; height: 100%;">
+    <h4 align="center" style="margin-top: 0; color: #00d8ff;">{title}</h4>
+    <p align="center">
+      <img src="https://skillicons.dev/icons?i={icons_str}&perline=4&theme=dark" alt="{title}">
+    </p>
+  </div>
+</td>
+"""
     
-    return (
-        '<div align="center">\n'
-        '  <marquee behavior="scroll" direction="left" scrollamount="7" width="100%">\n'
-        f'    {infinite_content}\n'
-        '  </marquee>\n'
-        '</div>'
-    )
+    html += "</tr>\n</table>"
+    return html
 
 
 # ── Main ───────────────────────────────────────────────────────────────────────
