@@ -64,7 +64,9 @@ Programar es lo más parecido que tenemos a la **magia en el mundo real**. Mi mi
 <p align="right"><sub>Actualización automática inteligente ✨</sub></p>
 
 <!-- PROJECTS:START -->
-<p align="center"><em>⚙️ Sincronizando tus mejores repositorios...</em></p>
+<div align="center">
+  <p align="center"><em>⚙️ Sincronizando tus mejores repositorios...</em></p>
+</div>
 <!-- PROJECTS:END -->
 
 <br>
