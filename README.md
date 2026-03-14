@@ -125,5 +125,7 @@ Programar es lo más parecido que tenemos a la **magia en el mundo real**. Mi mi
   <img src="https://capsule-render.vercel.app/api?type=waving&color=00d8ff&height=120&section=footer" width="100%" alt="Footer">
 </p>
 <p align="center">
-  <sub>Hecho con ❤️ y mucho de código por <strong>Frank Abanto</strong></sub>
+  <sub>Hecho con ❤️ y mucho código por <strong>Frank Abanto</strong></sub>
+  <br>
+  <img src="https://komarev.com/ghpvc/?username=FrankUsqAbant&color=00d8ff&style=flat-square&label=VISTAS+AL+PERFIL" alt="Vistas al perfil">
 </p>
