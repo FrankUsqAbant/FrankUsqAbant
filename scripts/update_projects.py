@@ -228,37 +228,39 @@ def build_project_card(repo):
     image_url    = extract_image(readme_text, name)
     live_url     = extract_live_url(readme_text, repo_homepage)
 
-    # Botones estilizados como opciones de visita
+    # Botones como opciones claras de navegación
     repo_btn = (
         f'<a href="{repo_url}">'
-        f'<img src="https://img.shields.io/badge/⚡_Código-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repositorio">'
+        f'<img src="https://img.shields.io/badge/⚡_VISITAR_REPO-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repositorio">'
         f'</a>'
     )
     
     live_btn = ""
     if live_url:
         live_btn = (
-            f'&nbsp;'
+            f'<br><br>'
             f'<a href="{live_url}">'
-            f'<img src="https://img.shields.io/badge/🌐_Web-00d8ff?style=for-the-badge&logo=vercel&logoColor=black" alt="Sitio">'
+            f'<img src="https://img.shields.io/badge/🌐_IR_A_LA_WEB-00d8ff?style=for-the-badge&logo=vercel&logoColor=black" alt="Sitio Web">'
             f'</a>'
         )
 
     return f"""\
 <td width="33%" align="center" valign="top">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=00d8ff&height=35&section=header&reversal=true" width="100%" alt="cabecera">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=00d8ff&height=40&section=header&reversal=true&animation=fadeIn" width="100%" alt="header">
 <br>
 <a href="{live_url or repo_url}">
-  <img src="{image_url}" width="100%" style="border-radius:12px; border: 1px solid #30363d; aspect-ratio: 16/9; object-fit: cover;" alt="{display}">
+  <img src="{image_url}" width="100%" height="160px" style="border-radius:15px; border: 2px solid #30363d; object-fit: cover; box-shadow: 0 4px 8px rgba(0,0,0,0.4);" alt="{display}">
 </a>
 <br><br>
-<strong>{display}</strong><br>
-<div style="height: 40px; overflow: hidden; margin-top: 5px;">
+<h3 align="center">{display}</h3>
+<div style="height: 50px; overflow: hidden; margin-top: -10px;">
   <sub>{description}</sub>
 </div>
 <br>
-{lang_badge(language)}&nbsp;<img src="https://img.shields.io/github/stars/{USERNAME}/{name}?style=flat-square&color=ffd700&labelColor=0d1117&label=⭐" alt="Estrellas">
-<br><br>
+<p align="center">
+  {lang_badge(language)}&nbsp;<img src="https://img.shields.io/github/stars/{USERNAME}/{name}?style=flat-square&color=ffd700&labelColor=0d1117&label=⭐" alt="Estrellas">
+</p>
+<hr style="border: 0.5px solid #30363d;">
 <p align="center">
   {repo_btn}
   {live_btn}

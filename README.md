@@ -11,11 +11,11 @@
   <a href="https://www.youtube.com/@abantofrank12">
     <img src="https://cdn.simpleicons.org/youtube/FF0000" width="36" height="36" alt="YouTube">
   </a>
-  &nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <a href="https://www.linkedin.com/in/frankabanto/">
     <img src="https://cdn.simpleicons.org/linkedin/0A66C2" width="36" height="36" alt="LinkedIn">
   </a>
-  &nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <a href="https://www.instagram.com/abantofrank12">
     <img src="https://cdn.simpleicons.org/instagram/E4405F" width="36" height="36" alt="Instagram">
   </a>
@@ -48,7 +48,9 @@ Programar es lo más parecido que tenemos a la **magia en el mundo real**. Mi mi
 ## 🛠️ Tecnologías
 
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,tailwind,sass,figma,git,github,vscode,vercel,notion,py,nodejs,mongodb,postman,redux,vite&perline=10&theme=dark" alt="Tech Stack">
+  <marquee behavior="scroll" direction="left" scrollamount="10" width="100%">
+    <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,tailwind,sass,figma,git,github,vscode,vercel,notion,py,nodejs,mongodb,postman,redux,vite&perline=20&theme=dark" alt="Tech Stack">
+  </marquee>
 </div>
 
 <br>
