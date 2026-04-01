@@ -142,8 +142,8 @@ Programar es lo más parecido que tenemos a la **magia en el mundo real**. Mi mi
   <img src="https://capsule-render.vercel.app/api?type=waving&color=00d8ff&height=40&section=header&reversal=true&animation=shimmer" width="100%" alt="shimmer">
   <br>
   <h4 align="center" style="margin: 5px 0;">Proyecto Curso Html</h4>
-  <a href="https://github.com/FrankUsqAbant/proyecto-curso-html">
-    <img src="https://opengraph.githubassets.com/1/FrankUsqAbant/proyecto-curso-html" width="90%" height="140px" style="border-radius:10px; object-fit: cover; border: 1px solid #30363d;" alt="Proyecto Curso Html">
+  <a href="https://frankusqabant.github.io/proyecto-curso-html/">
+    <img src="https://raw.githubusercontent.com/sergiecode/proyecto-curso-html/master/assets/img/captura-pantalla-glottis.png" width="90%" height="140px" style="border-radius:10px; object-fit: cover; border: 1px solid #30363d;" alt="Proyecto Curso Html">
   </a>
   <br>
   <div style="height: 45px; overflow: hidden; padding: 0 10px;">
@@ -151,7 +151,7 @@ Programar es lo más parecido que tenemos a la **magia en el mundo real**. Mi mi
   </div>
   <p align="center"><img src="https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML"></p>
   <hr style="border: 0.1px solid #30363d; margin: 10px;">
-  <p align="center"><a href="https://github.com/FrankUsqAbant/proyecto-curso-html"><img src="https://img.shields.io/badge/Código-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo"></a></p>
+  <p align="center"><a href="https://github.com/FrankUsqAbant/proyecto-curso-html"><img src="https://img.shields.io/badge/Código-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo"></a>&nbsp;&nbsp;<a href="https://frankusqabant.github.io/proyecto-curso-html/"><img src="https://img.shields.io/badge/Web-00d8ff?style=for-the-badge&logo=vercel&logoColor=black" alt="Web"></a></p>
 </div>
 </td>
 </tr>
