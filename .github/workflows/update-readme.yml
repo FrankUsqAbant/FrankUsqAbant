@@ -2,9 +2,12 @@ name: 🤖 Auto-update README
 
 on:
   schedule:
-    - cron: "0 */6 * * *"   # Cada 6 horas
+    - cron: "0 0 */5 * *"   # Cada 5 días a medianoche UTC
   push:
     branches: [main]
+    paths:
+      - "scripts/**"
+      - ".github/workflows/**"
   workflow_dispatch:          # También se puede correr manualmente desde GitHub
 
 jobs:

@@ -85,8 +85,40 @@ def inject_section(readme, start_marker, end_marker, new_content):
 
 # ── 1. Featured Projects ───────────────────────────────────────────────────────
 
+def _repo_score(repo, readme_text, live_url):
+    """Puntúa cada repo para decidir cuáles merecen estar en destacados."""
+    score = 0
+    has_desc = bool((repo.get("description") or "").strip())
+    has_live = bool(live_url)
+    has_image = bool(readme_text)  # si tiene README con contenido
+
+    # Premios fuertes: descripción y demo online (lo que más valora el lector)
+    if has_desc: score += 30
+    if has_live:  score += 25
+    if has_image: score += 5
+
+    # Repos con estrellas o forks reciben bonus (indica interés real)
+    score += min(repo.get("stargazers_count", 0), 10)
+    score += min(repo.get("forks_count", 0), 5)
+
+    # Bonus pequeño por tamaño (descarta proyectos vacíos de 1 archivo)
+    size_kb = repo.get("size", 0)
+    if size_kb > 50: score += 5
+    if size_kb > 500: score += 3
+
+    return score, has_desc, has_live
+
 def get_featured_repos():
-    repos, page = [], 1
+    """Devuelve los 6 mejores repos públicos para destacar.
+
+    Estrategia (en orden de prioridad):
+      1. Repos con el topic "featured" → si los hay, se usan esos.
+      2. Si no, se puntúan todos según: descripción, demo online, README,
+         estrellas, tamaño. Se excluyen el repo del perfil, forks y
+         proyectos triviales. De los mejores se rotan 6 cada corrida
+         para que vayan variando.
+    """
+    page = 1
     featured_repos = []
     all_public_repos = []
 
@@ -105,8 +137,76 @@ def get_featured_repos():
             except: pass
         page += 1
         if len(data) < 100: break
-    
-    return featured_repos if featured_repos else all_public_repos[:6]
+
+    # 1) Si hay repos marcados con topic "featured", úsalos
+    if featured_repos:
+        return featured_repos[:6]
+
+    # 2) Exclusiones: repo del perfil, forks y candidatos triviales
+    EXCLUDE_NAMES = {USERNAME.lower(), "username.github.io"}  # autorepo perfil
+    TRIVIAL_HINTS = ("curso", "ejercicio", "starter", "template", "test", "demo",
+                     "youtube-git", "scripts-main", "css-basico", "javascript")
+
+    candidates = []
+    for repo in all_public_repos:
+        name_lower = repo["name"].lower()
+
+        # Excluir el repo del README del perfil
+        if name_lower in EXCLUDE_NAMES: continue
+        # Excluir forks
+        if repo.get("fork"): continue
+        # Excluir candidatos triviales por nombre
+        if any(hint in name_lower for hint in TRIVIAL_HINTS): continue
+
+        # Precálculo de info del README (para puntuar y para build_project_card)
+        readme_text = fetch_readme_text(repo["name"])
+        live_url = extract_live_url(readme_text, repo.get("homepage"))
+        score, has_desc, has_live = _repo_score(repo, readme_text, live_url)
+
+        # Guardamos lo precalculado para no volver a pedirlo al construir la card
+        repo["_readme_text"] = readme_text
+        repo["_live_url"] = live_url
+        repo["_score"] = score
+        repo["_has_desc"] = has_desc
+        repo["_has_live"] = has_live
+
+        candidates.append(repo)
+
+    # 3) Ordenar: primero por score, luego por fecha de actualización
+    candidates.sort(key=lambda r: (r["_score"], r.get("updated_at", "")), reverse=True)
+
+    # 4) Rotación: si hay más de 6 candidatos buenos, rotar para que varíen
+    top = candidates[:6] if len(candidates) <= 6 else _rotate(candidates)
+
+    # 5) Si sobran candidatos con baja calidad (sin descripción ni web),
+    #    igual los incluimos para no tener menos de 6 tarjetas.
+    if len(top) < 6:
+        for c in candidates[6:]:
+            if c not in top:
+                top.append(c)
+            if len(top) >= 6: break
+
+    return top[:6]
+
+def _rotate(candidates):
+    """Rota los puestos 4-6 según el día del mes para que cada corrida
+    del workflow muestre un conjunto distinto. Los 3 mejores siempre
+    se mantienen fijos (son los más representativos)."""
+    import datetime
+    if len(candidates) <= 6:
+        return candidates
+    # Los 3 mejores siempre fijos
+    fixed = candidates[:3]
+    # Pool para rotar: del puesto 4 al 12
+    pool = candidates[3:12]
+    if len(pool) <= 3:
+        return fixed + pool
+    day = datetime.datetime.utcnow().day
+    # Rotar 3 del pool cada ~5 días
+    span = 3
+    max_offset = len(pool) - span + 1
+    offset = (day // 5) % max_offset
+    return fixed + pool[offset:offset+span]
 
 def fetch_readme_text(repo_name):
     try:
@@ -126,10 +226,13 @@ def extract_image(readme_text, repo_name):
     return f"https://opengraph.githubassets.com/1/{USERNAME}/{repo_name}"
 
 def extract_live_url(readme_text, repo_homepage=None):
-    if repo_homepage and "github.com" not in repo_homepage: return repo_homepage
-    p3 = re.compile(r'https?://[^\s<>"\']+\.(?:vercel\.app|netlify\.app|pages\.dev|github\.io)[^\s<>"\']*')
+    if repo_homepage and "github.com" not in repo_homepage:
+        return repo_homepage.strip()
+    # Excluir ] y ) del trailing para evitar capturar paréntesis/corchetes
+    # rotos (bug del README de PredictorDePartidos que tenía ]( anidados)
+    p3 = re.compile(r'https?://[^\s<>"\]\)]+\.(?:vercel\.app|netlify\.app|pages\.dev|github\.io)[^\s<>"\]\)]*')
     m = p3.search(readme_text)
-    return m.group(0).rstrip(".,)") if m else None
+    return m.group(0).rstrip(".,") if m else None
 
 def lang_badge(language):
     if not language or language not in LANG_DATA: return ""
@@ -140,10 +243,17 @@ def build_project_card(repo):
     name, display = repo["name"], repo["name"].replace("-", " ").replace("_", " ").title()
     desc = (repo.get("description") or "Sin descripción del proyecto.").replace('"', "'")
     desc = desc[:57] + "..." if len(desc) > 60 else desc
-    
-    readme_text = fetch_readme_text(name)
+
+    # Usar info pre-calculada por get_featured_repos() si está disponible
+    # (evita peticiones duplicadas a la API de GitHub)
+    readme_text = repo.get("_readme_text")
+    if readme_text is None:
+        readme_text = fetch_readme_text(name)
     image_url = extract_image(readme_text, name)
-    live_url = extract_live_url(readme_text, repo.get("homepage"))
+
+    live_url = repo.get("_live_url")
+    if live_url is None:
+        live_url = extract_live_url(readme_text, repo.get("homepage"))
 
     repo_btn = f'<a href="{repo["html_url"]}"><img src="https://img.shields.io/badge/Código-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo"></a>'
     live_btn = f'&nbsp;&nbsp;<a href="{live_url}"><img src="https://img.shields.io/badge/Web-00d8ff?style=for-the-badge&logo=vercel&logoColor=black" alt="Web"></a>' if live_url else ""

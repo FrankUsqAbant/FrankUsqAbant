@@ -10,17 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://www.youtube.com/@abantofrank12">
-    <img src="https://cdn.simpleicons.org/youtube/FF0000" width="38" height="38" alt="YouTube">
-  </a>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://www.linkedin.com/in/frankabanto/">
-    <img src="images/linkedin.svg" width="38" height="38" alt="LinkedIn">
-  </a>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://www.instagram.com/abantofrank12">
-    <img src="https://cdn.simpleicons.org/instagram/E4405F" width="38" height="38" alt="Instagram">
-  </a>
+  <a href="https://www.youtube.com/@abantofrank12"><img src="https://cdn.simpleicons.org/youtube/FF0000" width="38" height="38" alt="YouTube"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.linkedin.com/in/frankabanto/"><img src="images/linkedin.svg" width="38" height="38" alt="LinkedIn"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.instagram.com/abantofrank12"><img src="https://cdn.simpleicons.org/instagram/E4405F" width="38" height="38" alt="Instagram"></a>
 </p>
 
 <br>
