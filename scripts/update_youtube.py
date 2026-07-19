@@ -16,6 +16,7 @@ Uso:
 """
 
 import re
+import html
 import requests
 import xml.etree.ElementTree as ET
 
@@ -85,7 +86,9 @@ def fetch_videos():
 # ── HTML builders ──────────────────────────────────────────────────────────────
 
 def build_video_card(video):
-    title = video["title"].replace('"', "'")
+    # Escapar título para prevenir XSS stored vía título de video
+    # (un video con title="</strong><script>" no se ejecutará)
+    title = html.escape(video["title"])
     url   = video["url"]
     thumb = video["thumb"]
     return f"""\

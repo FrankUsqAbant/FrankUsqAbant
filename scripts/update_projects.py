@@ -17,8 +17,10 @@ Uso:
 
 import os
 import re
+import html
 import base64
 import requests
+from urllib.parse import urlparse
 
 # ── Config ─────────────────────────────────────────────────────────────────────
 TOKEN    = os.environ.get("GITHUB_TOKEN", "")
@@ -239,32 +241,53 @@ def lang_badge(language):
     color, logo, _ = LANG_DATA[language]
     return f'<img src="https://img.shields.io/badge/{language}-{color}?style=flat-square&logo={logo}&logoColor=white" alt="{language}">'
 
+def _safe_url(url):
+    """Valida que una URL sea http(s):// para prevenir inyección de
+    esquemas peligrosos (javascript:, data:, vbscript:)."""
+    if not url:
+        return None
+    try:
+        parsed = urlparse(url)
+        if parsed.scheme in ("http", "https") and parsed.netloc:
+            return url
+    except Exception:
+        pass
+    return None
+
 def build_project_card(repo):
-    name, display = repo["name"], repo["name"].replace("-", " ").replace("_", " ").title()
-    desc = (repo.get("description") or "Sin descripción del proyecto.").replace('"', "'")
+    # Escapar nombre y descripción para prevenir XSS stored
+    # (un repo malicioso con description="</small><script>" no se ejecutará)
+    raw_name = repo["name"]
+    display = html.escape(raw_name.replace("-", " ").replace("_", " ").title())
+    desc_raw = (repo.get("description") or "Sin descripción del proyecto.")
+    desc = html.escape(desc_raw)
     desc = desc[:57] + "..." if len(desc) > 60 else desc
 
     # Usar info pre-calculada por get_featured_repos() si está disponible
     # (evita peticiones duplicadas a la API de GitHub)
     readme_text = repo.get("_readme_text")
     if readme_text is None:
-        readme_text = fetch_readme_text(name)
-    image_url = extract_image(readme_text, name)
+        readme_text = fetch_readme_text(raw_name)
+    image_url = _safe_url(extract_image(readme_text, raw_name)) or \
+        f"https://opengraph.githubassets.com/1/{USERNAME}/{raw_name}"
 
     live_url = repo.get("_live_url")
     if live_url is None:
         live_url = extract_live_url(readme_text, repo.get("homepage"))
+    live_url = _safe_url(live_url)
 
-    repo_btn = f'<a href="{repo["html_url"]}"><img src="https://img.shields.io/badge/Código-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo"></a>'
+    repo_url = _safe_url(repo.get("html_url")) or f"https://github.com/{USERNAME}/{raw_name}"
+    repo_btn = f'<a href="{repo_url}"><img src="https://img.shields.io/badge/Código-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo"></a>'
     live_btn = f'&nbsp;&nbsp;<a href="{live_url}"><img src="https://img.shields.io/badge/Web-00d8ff?style=for-the-badge&logo=vercel&logoColor=black" alt="Web"></a>' if live_url else ""
 
+    card_link = live_url or repo_url
     return f"""\
 <td width="33.33%" align="center" valign="top">
-<div style="border: 2px solid #00d8ff; border-radius: 15px; background: #0d1117; padding: 0 0 15px 0; overflow: hidden; margin: 5px;">
+<div style="border: 2px solid #00d8ff; border-radius: 15px; background: #0d1117; padding: 0 0 15px 0; overflow: hidden; margin: 5px; box-shadow: 0 0 10px rgba(0,216,255,0.25);">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=00d8ff&height=40&section=header&reversal=true&animation=shimmer" width="100%" alt="shimmer">
   <br>
   <h4 align="center" style="margin: 5px 0;">{display}</h4>
-  <a href="{live_url or repo["html_url"]}">
+  <a href="{card_link}">
     <img src="{image_url}" width="90%" height="140px" style="border-radius:10px; object-fit: cover; border: 1px solid #30363d;" alt="{display}">
   </a>
   <br>
@@ -276,6 +299,7 @@ def build_project_card(repo):
   <p align="center">{repo_btn}{live_btn}</p>
 </div>
 </td>"""
+
 
 def generate_projects_html(repos):
     cards = [build_project_card(r) for r in repos]
@@ -289,20 +313,22 @@ def generate_projects_html(repos):
 # ── 2. Language Icons ──────────────────────────────────────────────────────────
 
 def generate_languages_html():
-    # Categorías con iluminación Premium
+    # Categorías con iluminación Premium + glow estático (box-shadow inline)
+    # Nota: GitHub elimina :hover y CSS animations del README, pero
+    # box-shadow inline SÍ está permitido y da efecto de "brillo vivo"
     categories = {
         "🎨 FRONTEND": ["html", "css", "js", "ts", "react", "nextjs", "tailwind", "sass", "redux", "vite", "figma"],
         "⚙️ BACKEND": ["py", "nodejs", "mongodb"],
         "🛠️ TOOLS": ["git", "github", "vscode", "vercel", "notion", "postman"]
     }
-    
-    html = '<table border="0" width="100%" cellpadding="0" cellspacing="15">\n<tr>\n'
-    
+
+    html_out = '<table border="0" width="100%" cellpadding="0" cellspacing="15">\n<tr>\n'
+
     for title, icons in categories.items():
         icons_str = ",".join(icons)
-        html += f"""\
+        html_out += f"""\
 <td width="33.33%" valign="top">
-  <div style="border: 2px solid #00d8ff; border-radius: 15px; background: #0d1117; overflow: hidden; height: 100%;">
+  <div style="border: 2px solid #00d8ff; border-radius: 15px; background: #0d1117; overflow: hidden; height: 100%; box-shadow: 0 0 12px rgba(0,216,255,0.35), inset 0 0 8px rgba(0,216,255,0.15);">
     <img src="https://capsule-render.vercel.app/api?type=waving&color=00d8ff&height=40&section=header&reversal=true&animation=shimmer&text={title.split()[-1]}&fontSize=18&fontAlignY=60" width="100%" alt="light">
     <div style="padding: 15px; text-align: center;">
       <p align="center" style="color: #00d8ff; margin-bottom: 10px;"><strong>{title}</strong></p>
@@ -311,9 +337,9 @@ def generate_languages_html():
   </div>
 </td>
 """
-    
-    html += "</tr>\n</table>"
-    return html
+
+    html_out += "</tr>\n</table>"
+    return html_out
 
 # ── Main ───────────────────────────────────────────────────────────────────────
 
