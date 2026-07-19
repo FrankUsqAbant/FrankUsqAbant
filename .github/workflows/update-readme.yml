@@ -5,11 +5,9 @@ on:
     - cron: "0 0 */5 * *"   # Cada 5 días a medianoche UTC
   push:
     branches: [main]
-    paths:
-      - "scripts/**"
-      - ".github/workflows/**"
     paths-ignore:
-      - "README.md"   # evita bucle infinito si el bot commitea el README
+      - "README.md"           # evita bucle infinito si el bot commitea el README
+      - "images/**"
   workflow_dispatch:          # También se puede correr manualmente desde GitHub
 
 jobs:
