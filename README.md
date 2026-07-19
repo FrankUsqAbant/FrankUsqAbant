@@ -41,7 +41,7 @@ Programar es lo más parecido que tenemos a la **magia en el mundo real**. Mi mi
 <table border="0" width="100%" cellpadding="0" cellspacing="15">
 <tr>
 <td width="33.33%" align="center" valign="top">
-<div style="border: 2px solid #00d8ff; border-radius: 15px; background: #0d1117; padding: 0 0 15px 0; overflow: hidden; margin: 5px;">
+<div style="border: 2px solid #00d8ff; border-radius: 15px; background: #0d1117; padding: 0 0 15px 0; overflow: hidden; margin: 5px; box-shadow: 0 0 10px rgba(0,216,255,0.25);">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=00d8ff&height=40&section=header&reversal=true&animation=shimmer" width="100%" alt="shimmer">
   <br>
   <h4 align="center" style="margin: 5px 0;">Astro Sitio Web</h4>
@@ -58,7 +58,7 @@ Programar es lo más parecido que tenemos a la **magia en el mundo real**. Mi mi
 </div>
 </td>
 <td width="33.33%" align="center" valign="top">
-<div style="border: 2px solid #00d8ff; border-radius: 15px; background: #0d1117; padding: 0 0 15px 0; overflow: hidden; margin: 5px;">
+<div style="border: 2px solid #00d8ff; border-radius: 15px; background: #0d1117; padding: 0 0 15px 0; overflow: hidden; margin: 5px; box-shadow: 0 0 10px rgba(0,216,255,0.25);">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=00d8ff&height=40&section=header&reversal=true&animation=shimmer" width="100%" alt="shimmer">
   <br>
   <h4 align="center" style="margin: 5px 0;">Artificial Inteligence Learning</h4>
@@ -75,7 +75,7 @@ Programar es lo más parecido que tenemos a la **magia en el mundo real**. Mi mi
 </div>
 </td>
 <td width="33.33%" align="center" valign="top">
-<div style="border: 2px solid #00d8ff; border-radius: 15px; background: #0d1117; padding: 0 0 15px 0; overflow: hidden; margin: 5px;">
+<div style="border: 2px solid #00d8ff; border-radius: 15px; background: #0d1117; padding: 0 0 15px 0; overflow: hidden; margin: 5px; box-shadow: 0 0 10px rgba(0,216,255,0.25);">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=00d8ff&height=40&section=header&reversal=true&animation=shimmer" width="100%" alt="shimmer">
   <br>
   <h4 align="center" style="margin: 5px 0;">Pagina Maquetacion Cv</h4>
@@ -94,7 +94,7 @@ Programar es lo más parecido que tenemos a la **magia en el mundo real**. Mi mi
 </tr>
 <tr>
 <td width="33.33%" align="center" valign="top">
-<div style="border: 2px solid #00d8ff; border-radius: 15px; background: #0d1117; padding: 0 0 15px 0; overflow: hidden; margin: 5px;">
+<div style="border: 2px solid #00d8ff; border-radius: 15px; background: #0d1117; padding: 0 0 15px 0; overflow: hidden; margin: 5px; box-shadow: 0 0 10px rgba(0,216,255,0.25);">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=00d8ff&height=40&section=header&reversal=true&animation=shimmer" width="100%" alt="shimmer">
   <br>
   <h4 align="center" style="margin: 5px 0;">Frank Taller Maquetacion</h4>
@@ -111,7 +111,7 @@ Programar es lo más parecido que tenemos a la **magia en el mundo real**. Mi mi
 </div>
 </td>
 <td width="33.33%" align="center" valign="top">
-<div style="border: 2px solid #00d8ff; border-radius: 15px; background: #0d1117; padding: 0 0 15px 0; overflow: hidden; margin: 5px;">
+<div style="border: 2px solid #00d8ff; border-radius: 15px; background: #0d1117; padding: 0 0 15px 0; overflow: hidden; margin: 5px; box-shadow: 0 0 10px rgba(0,216,255,0.25);">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=00d8ff&height=40&section=header&reversal=true&animation=shimmer" width="100%" alt="shimmer">
   <br>
   <h4 align="center" style="margin: 5px 0;">Nexus Ascii Generator</h4>
@@ -128,7 +128,7 @@ Programar es lo más parecido que tenemos a la **magia en el mundo real**. Mi mi
 </div>
 </td>
 <td width="33.33%" align="center" valign="top">
-<div style="border: 2px solid #00d8ff; border-radius: 15px; background: #0d1117; padding: 0 0 15px 0; overflow: hidden; margin: 5px;">
+<div style="border: 2px solid #00d8ff; border-radius: 15px; background: #0d1117; padding: 0 0 15px 0; overflow: hidden; margin: 5px; box-shadow: 0 0 10px rgba(0,216,255,0.25);">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=00d8ff&height=40&section=header&reversal=true&animation=shimmer" width="100%" alt="shimmer">
   <br>
   <h4 align="center" style="margin: 5px 0;">Feliz Navidad Python</h4>
@@ -192,7 +192,7 @@ Programar es lo más parecido que tenemos a la **magia en el mundo real**. Mi mi
 <table border="0" width="100%" cellpadding="0" cellspacing="15">
 <tr>
 <td width="33.33%" valign="top">
-  <div style="border: 2px solid #00d8ff; border-radius: 15px; background: #0d1117; overflow: hidden; height: 100%;">
+  <div style="border: 2px solid #00d8ff; border-radius: 15px; background: #0d1117; overflow: hidden; height: 100%; box-shadow: 0 0 12px rgba(0,216,255,0.35), inset 0 0 8px rgba(0,216,255,0.15);">
     <img src="https://capsule-render.vercel.app/api?type=waving&color=00d8ff&height=40&section=header&reversal=true&animation=shimmer&text=FRONTEND&fontSize=18&fontAlignY=60" width="100%" alt="light">
     <div style="padding: 15px; text-align: center;">
       <p align="center" style="color: #00d8ff; margin-bottom: 10px;"><strong>🎨 FRONTEND</strong></p>
@@ -201,7 +201,7 @@ Programar es lo más parecido que tenemos a la **magia en el mundo real**. Mi mi
   </div>
 </td>
 <td width="33.33%" valign="top">
-  <div style="border: 2px solid #00d8ff; border-radius: 15px; background: #0d1117; overflow: hidden; height: 100%;">
+  <div style="border: 2px solid #00d8ff; border-radius: 15px; background: #0d1117; overflow: hidden; height: 100%; box-shadow: 0 0 12px rgba(0,216,255,0.35), inset 0 0 8px rgba(0,216,255,0.15);">
     <img src="https://capsule-render.vercel.app/api?type=waving&color=00d8ff&height=40&section=header&reversal=true&animation=shimmer&text=BACKEND&fontSize=18&fontAlignY=60" width="100%" alt="light">
     <div style="padding: 15px; text-align: center;">
       <p align="center" style="color: #00d8ff; margin-bottom: 10px;"><strong>⚙️ BACKEND</strong></p>
@@ -210,7 +210,7 @@ Programar es lo más parecido que tenemos a la **magia en el mundo real**. Mi mi
   </div>
 </td>
 <td width="33.33%" valign="top">
-  <div style="border: 2px solid #00d8ff; border-radius: 15px; background: #0d1117; overflow: hidden; height: 100%;">
+  <div style="border: 2px solid #00d8ff; border-radius: 15px; background: #0d1117; overflow: hidden; height: 100%; box-shadow: 0 0 12px rgba(0,216,255,0.35), inset 0 0 8px rgba(0,216,255,0.15);">
     <img src="https://capsule-render.vercel.app/api?type=waving&color=00d8ff&height=40&section=header&reversal=true&animation=shimmer&text=TOOLS&fontSize=18&fontAlignY=60" width="100%" alt="light">
     <div style="padding: 15px; text-align: center;">
       <p align="center" style="color: #00d8ff; margin-bottom: 10px;"><strong>🛠️ TOOLS</strong></p>
