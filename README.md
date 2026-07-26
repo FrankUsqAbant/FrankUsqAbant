@@ -97,23 +97,6 @@ Programar es lo más parecido que tenemos a la **magia en el mundo real**. Mi mi
 <div style="border: 2px solid #00d8ff; border-radius: 15px; background: #0d1117; padding: 0 0 15px 0; overflow: hidden; margin: 5px; box-shadow: 0 0 10px rgba(0,216,255,0.25);">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=00d8ff&height=40&section=header&reversal=true&animation=shimmer" width="100%" alt="shimmer">
   <br>
-  <h4 align="center" style="margin: 5px 0;">Nexus Ascii Generator</h4>
-  <a href="https://frankusqabant.github.io/NEXUS-ASCII-Generator/">
-    <img src="https://raw.githubusercontent.com/FrankUsqAbant/NEXUS-ASCII-Generator/main/Pantalla.png" width="90%" height="140px" style="border-radius:10px; object-fit: cover; border: 1px solid #30363d;" alt="Nexus Ascii Generator">
-  </a>
-  <br>
-  <div style="height: 45px; overflow: hidden; padding: 0 10px;">
-    <small>Un banner ascii generador para consolas de terminal</small>
-  </div>
-  <p align="center"><img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript"></p>
-  <hr style="border: 0.1px solid #30363d; margin: 10px;">
-  <p align="center"><a href="https://github.com/FrankUsqAbant/NEXUS-ASCII-Generator"><img src="https://img.shields.io/badge/Código-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo"></a>&nbsp;&nbsp;<a href="https://frankusqabant.github.io/NEXUS-ASCII-Generator/"><img src="https://img.shields.io/badge/Web-00d8ff?style=for-the-badge&logo=vercel&logoColor=black" alt="Web"></a></p>
-</div>
-</td>
-<td width="33.33%" align="center" valign="top">
-<div style="border: 2px solid #00d8ff; border-radius: 15px; background: #0d1117; padding: 0 0 15px 0; overflow: hidden; margin: 5px; box-shadow: 0 0 10px rgba(0,216,255,0.25);">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=00d8ff&height=40&section=header&reversal=true&animation=shimmer" width="100%" alt="shimmer">
-  <br>
   <h4 align="center" style="margin: 5px 0;">Feliz Navidad Python</h4>
   <a href="https://github.com/FrankUsqAbant/feliz-navidad-python">
     <img src="https://opengraph.githubassets.com/1/FrankUsqAbant/feliz-navidad-python" width="90%" height="140px" style="border-radius:10px; object-fit: cover; border: 1px solid #30363d;" alt="Feliz Navidad Python">
@@ -125,6 +108,23 @@ Programar es lo más parecido que tenemos a la **magia en el mundo real**. Mi mi
   <p align="center"><img src="https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white" alt="Python"></p>
   <hr style="border: 0.1px solid #30363d; margin: 10px;">
   <p align="center"><a href="https://github.com/FrankUsqAbant/feliz-navidad-python"><img src="https://img.shields.io/badge/Código-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo"></a></p>
+</div>
+</td>
+<td width="33.33%" align="center" valign="top">
+<div style="border: 2px solid #00d8ff; border-radius: 15px; background: #0d1117; padding: 0 0 15px 0; overflow: hidden; margin: 5px; box-shadow: 0 0 10px rgba(0,216,255,0.25);">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=00d8ff&height=40&section=header&reversal=true&animation=shimmer" width="100%" alt="shimmer">
+  <br>
+  <h4 align="center" style="margin: 5px 0;">Proyecto Library</h4>
+  <a href="https://github.com/FrankUsqAbant/Proyecto-Library">
+    <img src="https://opengraph.githubassets.com/1/FrankUsqAbant/Proyecto-Library" width="90%" height="140px" style="border-radius:10px; object-fit: cover; border: 1px solid #30363d;" alt="Proyecto Library">
+  </a>
+  <br>
+  <div style="height: 45px; overflow: hidden; padding: 0 10px;">
+    <small>Biblioteca Digital de libros clasicos de dominio publico</small>
+  </div>
+  <p align="center"><img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript"></p>
+  <hr style="border: 0.1px solid #30363d; margin: 10px;">
+  <p align="center"><a href="https://github.com/FrankUsqAbant/Proyecto-Library"><img src="https://img.shields.io/badge/Código-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo"></a></p>
 </div>
 </td>
 <td width="33.33%" align="center" valign="top">
