@@ -97,51 +97,51 @@ Programar es lo más parecido que tenemos a la **magia en el mundo real**. Mi mi
 <div style="border: 2px solid #00d8ff; border-radius: 15px; background: #0d1117; padding: 0 0 15px 0; overflow: hidden; margin: 5px; box-shadow: 0 0 10px rgba(0,216,255,0.25);">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=00d8ff&height=40&section=header&reversal=true&animation=shimmer" width="100%" alt="shimmer">
   <br>
-  <h4 align="center" style="margin: 5px 0;">Proyecto Library</h4>
-  <a href="https://github.com/FrankUsqAbant/Proyecto-Library">
-    <img src="https://opengraph.githubassets.com/1/FrankUsqAbant/Proyecto-Library" width="90%" height="140px" style="border-radius:10px; object-fit: cover; border: 1px solid #30363d;" alt="Proyecto Library">
+  <h4 align="center" style="margin: 5px 0;">Simple Yoga Elite</h4>
+  <a href="https://simple-yoga-elite.netlify.app/">
+    <img src="https://raw.githubusercontent.com/FrankUsqAbant/simple-yoga-elite/main/protocol-aurora/public/hero_meditation.png" width="90%" height="140px" style="border-radius:10px; object-fit: cover; border: 1px solid #30363d;" alt="Simple Yoga Elite">
   </a>
   <br>
   <div style="height: 45px; overflow: hidden; padding: 0 10px;">
-    <small>Biblioteca Digital de libros clasicos de dominio publico</small>
+    <small>Santuario de Yoga Elite - Protocolo Aurora v15.0. Experie...</small>
   </div>
-  <p align="center"><img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript"></p>
+  <p align="center"><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=white" alt="JavaScript"></p>
   <hr style="border: 0.1px solid #30363d; margin: 10px;">
-  <p align="center"><a href="https://github.com/FrankUsqAbant/Proyecto-Library"><img src="https://img.shields.io/badge/Código-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo"></a></p>
+  <p align="center"><a href="https://github.com/FrankUsqAbant/simple-yoga-elite"><img src="https://img.shields.io/badge/Código-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo"></a>&nbsp;&nbsp;<a href="https://simple-yoga-elite.netlify.app/"><img src="https://img.shields.io/badge/Web-00d8ff?style=for-the-badge&logo=vercel&logoColor=black" alt="Web"></a></p>
 </div>
 </td>
 <td width="33.33%" align="center" valign="top">
 <div style="border: 2px solid #00d8ff; border-radius: 15px; background: #0d1117; padding: 0 0 15px 0; overflow: hidden; margin: 5px; box-shadow: 0 0 10px rgba(0,216,255,0.25);">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=00d8ff&height=40&section=header&reversal=true&animation=shimmer" width="100%" alt="shimmer">
   <br>
-  <h4 align="center" style="margin: 5px 0;">Portafolio Frank Abanto</h4>
-  <a href="https://github.com/FrankUsqAbant/Portafolio-Frank-Abanto">
-    <img src="https://via.placeholder.com/800x400?text=Captura+de+tu+Portafolio" width="90%" height="140px" style="border-radius:10px; object-fit: cover; border: 1px solid #30363d;" alt="Portafolio Frank Abanto">
+  <h4 align="center" style="margin: 5px 0;">Pagina Maquetacion</h4>
+  <a href="https://frankusqabant.github.io/pagina-maquetacion/portafolio-cv">
+    <img src="https://opengraph.githubassets.com/1/FrankUsqAbant/pagina-maquetacion" width="90%" height="140px" style="border-radius:10px; object-fit: cover; border: 1px solid #30363d;" alt="Pagina Maquetacion">
   </a>
   <br>
   <div style="height: 45px; overflow: hidden; padding: 0 10px;">
-    <small>Un portfolio simple y animalista (HTML, CSS, JavaScript)</small>
-  </div>
-  <p align="center"><img src="https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=css3&logoColor=white" alt="CSS"></p>
-  <hr style="border: 0.1px solid #30363d; margin: 10px;">
-  <p align="center"><a href="https://github.com/FrankUsqAbant/Portafolio-Frank-Abanto"><img src="https://img.shields.io/badge/Código-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo"></a></p>
-</div>
-</td>
-<td width="33.33%" align="center" valign="top">
-<div style="border: 2px solid #00d8ff; border-radius: 15px; background: #0d1117; padding: 0 0 15px 0; overflow: hidden; margin: 5px; box-shadow: 0 0 10px rgba(0,216,255,0.25);">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=00d8ff&height=40&section=header&reversal=true&animation=shimmer" width="100%" alt="shimmer">
-  <br>
-  <h4 align="center" style="margin: 5px 0;">Portafolio Adaptable Bootstrap</h4>
-  <a href="https://github.com/FrankUsqAbant/portafolio-adaptable-bootstrap">
-    <img src="https://raw.githubusercontent.com/FrankUsqAbant/portafolio-adaptable-bootstrap/main/imagenes/readme/screenshot1.png" width="90%" height="140px" style="border-radius:10px; object-fit: cover; border: 1px solid #30363d;" alt="Portafolio Adaptable Bootstrap">
-  </a>
-  <br>
-  <div style="height: 45px; overflow: hidden; padding: 0 10px;">
-    <small>Un proyecto web adaptable a cualquier dispositivo, desarr...</small>
+    <small>Repositorio de proyectos de taller de maquetación de Fran...</small>
   </div>
   <p align="center"><img src="https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML"></p>
   <hr style="border: 0.1px solid #30363d; margin: 10px;">
-  <p align="center"><a href="https://github.com/FrankUsqAbant/portafolio-adaptable-bootstrap"><img src="https://img.shields.io/badge/Código-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo"></a></p>
+  <p align="center"><a href="https://github.com/FrankUsqAbant/pagina-maquetacion"><img src="https://img.shields.io/badge/Código-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo"></a>&nbsp;&nbsp;<a href="https://frankusqabant.github.io/pagina-maquetacion/portafolio-cv"><img src="https://img.shields.io/badge/Web-00d8ff?style=for-the-badge&logo=vercel&logoColor=black" alt="Web"></a></p>
+</div>
+</td>
+<td width="33.33%" align="center" valign="top">
+<div style="border: 2px solid #00d8ff; border-radius: 15px; background: #0d1117; padding: 0 0 15px 0; overflow: hidden; margin: 5px; box-shadow: 0 0 10px rgba(0,216,255,0.25);">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=00d8ff&height=40&section=header&reversal=true&animation=shimmer" width="100%" alt="shimmer">
+  <br>
+  <h4 align="center" style="margin: 5px 0;">Pagina Taller Maquetacion</h4>
+  <a href="https://github.com/FrankUsqAbant/pagina-taller-maquetacion">
+    <img src="https://opengraph.githubassets.com/1/FrankUsqAbant/pagina-taller-maquetacion" width="90%" height="140px" style="border-radius:10px; object-fit: cover; border: 1px solid #30363d;" alt="Pagina Taller Maquetacion">
+  </a>
+  <br>
+  <div style="height: 45px; overflow: hidden; padding: 0 10px;">
+    <small>Repositorio de proyecto del taller de maquetacion de mi L...</small>
+  </div>
+  <p align="center"><img src="https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML"></p>
+  <hr style="border: 0.1px solid #30363d; margin: 10px;">
+  <p align="center"><a href="https://github.com/FrankUsqAbant/pagina-taller-maquetacion"><img src="https://img.shields.io/badge/Código-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo"></a></p>
 </div>
 </td>
 </tr>
