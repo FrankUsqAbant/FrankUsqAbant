@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="images/banner.webp" width="100%" alt="Franquer Abanto - The Dream is Yours, Build It">
+  <img src="https://raw.githubusercontent.com/FrankUsqAbant/FrankUsqAbant/main/images/banner.webp" width="100%" alt="Franquer Abanto - The Dream is Yours, Build It">
 </p>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=00d8ff&height=45&section=header&reversal=true&animation=shimmer" width="100%" alt="glow_lighting">
@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://www.youtube.com/@abantofrank12"><img src="https://cdn.simpleicons.org/youtube/FF0000" width="38" height="38" alt="YouTube"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.linkedin.com/in/frankabanto/"><img src="https://cdn.simpleicons.org/linkedin/0A66C2" width="38" height="38" alt="LinkedIn"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.instagram.com/abantofrank12"><img src="https://cdn.simpleicons.org/instagram/E4405F" width="38" height="38" alt="Instagram"></a>
+  <a href="https://www.youtube.com/@abantofrank12"><img src="https://cdn.simpleicons.org/youtube/FF0000" width="38" height="38" alt="YouTube"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.linkedin.com/in/frankabanto/"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="38" height="38" alt="LinkedIn"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.instagram.com/abantofrank12"><img src="https://cdn.simpleicons.org/instagram/E4405F" width="38" height="38" alt="Instagram"></a>
 </p>
 
 <br>
