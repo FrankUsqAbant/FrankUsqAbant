@@ -1,5 +1,8 @@
 <p align="center">
-  <img src="images/banner.png" width="100%" alt="Franquer Abanto Banner">
+  <picture>
+    <source srcset="images/banner.webp" type="image/webp">
+    <img src="images/banner.png" width="100%" style="max-width:1024px;" alt="Franquer Abanto - The Dream is Yours, Build It">
+  </picture>
 </p>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=00d8ff&height=45&section=header&reversal=true&animation=shimmer" width="100%" alt="glow_lighting">
