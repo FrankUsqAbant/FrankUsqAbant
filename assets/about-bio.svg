@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 290" width="100%" height="100%" preserveAspectRatio="xMinYMid meet">
+  <defs>
+    <style>
+      .quote-text {
+        font-family: Georgia, 'Times New Roman', serif;
+        font-size: 19.5px;
+        font-style: italic;
+        font-weight: 500;
+        fill: #f0f6fc;
+        letter-spacing: 0.3px;
+      }
+      .bio-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-size: 15.5px;
+        font-weight: 400;
+        fill: #c9d1d9;
+        line-height: 1.6;
+      }
+      .bullet-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-size: 14.5px;
+        font-weight: 400;
+        fill: #8b949e;
+      }
+      .accent {
+        fill: #00d8ff;
+        font-weight: 600;
+      }
+      .strong {
+        fill: #f0f6fc;
+        font-weight: 600;
+      }
+      .bullet-dot {
+        fill: #00d8ff;
+        font-size: 12px;
+      }
+      .quote-bar {
+        stroke: #00d8ff;
+        stroke-width: 3.5;
+        stroke-linecap: round;
+      }
+    </style>
+  </defs>
+
+  <!-- Barra Cyan y Cita Motivacional -->
+  <line class="quote-bar" x1="4" y1="6" x2="4" y2="28" />
+  <text class="quote-text" x="18" y="23">“Si puedes imaginarlo, puedes crearlo.”</text>
+
+  <!-- Párrafo Biográfico -->
+  <text class="bio-text" x="2" y="66">
+    Programar es lo más parecido que tenemos a la <tspan class="accent">magia en el mundo real</tspan>.
+  </text>
+  <text class="bio-text" x="2" y="92">
+    Mi misión es construir experiencias que otros solo pueden imaginar,
+  </text>
+  <text class="bio-text" x="2" y="118">
+    convirtiendo la tecnología en mi superpoder.
+  </text>
+
+  <!-- Viñetas Estructuradas con Puntos Cyan -->
+  <text class="bullet-dot" x="4" y="165">✦</text>
+  <text class="bullet-text" x="22" y="165">Cajamarca, Perú.</text>
+
+  <text class="bullet-dot" x="4" y="195">✦</text>
+  <text class="bullet-text" x="22" y="195">
+    Creador de contenido sobre <tspan class="accent">IA</tspan> y desarrollo web.
+  </text>
+
+  <text class="bullet-dot" x="4" y="225">✦</text>
+  <text class="bullet-text" x="22" y="225">
+    <tspan class="strong">Trabajo en equipo</tspan> y experiencia gestionando grupos de trabajo.
+  </text>
+
+  <text class="bullet-dot" x="4" y="255">✦</text>
+  <text class="bullet-text" x="22" y="255">
+    <tspan class="strong">Inteligencia emocional</tspan>, adaptabilidad y rápido aprendizaje.
+  </text>
+
+  <text class="bullet-dot" x="4" y="285">✦</text>
+  <text class="bullet-text" x="22" y="285">
+    <tspan class="strong">Eterno estudiante</tspan> — siempre aprendiendo e innovando.
+  </text>
+</svg>

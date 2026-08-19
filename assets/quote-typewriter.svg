@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 36" width="100%" height="32" preserveAspectRatio="xMinYMid meet">
+  <defs>
+    <style>
+      .neon-bar {
+        stroke: #00d8ff;
+        stroke-width: 3.5;
+        stroke-linecap: round;
+        filter: drop-shadow(0 0 4px rgba(0, 216, 255, 0.8));
+        animation: barPulse 3s ease-in-out infinite alternate;
+      }
+      .quote-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-size: 15px;
+        font-style: italic;
+        font-weight: 500;
+        fill: #d1d7e0;
+      }
+      .cursor-line {
+        fill: #00d8ff;
+        filter: drop-shadow(0 0 3px #00d8ff);
+        animation: cursorType 7s cubic-bezier(0.2, 0.8, 0.3, 1) infinite, blinkRate 0.65s step-end infinite;
+      }
+      .mask-sweep {
+        animation: revealText 7s cubic-bezier(0.2, 0.8, 0.3, 1) infinite;
+      }
+      .rocket-anim {
+        animation: rocketThrust 1.8s ease-in-out infinite alternate;
+        transform-origin: 345px 18px;
+      }
+      @keyframes revealText {
+        0%, 8%   { width: 0px; opacity: 1; }
+        55%, 85% { width: 410px; opacity: 1; }
+        92%      { width: 410px; opacity: 0; }
+        100%     { width: 0px; opacity: 0; }
+      }
+      @keyframes cursorType {
+        0%, 8%   { transform: translateX(0px); opacity: 1; }
+        55%, 85% { transform: translateX(322px); opacity: 1; }
+        92%      { transform: translateX(322px); opacity: 0; }
+        100%     { transform: translateX(0px); opacity: 0; }
+      }
+      @keyframes blinkRate {
+        0%, 100% { fill-opacity: 1; }
+        50%      { fill-opacity: 0; }
+      }
+      @keyframes barPulse {
+        0%   { stroke: #00b4d8; filter: drop-shadow(0 0 2px rgba(0, 180, 216, 0.5)); }
+        100% { stroke: #00f0ff; filter: drop-shadow(0 0 6px rgba(0, 240, 255, 0.95)); }
+      }
+      @keyframes rocketThrust {
+        0%   { transform: translateY(0px) rotate(0deg); }
+        100% { transform: translateY(-3px) rotate(7deg); }
+      }
+    </style>
+    <clipPath id="typeMask">
+      <rect class="mask-sweep" x="18" y="0" width="0" height="36" />
+    </clipPath>
+  </defs>
+
+  <!-- Barra vertical izquierda fija con resplandor neón -->
+  <line class="neon-bar" x1="4" y1="6" x2="4" y2="30" />
+
+  <!-- Texto con máscara de máquina de escribir alineado a la izquierda -->
+  <g clip-path="url(#typeMask)">
+    <text class="quote-text" x="18" y="23">“Si puedes imaginarlo, puedes codearlo.”</text>
+    <text class="quote-text rocket-anim" x="340" y="23">🚀</text>
+  </g>
+
+  <!-- Cursor titilante que escribe -->
+  <rect class="cursor-line" x="18" y="8" width="2" height="17" rx="1" />
+</svg>

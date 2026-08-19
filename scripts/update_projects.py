@@ -28,9 +28,11 @@ USERNAME = "FrankUsqAbant"
 README   = "README.md"
 
 HEADERS = {
-    "Authorization": f"token {TOKEN}",
     "Accept": "application/vnd.github.v3+json",
 }
+if TOKEN:
+    HEADERS["Authorization"] = f"token {TOKEN}"
+
 HEADERS_TOPICS = {
     **HEADERS,
     "Accept": "application/vnd.github.mercy-preview+json",
@@ -111,41 +113,38 @@ def _repo_score(repo, readme_text, live_url):
     return score, has_desc, has_live
 
 def get_featured_repos():
-    """Devuelve los 6 mejores repos públicos para destacar.
+    """Devuelve los 6 mejores repos públicos para destacar de forma rápida y optimizada."""
+    url = f"https://api.github.com/users/{USERNAME}/repos?type=public&sort=updated&per_page=30"
+    try:
+        repos = get(url, headers=HEADERS_TOPICS)
+    except Exception:
+        repos = []
 
-    Estrategia (en orden de prioridad):
-      1. Repos con el topic "featured" → si los hay, se usan esos.
-      2. Si no, se puntúan todos según: descripción, demo online, README,
-         estrellas, tamaño. Se excluyen el repo del perfil, forks y
-         proyectos triviales. De los mejores se rotan 6 cada corrida
-         para que vayan variando.
-    """
-    page = 1
-    featured_repos = []
-    all_public_repos = []
+    featured = []
+    candidates = []
+    EXCLUDE_NAMES = {USERNAME.lower(), "username.github.io", "frankusqabant"}
 
-    while True:
-        url = (f"https://api.github.com/users/{USERNAME}/repos"
-               f"?type=public&sort=updated&per_page=100&page={page}")
-        data = get(url)
-        if not data:
+    for r in repos:
+        name_lower = r["name"].lower()
+        if name_lower in EXCLUDE_NAMES or r.get("fork"):
+            continue
+        topics = r.get("topics", [])
+        if "featured" in topics:
+            featured.append(r)
+        else:
+            candidates.append(r)
+
+    if len(featured) >= 6:
+        return featured[:6]
+
+    # Completar con los más recientemente actualizados
+    for c in candidates:
+        if c not in featured:
+            featured.append(c)
+        if len(featured) == 6:
             break
-        for repo in data:
-            all_public_repos.append(repo)
-            try:
-                t = get(f"https://api.github.com/repos/{USERNAME}/{repo['name']}/topics", headers=HEADERS_TOPICS)
-                if "featured" in t.get("names", []):
-                    featured_repos.append(repo)
-            except: pass
-        page += 1
-        if len(data) < 100: break
 
-    # 1) Si hay repos marcados con topic "featured", úsalos
-    if featured_repos:
-        return featured_repos[:6]
-
-    # 2) Exclusiones: repo del perfil, forks y candidatos triviales
-    EXCLUDE_NAMES = {USERNAME.lower(), "username.github.io"}  # autorepo perfil
+    return featured[:6]
     TRIVIAL_HINTS = ("curso", "ejercicio", "starter", "template", "test", "demo",
                      "youtube-git", "scripts-main", "css-basico", "javascript")
 
@@ -252,57 +251,44 @@ def _safe_url(url):
             return url
     except Exception:
         pass
-    return None
-
-def build_project_card(repo):
-    # Escapar nombre y descripción para prevenir XSS stored
-    # (un repo malicioso con description="</small><script>" no se ejecutará)
+def build_project_card(repo, index=1):
     raw_name = repo["name"]
     display = html.escape(raw_name.replace("-", " ").replace("_", " ").title())
-    desc_raw = (repo.get("description") or "Sin descripción del proyecto.")
-    desc = html.escape(desc_raw)
-    desc = desc[:57] + "..." if len(desc) > 60 else desc
-
-    # Usar info pre-calculada por get_featured_repos() si está disponible
-    # (evita peticiones duplicadas a la API de GitHub)
+    
     readme_text = repo.get("_readme_text")
     if readme_text is None:
         readme_text = fetch_readme_text(raw_name)
-    image_url = _safe_url(extract_image(readme_text, raw_name)) or \
-        f"https://opengraph.githubassets.com/1/{USERNAME}/{raw_name}"
-
+    
     live_url = repo.get("_live_url")
     if live_url is None:
         live_url = extract_live_url(readme_text, repo.get("homepage"))
     live_url = _safe_url(live_url)
-
     repo_url = _safe_url(repo.get("html_url")) or f"https://github.com/{USERNAME}/{raw_name}"
+    
+    card_link = live_url or repo_url
+    svg_filename = f"card-{index}.svg"
+    
     repo_btn = f'<a href="{repo_url}"><img src="https://img.shields.io/badge/Código-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo"></a>'
     live_btn = f'&nbsp;&nbsp;<a href="{live_url}"><img src="https://img.shields.io/badge/Web-00d8ff?style=for-the-badge&logo=vercel&logoColor=black" alt="Web"></a>' if live_url else ""
-
-    card_link = live_url or repo_url
-    return f"""\
-<td width="33.33%" align="center" valign="top">
-<div style="border: 2px solid #00d8ff; border-radius: 15px; background: #0d1117; padding: 0 0 15px 0; overflow: hidden; margin: 5px; box-shadow: 0 0 10px rgba(0,216,255,0.25);">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=00d8ff&height=40&section=header&reversal=true&animation=shimmer" width="100%" alt="shimmer">
-  <br>
-  <h4 align="center" style="margin: 5px 0;">{display}</h4>
-  <a href="{card_link}">
-    <img src="{image_url}" width="90%" height="140px" style="border-radius:10px; object-fit: cover; border: 1px solid #30363d;" alt="{display}">
+    
+    return f"""<td width="33.33%" align="center" valign="top">
+  <a href="{card_link}" target="_blank">
+    <img src="./assets/cards/{svg_filename}" width="100%" alt="{display}">
   </a>
-  <br>
-  <div style="height: 45px; overflow: hidden; padding: 0 10px;">
-    <small>{desc}</small>
-  </div>
-  <p align="center">{lang_badge(repo.get("language"))}</p>
-  <hr style="border: 0.1px solid #30363d; margin: 10px;">
-  <p align="center">{repo_btn}{live_btn}</p>
-</div>
+  <p align="center" style="margin-top: 8px;">
+    {repo_btn}{live_btn}
+  </p>
 </td>"""
 
 
 def generate_projects_html(repos):
-    cards = [build_project_card(r) for r in repos]
+    try:
+        import generate_cards
+        generate_cards.generate_cards_from_repos(repos)
+    except Exception as e:
+        print(f"  ⚠️ Error en generate_cards: {e}")
+        
+    cards = [build_project_card(r, i + 1) for i, r in enumerate(repos)]
     rows = ""
     for i in range(0, len(cards), 3):
         chunk = cards[i:i+3]
@@ -313,33 +299,15 @@ def generate_projects_html(repos):
 # ── 2. Language Icons ──────────────────────────────────────────────────────────
 
 def generate_languages_html():
-    # Categorías con iluminación Premium + glow estático (box-shadow inline)
-    # Nota: GitHub elimina :hover y CSS animations del README, pero
-    # box-shadow inline SÍ está permitido y da efecto de "brillo vivo"
-    categories = {
-        "🎨 FRONTEND": ["html", "css", "js", "ts", "react", "nextjs", "tailwind", "sass", "redux", "vite", "figma"],
-        "⚙️ BACKEND": ["py", "nodejs", "mongodb"],
-        "🛠️ TOOLS": ["git", "github", "vscode", "vercel", "notion", "postman"]
-    }
-
-    html_out = '<table border="0" width="100%" cellpadding="0" cellspacing="15">\n<tr>\n'
-
-    for title, icons in categories.items():
-        icons_str = ",".join(icons)
-        html_out += f"""\
-<td width="33.33%" valign="top">
-  <div style="border: 2px solid #00d8ff; border-radius: 15px; background: #0d1117; overflow: hidden; height: 100%; box-shadow: 0 0 12px rgba(0,216,255,0.35), inset 0 0 8px rgba(0,216,255,0.15);">
-    <img src="https://capsule-render.vercel.app/api?type=waving&color=00d8ff&height=40&section=header&reversal=true&animation=shimmer&text={title.split()[-1]}&fontSize=18&fontAlignY=60" width="100%" alt="light">
-    <div style="padding: 15px; text-align: center;">
-      <p align="center" style="color: #00d8ff; margin-bottom: 10px;"><strong>{title}</strong></p>
-      <img src="https://skillicons.dev/icons?i={icons_str}&perline=3&theme=dark" alt="icons">
+    return '''\
+<div align="center">
+  <div style="border: 2px solid #000000; border-radius: 15px; background: #0d1117; overflow: hidden; box-shadow: 0 0 12px rgba(0,0,0,0.8); display: inline-block; width: 100%;">
+    <img src="./assets/shimmer-header.svg" width="100%" height="12" alt="shimmer">
+    <div style="padding: 25px 20px;">
+      <img src="./assets/tech-stack.svg" width="90%" alt="Tech Stack">
     </div>
   </div>
-</td>
-"""
-
-    html_out += "</tr>\n</table>"
-    return html_out
+</div>'''
 
 # ── Main ───────────────────────────────────────────────────────────────────────
 

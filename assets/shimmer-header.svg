@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 30" width="100%" height="30" preserveAspectRatio="none">
+  <defs>
+    <!-- Gradiente ambiental que imita la luz del banner: Cian intenso a la izq -> Oscuro al centro -> Magenta intenso a la der -->
+    <linearGradient id="bannerAmbient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f5ff" stop-opacity="1" />
+      <stop offset="20%" stop-color="#00aaff" stop-opacity="0.8" />
+      <stop offset="38%" stop-color="#0d1117" stop-opacity="0.3" />
+      <stop offset="50%" stop-color="#0d1117" stop-opacity="0" />
+      <stop offset="62%" stop-color="#0d1117" stop-opacity="0.3" />
+      <stop offset="80%" stop-color="#a855f7" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#f026ff" stop-opacity="1" />
+    </linearGradient>
+
+    <!-- Desvanecimiento vertical hacia el fondo oscuro para fusionar con la página -->
+    <linearGradient id="verticalFade" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1" />
+      <stop offset="30%" stop-color="#ffffff" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+
+    <mask id="fadeMask">
+      <rect x="0" y="0" width="1200" height="30" fill="url(#verticalFade)" />
+    </mask>
+
+    <linearGradient id="shimmerBeam" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0)" />
+      <stop offset="50%" stop-color="rgba(255,255,255,0.7)" />
+      <stop offset="100%" stop-color="rgba(255,255,255,0)" />
+    </linearGradient>
+
+    <style>
+      .glow-layer {
+        mask: url(#fadeMask);
+        animation: pulseAura 3.5s ease-in-out infinite alternate;
+      }
+      .shimmer-wave {
+        mask: url(#fadeMask);
+        animation: beamMove 3s ease-in-out infinite;
+      }
+      @keyframes pulseAura {
+        0%   { opacity: 0.7; }
+        100% { opacity: 1; }
+      }
+      @keyframes beamMove {
+        0%   { transform: translateX(-1200px); }
+        100% { transform: translateX(1200px); }
+      }
+    </style>
+  </defs>
+
+  <!-- Resplandor ambiental difuminado hacia abajo -->
+  <rect class="glow-layer" x="0" y="0" width="1200" height="30" fill="url(#bannerAmbient)" />
+
+  <!-- Línea de contacto ultra nítida arriba pegada al borde -->
+  <line x1="0" y1="0" x2="1200" y2="0" stroke="url(#bannerAmbient)" stroke-width="2.5" />
+
+  <!-- Haz de luz en movimiento -->
+  <rect class="shimmer-wave" x="0" y="0" width="400" height="30" fill="url(#shimmerBeam)" opacity="0.5" />
+</svg>

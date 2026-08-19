@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 30" width="100%" height="30" preserveAspectRatio="none">
+  <defs>
+    <!-- Gradiente que clona la paleta del banner: Cian neón a la izquierda -> Negro en el centro -> Púrpura/Magenta neón a la derecha -->
+    <linearGradient id="bannerAura" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f5ff" stop-opacity="1" />
+      <stop offset="22%" stop-color="#0088ff" stop-opacity="0.85" />
+      <stop offset="38%" stop-color="#0d1117" stop-opacity="0.2" />
+      <stop offset="50%" stop-color="#0d1117" stop-opacity="0" />
+      <stop offset="62%" stop-color="#0d1117" stop-opacity="0.2" />
+      <stop offset="78%" stop-color="#a855f7" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#f026ff" stop-opacity="1" />
+    </linearGradient>
+
+    <!-- Difuminado vertical para que la luz caiga y se funda suavemente con el fondo de GitHub -->
+    <linearGradient id="verticalFalloff" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1" />
+      <stop offset="25%" stop-color="#ffffff" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+
+    <mask id="falloffMask">
+      <rect x="0" y="0" width="1200" height="30" fill="url(#verticalFalloff)" />
+    </mask>
+
+    <linearGradient id="sweepRay" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0)" />
+      <stop offset="50%" stop-color="rgba(255,255,255,0.7)" />
+      <stop offset="100%" stop-color="rgba(255,255,255,0)" />
+    </linearGradient>
+
+    <style>
+      .aura-glow {
+        mask: url(#falloffMask);
+        animation: breathAura 3s ease-in-out infinite alternate;
+      }
+      .ray-move {
+        mask: url(#falloffMask);
+        animation: raySweep 3.5s ease-in-out infinite;
+      }
+      @keyframes breathAura {
+        0%   { opacity: 0.65; }
+        100% { opacity: 1; }
+      }
+      @keyframes raySweep {
+        0%   { transform: translateX(-1200px); }
+        100% { transform: translateX(1200px); }
+      }
+    </style>
+  </defs>
+
+  <!-- Resplandor que cae hacia abajo y se funde -->
+  <rect class="aura-glow" x="0" y="0" width="1200" height="30" fill="url(#bannerAura)" />
+  
+  <!-- Línea de contacto directa con el borde del banner -->
+  <line x1="0" y1="0" x2="1200" y2="0" stroke="url(#bannerAura)" stroke-width="3" />
+
+  <!-- Rayo de luz en movimiento -->
+  <rect class="ray-move" x="0" y="0" width="450" height="30" fill="url(#sweepRay)" opacity="0.5" />
+</svg>

@@ -93,7 +93,7 @@ def build_video_card(video):
     thumb = video["thumb"]
     return f"""\
 <td width="33%" align="center" valign="top">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=FF0000&height=35&section=header&reversal=true" width="100%" alt="cabecera">
+<img src="./assets/shimmer-header-yt.svg" width="100%" height="14" alt="cabecera">
 <br>
 <a href="{url}">
   <img src="{thumb}" width="100%" alt="{title}">
@@ -116,7 +116,7 @@ def build_empty_state():
 <tr>
 <td align="center" colspan="3">
 <br>
-<img src="https://capsule-render.vercel.app/api?type=waving&color=FF0000&height=35&section=header&reversal=true" width="100%" alt="cabecera">
+<img src="./assets/shimmer-header-yt.svg" width="100%" height="14" alt="cabecera">
 <br><br>
 <img src="https://cdn.simpleicons.org/youtube/FF0000" width="52" height="52" alt="YouTube">
 <br><br>

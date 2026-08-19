@@ -28,7 +28,18 @@ jobs:
           python-version: "3.11"
 
       - name: 📦 Instalar dependencias (pin por seguridad)
-        run: pip install requests==2.32.3
+        run: pip install requests==2.32.3 pillow==10.4.0
+
+      - name: 🕹️ Generar Snake Arcade Cyberpunk
+        run: python scripts/generate_snake.py
+
+      - name: 🛠️ Auto-detectar Tecnologías y generar SVG
+        run: python scripts/generate_tech_svgs.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 🃏 Generar Tarjetas Estáticas de Proyectos
+        run: python scripts/generate_cards.py
 
       - name: 🚀 Actualizar Featured Projects + Lenguajes
         run: python scripts/update_projects.py
@@ -42,6 +53,6 @@ jobs:
         run: |
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config user.name "github-actions[bot]"
-          git add README.md
+          git add README.md assets/tech-stack.svg assets/snake.svg assets/cards/
           git diff --staged --quiet || git commit -m "🤖 Auto-update README [skip ci]"
           git push

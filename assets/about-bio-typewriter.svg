@@ -1,0 +1,186 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 390" width="100%" height="390" preserveAspectRatio="xMinYMid meet">
+  <defs>
+    <style>
+      /* Tipografía Itálica Serif fina y elegante */
+      .serif-quote {
+        font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+        font-size: 19px;
+        font-style: italic;
+        font-weight: 500;
+        fill: #f1f5f9;
+        letter-spacing: 0.3px;
+      }
+      .serif-bio {
+        font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+        font-size: 17.5px;
+        font-style: italic;
+        font-weight: 400;
+        fill: #cbd5e1;
+        letter-spacing: 0.2px;
+      }
+      .serif-bullet {
+        font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+        font-size: 16.5px;
+        font-style: italic;
+        font-weight: 400;
+        fill: #94a3b8;
+        letter-spacing: 0.2px;
+      }
+      .serif-accent {
+        fill: #00d8ff;
+        font-weight: 600;
+      }
+      .serif-strong {
+        fill: #f1f5f9;
+        font-weight: 600;
+      }
+      .serif-bullet-dot {
+        fill: #00d8ff;
+        font-size: 12px;
+      }
+      .serif-bar {
+        stroke: #00d8ff;
+        stroke-width: 2.5;
+        stroke-linecap: round;
+      }
+
+      /* Animación global del contenedor con pausa de lectura y fade suave */
+      .bio-wrapper {
+        animation: fadeCycle 30s ease-in-out infinite;
+      }
+      @keyframes fadeCycle {
+        0%, 92%   { opacity: 1; }
+        95.5%     { opacity: 0; }
+        98%       { opacity: 0; }
+        100%      { opacity: 1; }
+      }
+
+      /* Expansión del clipPath (Tipeo progresivo sin cortar letras) */
+      .tl-1 { animation: type1 30s linear infinite; }
+      .tl-2 { animation: type2 30s linear infinite; }
+      .tl-3 { animation: type3 30s linear infinite; }
+      .tl-4 { animation: type4 30s linear infinite; }
+      .tl-5 { animation: type5 30s linear infinite; }
+      .tl-6 { animation: type6 30s linear infinite; }
+      .tl-7 { animation: type7 30s linear infinite; }
+      .tl-8 { animation: type8 30s linear infinite; }
+      .tl-9 { animation: type9 30s linear infinite; }
+
+      @keyframes type1 { 0% { width: 0px; } 5.5% { width: 400px; } 96% { width: 400px; } 98%, 100% { width: 0px; } }
+      @keyframes type2 { 0%, 6% { width: 0px; } 12% { width: 620px; } 96% { width: 620px; } 98%, 100% { width: 0px; } }
+      @keyframes type3 { 0%, 12.5% { width: 0px; } 18.5% { width: 600px; } 96% { width: 600px; } 98%, 100% { width: 0px; } }
+      @keyframes type4 { 0%, 19% { width: 0px; } 23.5% { width: 420px; } 96% { width: 420px; } 98%, 100% { width: 0px; } }
+      @keyframes type5 { 0%, 24% { width: 0px; } 27.5% { width: 180px; } 96% { width: 180px; } 98%, 100% { width: 0px; } }
+      @keyframes type6 { 0%, 28% { width: 0px; } 33.5% { width: 450px; } 96% { width: 450px; } 98%, 100% { width: 0px; } }
+      @keyframes type7 { 0%, 34% { width: 0px; } 40% { width: 570px; } 96% { width: 570px; } 98%, 100% { width: 0px; } }
+      @keyframes type8 { 0%, 40.5% { width: 0px; } 46.5% { width: 550px; } 96% { width: 550px; } 98%, 100% { width: 0px; } }
+      @keyframes type9 { 0%, 47% { width: 0px; } 53% { width: 510px; } 96% { width: 510px; } 98%, 100% { width: 0px; } }
+
+      /* Animación exacta del cursor cyan viajero */
+      .cur {
+        fill: #00d8ff;
+        filter: drop-shadow(0 0 3px #00d8ff);
+        opacity: 0;
+      }
+      .cur-1 { animation: curAnim1 30s linear infinite; }
+      .cur-2 { animation: curAnim2 30s linear infinite; }
+      .cur-3 { animation: curAnim3 30s linear infinite; }
+      .cur-4 { animation: curAnim4 30s linear infinite; }
+      .cur-5 { animation: curAnim5 30s linear infinite; }
+      .cur-6 { animation: curAnim6 30s linear infinite; }
+      .cur-7 { animation: curAnim7 30s linear infinite; }
+      .cur-8 { animation: curAnim8 30s linear infinite; }
+      .cur-9 { animation: curAnim9 30s linear infinite; }
+
+      @keyframes curAnim1 { 0% { transform: translateX(0px); opacity: 1; } 5.4% { transform: translateX(370px); opacity: 1; } 5.5%, 100% { opacity: 0; } }
+      @keyframes curAnim2 { 0%, 5.9% { opacity: 0; } 6% { transform: translateX(0px); opacity: 1; } 11.9% { transform: translateX(580px); opacity: 1; } 12%, 100% { opacity: 0; } }
+      @keyframes curAnim3 { 0%, 12.4% { opacity: 0; } 12.5% { transform: translateX(0px); opacity: 1; } 18.4% { transform: translateX(565px); opacity: 1; } 18.5%, 100% { opacity: 0; } }
+      @keyframes curAnim4 { 0%, 18.9% { opacity: 0; } 19% { transform: translateX(0px); opacity: 1; } 23.4% { transform: translateX(385px); opacity: 1; } 23.5%, 100% { opacity: 0; } }
+      @keyframes curAnim5 { 0%, 23.9% { opacity: 0; } 24% { transform: translateX(0px); opacity: 1; } 27.4% { transform: translateX(155px); opacity: 1; } 27.5%, 100% { opacity: 0; } }
+      @keyframes curAnim6 { 0%, 27.9% { opacity: 0; } 28% { transform: translateX(0px); opacity: 1; } 33.4% { transform: translateX(415px); opacity: 1; } 33.5%, 100% { opacity: 0; } }
+      @keyframes curAnim7 { 0%, 33.9% { opacity: 0; } 34% { transform: translateX(0px); opacity: 1; } 39.9% { transform: translateX(540px); opacity: 1; } 40%, 100% { opacity: 0; } }
+      @keyframes curAnim8 { 0%, 40.4% { opacity: 0; } 40.5% { transform: translateX(0px); opacity: 1; } 46.4% { transform: translateX(520px); opacity: 1; } 46.5%, 100% { opacity: 0; } }
+      @keyframes curAnim9 { 0%, 46.9% { opacity: 0; } 47% { transform: translateX(0px); opacity: 1; } 53% { transform: translateX(475px); opacity: 1; } 53.1%, 92% { transform: translateX(475px); opacity: 1; } 93%, 100% { opacity: 0; } }
+    </style>
+
+    <clipPath id="cp1"><rect class="tl-1" x="18" y="0" width="0" height="34" /></clipPath>
+    <clipPath id="cp2"><rect class="tl-2" x="2" y="55" width="0" height="30" /></clipPath>
+    <clipPath id="cp3"><rect class="tl-3" x="2" y="88" width="0" height="30" /></clipPath>
+    <clipPath id="cp4"><rect class="tl-4" x="2" y="121" width="0" height="30" /></clipPath>
+    <clipPath id="cp5"><rect class="tl-5" x="22" y="175" width="0" height="30" /></clipPath>
+    <clipPath id="cp6"><rect class="tl-6" x="22" y="215" width="0" height="30" /></clipPath>
+    <clipPath id="cp7"><rect class="tl-7" x="22" y="255" width="0" height="30" /></clipPath>
+    <clipPath id="cp8"><rect class="tl-8" x="22" y="295" width="0" height="30" /></clipPath>
+    <clipPath id="cp9"><rect class="tl-9" x="22" y="335" width="0" height="30" /></clipPath>
+  </defs>
+
+  <g class="bio-wrapper">
+    <!-- LÍNEA 1: Cita motivacional -->
+    <line class="serif-bar" x1="4" y1="6" x2="4" y2="28" />
+    <g clip-path="url(#cp1)">
+      <text class="serif-quote" x="18" y="22">“Si puedes imaginarlo, puedes crearlo.”</text>
+    </g>
+    <rect class="cur cur-1" x="18" y="6" width="2.5" height="18" rx="1" />
+
+    <!-- LÍNEAS 2, 3 y 4: Párrafo Biográfico -->
+    <g clip-path="url(#cp2)">
+      <text class="serif-bio" x="2" y="74">
+        Programar es lo más parecido que tenemos a la <tspan class="serif-accent">magia en el mundo real</tspan>.
+      </text>
+    </g>
+    <rect class="cur cur-2" x="2" y="58" width="2.5" height="18" rx="1" />
+
+    <g clip-path="url(#cp3)">
+      <text class="serif-bio" x="2" y="106">
+        Mi misión es construir experiencias que otros solo pueden imaginar,
+      </text>
+    </g>
+    <rect class="cur cur-3" x="2" y="90" width="2.5" height="18" rx="1" />
+
+    <g clip-path="url(#cp4)">
+      <text class="serif-bio" x="2" y="138">
+        convirtiendo la tecnología en mi superpoder.
+      </text>
+    </g>
+    <rect class="cur cur-4" x="2" y="122" width="2.5" height="18" rx="1" />
+
+    <!-- LÍNEAS 5 A 9: Viñetas Estructuradas -->
+    <text class="serif-bullet-dot" x="4" y="195">✦</text>
+    <g clip-path="url(#cp5)">
+      <text class="serif-bullet" x="22" y="195">Cajamarca, Perú.</text>
+    </g>
+    <rect class="cur cur-5" x="22" y="180" width="2.5" height="17" rx="1" />
+
+    <text class="serif-bullet-dot" x="4" y="235">✦</text>
+    <g clip-path="url(#cp6)">
+      <text class="serif-bullet" x="22" y="235">
+        Creador de contenido sobre <tspan class="serif-accent">IA</tspan> y desarrollo web.
+      </text>
+    </g>
+    <rect class="cur cur-6" x="22" y="220" width="2.5" height="17" rx="1" />
+
+    <text class="serif-bullet-dot" x="4" y="275">✦</text>
+    <g clip-path="url(#cp7)">
+      <text class="serif-bullet" x="22" y="275">
+        <tspan class="serif-strong">Trabajo en equipo</tspan> y experiencia gestionando grupos de trabajo.
+      </text>
+    </g>
+    <rect class="cur cur-7" x="22" y="260" width="2.5" height="17" rx="1" />
+
+    <text class="serif-bullet-dot" x="4" y="315">✦</text>
+    <g clip-path="url(#cp8)">
+      <text class="serif-bullet" x="22" y="315">
+        <tspan class="serif-strong">Inteligencia emocional</tspan>, adaptabilidad y rápido aprendizaje.
+      </text>
+    </g>
+    <rect class="cur cur-8" x="22" y="300" width="2.5" height="17" rx="1" />
+
+    <text class="serif-bullet-dot" x="4" y="355">✦</text>
+    <g clip-path="url(#cp9)">
+      <text class="serif-bullet" x="22" y="355">
+        <tspan class="serif-strong">Eterno estudiante</tspan> — siempre aprendiendo e innovando.
+      </text>
+    </g>
+    <rect class="cur cur-9" x="22" y="340" width="2.5" height="17" rx="1" />
+  </g>
+</svg>
