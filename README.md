@@ -34,53 +34,53 @@
 <table border="0" width="100%" cellpadding="0" cellspacing="15">
 <tr>
 <td width="33.33%" align="center" valign="top">
-  <a href="https://frankusqabant.github.io/astro-sitio-web/" target="_blank">
-    <img src="./assets/cards/card-1.svg" width="100%" alt="Astro Sitio Web">
+  <a href="https://github.com/FrankUsqAbant/feliz-navidad-python" target="_blank">
+    <img src="./assets/cards/card-1.svg" width="100%" alt="Feliz Navidad Python">
   </a>
   <p align="center" style="margin-top: 8px;">
-    <a href="https://github.com/FrankUsqAbant/astro-sitio-web"><img src="https://img.shields.io/badge/Código-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo"></a>&nbsp;&nbsp;<a href="https://frankusqabant.github.io/astro-sitio-web/"><img src="https://img.shields.io/badge/Web-00d8ff?style=for-the-badge&logo=vercel&logoColor=black" alt="Web"></a>
+    <a href="https://github.com/FrankUsqAbant/feliz-navidad-python"><img src="https://img.shields.io/badge/Código-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo"></a>
   </p>
 </td>
 <td width="33.33%" align="center" valign="top">
-  <a href="https://frankusqabant.github.io/pagina-maquetacion-cv/" target="_blank">
-    <img src="./assets/cards/card-2.svg" width="100%" alt="Pagina Maquetacion Cv">
+  <a href="https://frankusqabant.github.io/01-testimonios/" target="_blank">
+    <img src="./assets/cards/card-2.svg" width="100%" alt="01 Testimonios">
   </a>
   <p align="center" style="margin-top: 8px;">
-    <a href="https://github.com/FrankUsqAbant/pagina-maquetacion-cv"><img src="https://img.shields.io/badge/Código-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo"></a>&nbsp;&nbsp;<a href="https://frankusqabant.github.io/pagina-maquetacion-cv/"><img src="https://img.shields.io/badge/Web-00d8ff?style=for-the-badge&logo=vercel&logoColor=black" alt="Web"></a>
+    <a href="https://github.com/FrankUsqAbant/01-testimonios"><img src="https://img.shields.io/badge/Código-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo"></a>&nbsp;&nbsp;<a href="https://frankusqabant.github.io/01-testimonios/"><img src="https://img.shields.io/badge/Web-00d8ff?style=for-the-badge&logo=vercel&logoColor=black" alt="Web"></a>
   </p>
 </td>
 <td width="33.33%" align="center" valign="top">
-  <a href="https://simple-yoga-elite.netlify.app/" target="_blank">
-    <img src="./assets/cards/card-3.svg" width="100%" alt="Simple Yoga Elite">
+  <a href="https://frankusqabant.github.io/02-contador-de-clics/" target="_blank">
+    <img src="./assets/cards/card-3.svg" width="100%" alt="02 Contador De Clics">
   </a>
   <p align="center" style="margin-top: 8px;">
-    <a href="https://github.com/FrankUsqAbant/simple-yoga-elite"><img src="https://img.shields.io/badge/Código-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo"></a>&nbsp;&nbsp;<a href="https://simple-yoga-elite.netlify.app/"><img src="https://img.shields.io/badge/Web-00d8ff?style=for-the-badge&logo=vercel&logoColor=black" alt="Web"></a>
+    <a href="https://github.com/FrankUsqAbant/02-contador-de-clics"><img src="https://img.shields.io/badge/Código-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo"></a>&nbsp;&nbsp;<a href="https://frankusqabant.github.io/02-contador-de-clics/"><img src="https://img.shields.io/badge/Web-00d8ff?style=for-the-badge&logo=vercel&logoColor=black" alt="Web"></a>
   </p>
 </td>
 </tr>
 <tr>
 <td width="33.33%" align="center" valign="top">
+  <a href="https://frankusqabant.github.io/aurea-dental/" target="_blank">
+    <img src="./assets/cards/card-4.svg" width="100%" alt="Portafolio Adaptable Bootstrap">
+  </a>
+  <p align="center" style="margin-top: 8px;">
+    <a href="https://github.com/FrankUsqAbant/portafolio-adaptable-bootstrap"><img src="https://img.shields.io/badge/Código-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo"></a>&nbsp;&nbsp;<a href="https://frankusqabant.github.io/aurea-dental/"><img src="https://img.shields.io/badge/Web-00d8ff?style=for-the-badge&logo=vercel&logoColor=black" alt="Web"></a>
+  </p>
+</td>
+<td width="33.33%" align="center" valign="top">
   <a href="https://frankusqabant.github.io" target="_blank">
-    <img src="./assets/cards/card-4.svg" width="100%" alt="Frankusqabant.Github.Io">
+    <img src="./assets/cards/card-5.svg" width="100%" alt="Frankusqabant.Github.Io">
   </a>
   <p align="center" style="margin-top: 8px;">
     <a href="https://github.com/FrankUsqAbant/FrankUsqAbant.github.io"><img src="https://img.shields.io/badge/Código-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo"></a>&nbsp;&nbsp;<a href="https://frankusqabant.github.io"><img src="https://img.shields.io/badge/Web-00d8ff?style=for-the-badge&logo=vercel&logoColor=black" alt="Web"></a>
   </p>
 </td>
 <td width="33.33%" align="center" valign="top">
-  <a href="https://FrankUsqAbant.github.io/frank-taller-maquetacion/portafolio" target="_blank">
-    <img src="./assets/cards/card-5.svg" width="100%" alt="Frank Taller Maquetacion">
+  <a href="https://github.com/FrankUsqAbant/vertice-moda" target="_blank">
+    <img src="./assets/cards/card-6.svg" width="100%" alt="Vertice Moda">
   </a>
   <p align="center" style="margin-top: 8px;">
-    <a href="https://github.com/FrankUsqAbant/frank-taller-maquetacion"><img src="https://img.shields.io/badge/Código-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo"></a>&nbsp;&nbsp;<a href="https://FrankUsqAbant.github.io/frank-taller-maquetacion/portafolio"><img src="https://img.shields.io/badge/Web-00d8ff?style=for-the-badge&logo=vercel&logoColor=black" alt="Web"></a>
-  </p>
-</td>
-<td width="33.33%" align="center" valign="top">
-  <a href="https://frankusqabant.github.io/NEXUS-ASCII-Generator/" target="_blank">
-    <img src="./assets/cards/card-6.svg" width="100%" alt="Nexus Ascii Generator">
-  </a>
-  <p align="center" style="margin-top: 8px;">
-    <a href="https://github.com/FrankUsqAbant/NEXUS-ASCII-Generator"><img src="https://img.shields.io/badge/Código-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo"></a>&nbsp;&nbsp;<a href="https://frankusqabant.github.io/NEXUS-ASCII-Generator/"><img src="https://img.shields.io/badge/Web-00d8ff?style=for-the-badge&logo=vercel&logoColor=black" alt="Web"></a>
+    <a href="https://github.com/FrankUsqAbant/vertice-moda"><img src="https://img.shields.io/badge/Código-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo"></a>
   </p>
 </td>
 </tr>
