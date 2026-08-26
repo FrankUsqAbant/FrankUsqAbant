@@ -34,53 +34,53 @@
 <table border="0" width="100%" cellpadding="0" cellspacing="15">
 <tr>
 <td width="33.33%" align="center" valign="top">
+  <a href="https://frankusqabant.github.io/Aplicaci-n-React-Tareas/" target="_blank">
+    <img src="./assets/cards/card-1.svg" width="100%" alt="Aplicaci N React Tareas">
+  </a>
+  <p align="center" style="margin-top: 8px;">
+    <a href="https://github.com/FrankUsqAbant/Aplicaci-n-React-Tareas"><img src="https://img.shields.io/badge/Código-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo"></a>&nbsp;&nbsp;<a href="https://frankusqabant.github.io/Aplicaci-n-React-Tareas/"><img src="https://img.shields.io/badge/Web-00d8ff?style=for-the-badge&logo=vercel&logoColor=black" alt="Web"></a>
+  </p>
+</td>
+<td width="33.33%" align="center" valign="top">
+  <a href="https://platos-ya.vercel.app" target="_blank">
+    <img src="./assets/cards/card-2.svg" width="100%" alt="Platosya">
+  </a>
+  <p align="center" style="margin-top: 8px;">
+    <a href="https://github.com/FrankUsqAbant/PlatosYa"><img src="https://img.shields.io/badge/Código-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo"></a>&nbsp;&nbsp;<a href="https://platos-ya.vercel.app"><img src="https://img.shields.io/badge/Web-00d8ff?style=for-the-badge&logo=vercel&logoColor=black" alt="Web"></a>
+  </p>
+</td>
+<td width="33.33%" align="center" valign="top">
   <a href="https://frankusqabant.github.io/portafolio-adaptable-bootstrap/" target="_blank">
-    <img src="./assets/cards/card-1.svg" width="100%" alt="Portafolio Adaptable Bootstrap">
+    <img src="./assets/cards/card-3.svg" width="100%" alt="Portafolio Adaptable Bootstrap">
   </a>
   <p align="center" style="margin-top: 8px;">
     <a href="https://github.com/FrankUsqAbant/portafolio-adaptable-bootstrap"><img src="https://img.shields.io/badge/Código-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo"></a>&nbsp;&nbsp;<a href="https://frankusqabant.github.io/portafolio-adaptable-bootstrap/"><img src="https://img.shields.io/badge/Web-00d8ff?style=for-the-badge&logo=vercel&logoColor=black" alt="Web"></a>
   </p>
 </td>
-<td width="33.33%" align="center" valign="top">
-  <a href="https://frankusqabant.github.io/aurea-dental/" target="_blank">
-    <img src="./assets/cards/card-2.svg" width="100%" alt="Aurea Dental">
-  </a>
-  <p align="center" style="margin-top: 8px;">
-    <a href="https://github.com/FrankUsqAbant/aurea-dental"><img src="https://img.shields.io/badge/Código-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo"></a>&nbsp;&nbsp;<a href="https://frankusqabant.github.io/aurea-dental/"><img src="https://img.shields.io/badge/Web-00d8ff?style=for-the-badge&logo=vercel&logoColor=black" alt="Web"></a>
-  </p>
-</td>
-<td width="33.33%" align="center" valign="top">
-  <a href="https://frankusqabant.github.io/Proyecto-Library/" target="_blank">
-    <img src="./assets/cards/card-3.svg" width="100%" alt="Proyecto Library">
-  </a>
-  <p align="center" style="margin-top: 8px;">
-    <a href="https://github.com/FrankUsqAbant/Proyecto-Library"><img src="https://img.shields.io/badge/Código-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo"></a>&nbsp;&nbsp;<a href="https://frankusqabant.github.io/Proyecto-Library/"><img src="https://img.shields.io/badge/Web-00d8ff?style=for-the-badge&logo=vercel&logoColor=black" alt="Web"></a>
-  </p>
-</td>
 </tr>
 <tr>
 <td width="33.33%" align="center" valign="top">
-  <a href="https://frankusqabant.github.io/vertice-moda/" target="_blank">
-    <img src="./assets/cards/card-4.svg" width="100%" alt="Vertice Moda">
+  <a href="https://frankusqabant.github.io/Developer-Theme-Portfolio/" target="_blank">
+    <img src="./assets/cards/card-4.svg" width="100%" alt="Developer Theme Portfolio">
   </a>
   <p align="center" style="margin-top: 8px;">
-    <a href="https://github.com/FrankUsqAbant/vertice-moda"><img src="https://img.shields.io/badge/Código-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo"></a>&nbsp;&nbsp;<a href="https://frankusqabant.github.io/vertice-moda/"><img src="https://img.shields.io/badge/Web-00d8ff?style=for-the-badge&logo=vercel&logoColor=black" alt="Web"></a>
+    <a href="https://github.com/FrankUsqAbant/Developer-Theme-Portfolio"><img src="https://img.shields.io/badge/Código-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo"></a>&nbsp;&nbsp;<a href="https://frankusqabant.github.io/Developer-Theme-Portfolio/"><img src="https://img.shields.io/badge/Web-00d8ff?style=for-the-badge&logo=vercel&logoColor=black" alt="Web"></a>
   </p>
 </td>
 <td width="33.33%" align="center" valign="top">
-  <a href="https://frankusqabant.github.io/02-contador-de-clics/" target="_blank">
-    <img src="./assets/cards/card-5.svg" width="100%" alt="02 Contador De Clics">
+  <a href="https://frankusqabant.github.io/Portafolio-Frank-Abanto/" target="_blank">
+    <img src="./assets/cards/card-5.svg" width="100%" alt="Portafolio Frank Abanto">
   </a>
   <p align="center" style="margin-top: 8px;">
-    <a href="https://github.com/FrankUsqAbant/02-contador-de-clics"><img src="https://img.shields.io/badge/Código-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo"></a>&nbsp;&nbsp;<a href="https://frankusqabant.github.io/02-contador-de-clics/"><img src="https://img.shields.io/badge/Web-00d8ff?style=for-the-badge&logo=vercel&logoColor=black" alt="Web"></a>
+    <a href="https://github.com/FrankUsqAbant/Portafolio-Frank-Abanto"><img src="https://img.shields.io/badge/Código-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo"></a>&nbsp;&nbsp;<a href="https://frankusqabant.github.io/Portafolio-Frank-Abanto/"><img src="https://img.shields.io/badge/Web-00d8ff?style=for-the-badge&logo=vercel&logoColor=black" alt="Web"></a>
   </p>
 </td>
 <td width="33.33%" align="center" valign="top">
-  <a href="https://frankusqabant.github.io/01-testimonios/" target="_blank">
-    <img src="./assets/cards/card-6.svg" width="100%" alt="01 Testimonios">
+  <a href="https://frankusqabant.github.io/PokeAPI/" target="_blank">
+    <img src="./assets/cards/card-6.svg" width="100%" alt="Pokeapi">
   </a>
   <p align="center" style="margin-top: 8px;">
-    <a href="https://github.com/FrankUsqAbant/01-testimonios"><img src="https://img.shields.io/badge/Código-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo"></a>&nbsp;&nbsp;<a href="https://frankusqabant.github.io/01-testimonios/"><img src="https://img.shields.io/badge/Web-00d8ff?style=for-the-badge&logo=vercel&logoColor=black" alt="Web"></a>
+    <a href="https://github.com/FrankUsqAbant/PokeAPI"><img src="https://img.shields.io/badge/Código-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo"></a>&nbsp;&nbsp;<a href="https://frankusqabant.github.io/PokeAPI/"><img src="https://img.shields.io/badge/Web-00d8ff?style=for-the-badge&logo=vercel&logoColor=black" alt="Web"></a>
   </p>
 </td>
 </tr>
