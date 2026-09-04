@@ -86,17 +86,15 @@ def fetch_videos():
 # ── HTML builders ──────────────────────────────────────────────────────────────
 
 def build_video_card(video):
-    # Escapar título para prevenir XSS stored vía título de video
-    # (un video con title="</strong><script>" no se ejecutará)
     title = html.escape(video["title"])
     url   = video["url"]
     thumb = video["thumb"]
     return f"""\
 <td width="33%" align="center" valign="top">
-<img src="./assets/shimmer-header-yt.svg" width="100%" height="14" alt="cabecera">
+<img src="./assets/shimmer-header-yt.svg" width="100%" height="14" loading="lazy" alt="cabecera">
 <br>
 <a href="{url}">
-  <img src="{thumb}" width="100%" alt="{title}">
+  <img src="{thumb}" width="100%" style="max-width: 100%; border-radius: 8px; height: auto;" loading="lazy" alt="{title}">
 </a>
 <br><br>
 <a href="{url}">
@@ -104,7 +102,7 @@ def build_video_card(video):
 </a>
 <br><br>
 <a href="{url}">
-  <img src="https://img.shields.io/badge/Ver_Video-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Ver Video">
+  <img src="https://img.shields.io/badge/Ver_Video-FF0000?style=for-the-badge&logo=youtube&logoColor=white" loading="lazy" alt="Ver Video">
 </a>
 <br><br>
 </td>"""
@@ -112,13 +110,13 @@ def build_video_card(video):
 
 def build_empty_state():
     return f"""\
-<table border="0" width="100%" cellpadding="10" cellspacing="0">
+<table border="0" width="100%" cellpadding="10" cellspacing="0" style="table-layout: fixed; width: 100%;">
 <tr>
 <td align="center" colspan="3">
 <br>
-<img src="./assets/shimmer-header-yt.svg" width="100%" height="14" alt="cabecera">
+<img src="./assets/shimmer-header-yt.svg" width="100%" height="14" loading="lazy" alt="cabecera">
 <br><br>
-<img src="https://cdn.simpleicons.org/youtube/FF0000" width="52" height="52" alt="YouTube">
+<img src="https://cdn.simpleicons.org/youtube/FF0000" width="52" height="52" loading="lazy" alt="YouTube">
 <br><br>
 <strong>¡Próximamente contenido en YouTube!</strong>
 <br><br>
@@ -127,7 +125,7 @@ def build_empty_state():
 <sub>¡Suscríbete para no perderte nada!</sub>
 <br><br>
 <a href="{YT_URL}">
-  <img src="https://img.shields.io/badge/🔔_Suscribirse-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Suscribirse">
+  <img src="https://img.shields.io/badge/🔔_Suscribirse-FF0000?style=for-the-badge&logo=youtube&logoColor=white" loading="lazy" alt="Suscribirse">
 </a>
 <br><br>
 </td>
