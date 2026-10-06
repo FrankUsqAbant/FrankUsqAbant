@@ -34,20 +34,6 @@
 <table border="0" width="100%" cellpadding="0" cellspacing="10" style="table-layout: fixed; width: 100%;">
 <tr>
 <td width="33.33%" align="center" valign="top" style="word-break: break-word;">
-  <a href="https://frankusqabant.github.io/kasa-nord/" target="_blank">
-    <img src="https://raw.githubusercontent.com/FrankUsqAbant/kasa-nord/main/docs/hero.webp" width="100%" alt="Kasa Nord" loading="lazy" decoding="async" style="width: 100%; height: auto; max-height: 175px; object-fit: cover; border-radius: 10px; display: block;">
-  </a>
-  <p align="center" style="margin-top: 8px; margin-bottom: 4px;">
-    <strong>Kasa Nord</strong>
-  </p>
-  <p align="center" style="margin-top: 0; margin-bottom: 10px;">
-    <sub>Kasa Nord — landing de inmobiliaria de lujo en Lima. HTML/CSS/JS planos, sin build.</sub>
-  </p>
-  <p align="center" style="margin-top: 4px; margin-bottom: 0;">
-    <a href="https://github.com/FrankUsqAbant/kasa-nord"><img src="https://img.shields.io/badge/C%C3%B3digo-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo" loading="lazy"></a>&nbsp;&nbsp;<a href="https://frankusqabant.github.io/kasa-nord/"><img src="https://img.shields.io/badge/Web-00d8ff?style=for-the-badge&logo=vercel&logoColor=black" alt="Web" loading="lazy"></a>
-  </p>
-</td>
-<td width="33.33%" align="center" valign="top" style="word-break: break-word;">
   <a href="https://frankusqabant.github.io/OpenGravity/" target="_blank">
     <img src="https://raw.githubusercontent.com/FrankUsqAbant/OpenGravity/main/docs/preview.webp" width="100%" alt="Opengravity" loading="lazy" decoding="async" style="width: 100%; height: auto; max-height: 175px; object-fit: cover; border-radius: 10px; display: block;">
   </a>
@@ -59,6 +45,20 @@
   </p>
   <p align="center" style="margin-top: 4px; margin-bottom: 0;">
     <a href="https://github.com/FrankUsqAbant/OpenGravity"><img src="https://img.shields.io/badge/C%C3%B3digo-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo" loading="lazy"></a>&nbsp;&nbsp;<a href="https://frankusqabant.github.io/OpenGravity/"><img src="https://img.shields.io/badge/Web-00d8ff?style=for-the-badge&logo=vercel&logoColor=black" alt="Web" loading="lazy"></a>
+  </p>
+</td>
+<td width="33.33%" align="center" valign="top" style="word-break: break-word;">
+  <a href="https://frankusqabant.github.io/kasa-nord/" target="_blank">
+    <img src="https://raw.githubusercontent.com/FrankUsqAbant/kasa-nord/main/docs/hero.webp" width="100%" alt="Kasa Nord" loading="lazy" decoding="async" style="width: 100%; height: auto; max-height: 175px; object-fit: cover; border-radius: 10px; display: block;">
+  </a>
+  <p align="center" style="margin-top: 8px; margin-bottom: 4px;">
+    <strong>Kasa Nord</strong>
+  </p>
+  <p align="center" style="margin-top: 0; margin-bottom: 10px;">
+    <sub>Kasa Nord — landing de inmobiliaria de lujo en Lima. HTML/CSS/JS planos, sin build.</sub>
+  </p>
+  <p align="center" style="margin-top: 4px; margin-bottom: 0;">
+    <a href="https://github.com/FrankUsqAbant/kasa-nord"><img src="https://img.shields.io/badge/C%C3%B3digo-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo" loading="lazy"></a>&nbsp;&nbsp;<a href="https://frankusqabant.github.io/kasa-nord/"><img src="https://img.shields.io/badge/Web-00d8ff?style=for-the-badge&logo=vercel&logoColor=black" alt="Web" loading="lazy"></a>
   </p>
 </td>
 <td width="33.33%" align="center" valign="top" style="word-break: break-word;">
