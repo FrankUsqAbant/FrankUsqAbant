@@ -34,6 +34,50 @@
 <table border="0" width="100%" cellpadding="0" cellspacing="10" style="table-layout: fixed; width: 100%;">
 <tr>
 <td width="33.33%" align="center" valign="top" style="word-break: break-word;">
+  <a href="https://github.com/FrankUsqAbant/jireh-pasteleria" target="_blank">
+    <img src="https://raw.githubusercontent.com/FrankUsqAbant/jireh-pasteleria/main/docs/preview.webp" width="100%" alt="Jireh Pasteleria" loading="lazy" decoding="async" style="width: 100%; height: auto; max-height: 175px; object-fit: cover; border-radius: 10px; display: block;">
+  </a>
+  <p align="center" style="margin-top: 8px; margin-bottom: 4px;">
+    <strong>Jireh Pasteleria</strong>
+  </p>
+  <p align="center" style="margin-top: 0; margin-bottom: 10px;">
+    <sub>JIRÉH Panadería y Pastelería (Cajamarca): catálogo de tortas, &#x27;Arma tu torta&#x27; en vivo y pedidos por WhatsApp</sub>
+  </p>
+  <p align="center" style="margin-top: 4px; margin-bottom: 0;">
+    <a href="https://github.com/FrankUsqAbant/jireh-pasteleria"><img src="https://img.shields.io/badge/C%C3%B3digo-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo" loading="lazy"></a>
+  </p>
+</td>
+<td width="33.33%" align="center" valign="top" style="word-break: break-word;">
+  <a href="https://chavez-originals.pages.dev" target="_blank">
+    <img src="https://raw.githubusercontent.com/FrankUsqAbant/chavez-originals/main/docs/preview.webp" width="100%" alt="Chavez Originals" loading="lazy" decoding="async" style="width: 100%; height: auto; max-height: 175px; object-fit: cover; border-radius: 10px; display: block;">
+  </a>
+  <p align="center" style="margin-top: 8px; margin-bottom: 4px;">
+    <strong>Chavez Originals</strong>
+  </p>
+  <p align="center" style="margin-top: 0; margin-bottom: 10px;">
+    <sub>Chavez Originals (Cajamarca): tienda de calzado con vitrina interactiva, catálogo administrable con Supabase y pedidos por WhatsApp</sub>
+  </p>
+  <p align="center" style="margin-top: 4px; margin-bottom: 0;">
+    <a href="https://github.com/FrankUsqAbant/chavez-originals"><img src="https://img.shields.io/badge/C%C3%B3digo-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo" loading="lazy"></a>&nbsp;&nbsp;<a href="https://chavez-originals.pages.dev"><img src="https://img.shields.io/badge/Web-00d8ff?style=for-the-badge&logo=vercel&logoColor=black" alt="Web" loading="lazy"></a>
+  </p>
+</td>
+<td width="33.33%" align="center" valign="top" style="word-break: break-word;">
+  <a href="https://hostal-aguilar.pages.dev" target="_blank">
+    <img src="https://raw.githubusercontent.com/FrankUsqAbant/hostal-aguilar/main/docs/preview.webp" width="100%" alt="Hostal Aguilar" loading="lazy" decoding="async" style="width: 100%; height: auto; max-height: 175px; object-fit: cover; border-radius: 10px; display: block;">
+  </a>
+  <p align="center" style="margin-top: 8px; margin-bottom: 4px;">
+    <strong>Hostal Aguilar</strong>
+  </p>
+  <p align="center" style="margin-top: 0; margin-bottom: 10px;">
+    <sub>Hostal Aguilar (Cajamarca): web con concepto &#x27;la luz encendida&#x27;, reservas por WhatsApp y panel con Supabase</sub>
+  </p>
+  <p align="center" style="margin-top: 4px; margin-bottom: 0;">
+    <a href="https://github.com/FrankUsqAbant/hostal-aguilar"><img src="https://img.shields.io/badge/C%C3%B3digo-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo" loading="lazy"></a>&nbsp;&nbsp;<a href="https://hostal-aguilar.pages.dev"><img src="https://img.shields.io/badge/Web-00d8ff?style=for-the-badge&logo=vercel&logoColor=black" alt="Web" loading="lazy"></a>
+  </p>
+</td>
+</tr>
+<tr>
+<td width="33.33%" align="center" valign="top" style="word-break: break-word;">
   <a href="https://frankusqabant.github.io/OpenGravity/" target="_blank">
     <img src="https://raw.githubusercontent.com/FrankUsqAbant/OpenGravity/main/docs/preview.webp" width="100%" alt="Opengravity" loading="lazy" decoding="async" style="width: 100%; height: auto; max-height: 175px; object-fit: cover; border-radius: 10px; display: block;">
   </a>
@@ -73,50 +117,6 @@
   </p>
   <p align="center" style="margin-top: 4px; margin-bottom: 0;">
     <a href="https://github.com/FrankUsqAbant/extracto"><img src="https://img.shields.io/badge/C%C3%B3digo-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo" loading="lazy"></a>&nbsp;&nbsp;<a href="https://extracto-roan.vercel.app"><img src="https://img.shields.io/badge/Web-00d8ff?style=for-the-badge&logo=vercel&logoColor=black" alt="Web" loading="lazy"></a>
-  </p>
-</td>
-</tr>
-<tr>
-<td width="33.33%" align="center" valign="top" style="word-break: break-word;">
-  <a href="https://frankusqabant.github.io/proyecto-curso-html/" target="_blank">
-    <img src="https://raw.githubusercontent.com/FrankUsqAbant/proyecto-curso-html/main/preview.webp" width="100%" alt="Proyecto Curso Html" loading="lazy" decoding="async" style="width: 100%; height: auto; max-height: 175px; object-fit: cover; border-radius: 10px; display: block;">
-  </a>
-  <p align="center" style="margin-top: 8px; margin-bottom: 4px;">
-    <strong>Proyecto Curso Html</strong>
-  </p>
-  <p align="center" style="margin-top: 0; margin-bottom: 10px;">
-    <sub>🐾 DevFauna Academy...</sub>
-  </p>
-  <p align="center" style="margin-top: 4px; margin-bottom: 0;">
-    <a href="https://github.com/FrankUsqAbant/proyecto-curso-html"><img src="https://img.shields.io/badge/C%C3%B3digo-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo" loading="lazy"></a>&nbsp;&nbsp;<a href="https://frankusqabant.github.io/proyecto-curso-html/"><img src="https://img.shields.io/badge/Web-00d8ff?style=for-the-badge&logo=vercel&logoColor=black" alt="Web" loading="lazy"></a>
-  </p>
-</td>
-<td width="33.33%" align="center" valign="top" style="word-break: break-word;">
-  <a href="https://frankusqabant.github.io/youttube-git/" target="_blank">
-    <img src="https://raw.githubusercontent.com/FrankUsqAbant/youttube-git/main/preview.webp" width="100%" alt="Youttube Git" loading="lazy" decoding="async" style="width: 100%; height: auto; max-height: 175px; object-fit: cover; border-radius: 10px; display: block;">
-  </a>
-  <p align="center" style="margin-top: 8px; margin-bottom: 4px;">
-    <strong>Youttube Git</strong>
-  </p>
-  <p align="center" style="margin-top: 0; margin-bottom: 10px;">
-    <sub>Este es el repositorio de codigo de Git</sub>
-  </p>
-  <p align="center" style="margin-top: 4px; margin-bottom: 0;">
-    <a href="https://github.com/FrankUsqAbant/youttube-git"><img src="https://img.shields.io/badge/C%C3%B3digo-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo" loading="lazy"></a>&nbsp;&nbsp;<a href="https://frankusqabant.github.io/youttube-git/"><img src="https://img.shields.io/badge/Web-00d8ff?style=for-the-badge&logo=vercel&logoColor=black" alt="Web" loading="lazy"></a>
-  </p>
-</td>
-<td width="33.33%" align="center" valign="top" style="word-break: break-word;">
-  <a href="https://frankusqabant.github.io/youtube-git-main/" target="_blank">
-    <img src="https://raw.githubusercontent.com/FrankUsqAbant/youtube-git-main/main/preview.webp" width="100%" alt="Youtube Git Main" loading="lazy" decoding="async" style="width: 100%; height: auto; max-height: 175px; object-fit: cover; border-radius: 10px; display: block;">
-  </a>
-  <p align="center" style="margin-top: 8px; margin-bottom: 4px;">
-    <strong>Youtube Git Main</strong>
-  </p>
-  <p align="center" style="margin-top: 0; margin-bottom: 10px;">
-    <sub>Domina Git, Terminal, Lógica e IA — Estilo Duolingo...</sub>
-  </p>
-  <p align="center" style="margin-top: 4px; margin-bottom: 0;">
-    <a href="https://github.com/FrankUsqAbant/youtube-git-main"><img src="https://img.shields.io/badge/C%C3%B3digo-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo" loading="lazy"></a>&nbsp;&nbsp;<a href="https://frankusqabant.github.io/youtube-git-main/"><img src="https://img.shields.io/badge/Web-00d8ff?style=for-the-badge&logo=vercel&logoColor=black" alt="Web" loading="lazy"></a>
   </p>
 </td>
 </tr>
