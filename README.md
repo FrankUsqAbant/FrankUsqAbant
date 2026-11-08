@@ -34,7 +34,7 @@
 <table border="0" width="100%" cellpadding="0" cellspacing="10" style="table-layout: fixed; width: 100%;">
 <tr>
 <td width="33.33%" align="center" valign="top" style="word-break: break-word;">
-  <a href="https://github.com/FrankUsqAbant/jireh-pasteleria" target="_blank">
+  <a href="https://jireh-pasteleria.pages.dev" target="_blank">
     <img src="https://raw.githubusercontent.com/FrankUsqAbant/jireh-pasteleria/main/docs/preview.webp" width="100%" alt="Jireh Pasteleria" loading="lazy" decoding="async" style="width: 100%; height: auto; max-height: 175px; object-fit: cover; border-radius: 10px; display: block;">
   </a>
   <p align="center" style="margin-top: 8px; margin-bottom: 4px;">
@@ -44,7 +44,7 @@
     <sub>JIRÉH Panadería y Pastelería (Cajamarca): catálogo de tortas, &#x27;Arma tu torta&#x27; en vivo y pedidos por WhatsApp</sub>
   </p>
   <p align="center" style="margin-top: 4px; margin-bottom: 0;">
-    <a href="https://github.com/FrankUsqAbant/jireh-pasteleria"><img src="https://img.shields.io/badge/C%C3%B3digo-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo" loading="lazy"></a>
+    <a href="https://github.com/FrankUsqAbant/jireh-pasteleria"><img src="https://img.shields.io/badge/C%C3%B3digo-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo" loading="lazy"></a>&nbsp;&nbsp;<a href="https://jireh-pasteleria.pages.dev"><img src="https://img.shields.io/badge/Web-00d8ff?style=for-the-badge&logo=vercel&logoColor=black" alt="Web" loading="lazy"></a>
   </p>
 </td>
 <td width="33.33%" align="center" valign="top" style="word-break: break-word;">
