@@ -1,3 +1,9 @@
+# DISABLED 2026-11-13: reemplazado por .github/workflows/projects.yml
+# Este archivo se renombró a .yml.disabled para que GitHub Actions no lo ejecute.
+# El contenido original se conserva abajo.
+#
+# Original: .github/workflows/update-readme.yml
+
 name: 🤖 Auto-update README
 
 on:
