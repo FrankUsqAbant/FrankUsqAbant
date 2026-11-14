@@ -1,222 +1,203 @@
-<div id="top"></div>
+<!--
+README de perfil de Frank Abanto (FrankUsqAbant).
+Sitio canónico: https://abanto.pages.dev
+No usar el dominio abanto.dev (no es propio).
+-->
 
-<div align="center" style="line-height: 0; font-size: 0; margin-bottom: 25px;">
-  <img src="./images/banner.webp" width="100%" style="display: block; margin: 0; padding: 0;" alt="Franquer Abanto - The Dream is Yours, Build It"><img src="./assets/banner-glow.svg" width="100%" height="24" style="display: block; margin: 0; padding: 0;" alt="glow_lighting">
-</div>
+<div align="center">
 
-<p align="center" style="margin-top: 15px; margin-bottom: 10px;">
-  <img src="./assets/subtitle-glow.svg" width="100%" height="22" alt="Software Engineer · Frontend Specialist · AI Content Creator">
-</p>
-
-<p align="center">
-  <a href="https://www.youtube.com/@abantofrank12"><img src="https://cdn.simpleicons.org/youtube/FF0000" width="30" height="30" alt="YouTube"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.linkedin.com/in/frankabanto/"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="30" height="30" alt="LinkedIn"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.instagram.com/abantofrank12"><img src="https://cdn.simpleicons.org/instagram/E4405F" width="30" height="30" alt="Instagram"></a>
-</p>
-
-<img src="./assets/divider.svg" width="100%" height="2" alt="divider">
-
-<br>
-
-## 👨‍💻 Sobre Mí
-
-<div style="margin: 15px 0 20px 0;">
-  <img src="./assets/about-bio-typewriter.svg" width="100%" style="width: 100%; height: auto; display: block;" loading="lazy" alt="Sobre Mí - Franquer Abanto">
-</div>
-
-<br>
-
-<img src="./assets/divider.svg" width="100%" height="2" alt="divider">
-
-<br>
-
-## 🚀 Proyectos Destacados
-
-<!-- PROJECTS:START -->
-<table border="0" width="100%" cellpadding="0" cellspacing="10" style="table-layout: fixed; width: 100%;">
-<tr>
-<td width="33.33%" align="center" valign="top" style="word-break: break-word;">
-  <a href="https://frankusqabant.github.io/OpenGravity/" target="_blank">
-    <img src="https://raw.githubusercontent.com/FrankUsqAbant/OpenGravity/main/docs/preview.webp" width="100%" alt="Opengravity" loading="lazy" decoding="async" style="width: 100%; height: auto; max-height: 175px; object-fit: cover; border-radius: 10px; display: block;">
-  </a>
-  <p align="center" style="margin-top: 8px; margin-bottom: 4px;">
-    <strong>Opengravity</strong>
-  </p>
-  <p align="center" style="margin-top: 0; margin-bottom: 10px;">
-    <sub>OpenGravity proyecto de un bot para telegram</sub>
-  </p>
-  <p align="center" style="margin-top: 4px; margin-bottom: 0;">
-    <a href="https://github.com/FrankUsqAbant/OpenGravity"><img src="https://img.shields.io/badge/C%C3%B3digo-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo" loading="lazy"></a>&nbsp;&nbsp;<a href="https://frankusqabant.github.io/OpenGravity/"><img src="https://img.shields.io/badge/Web-00d8ff?style=for-the-badge&logo=vercel&logoColor=black" alt="Web" loading="lazy"></a>
-  </p>
-</td>
-<td width="33.33%" align="center" valign="top" style="word-break: break-word;">
-  <a href="https://jireh-pasteleria.pages.dev" target="_blank">
-    <img src="https://raw.githubusercontent.com/FrankUsqAbant/jireh-pasteleria/main/docs/preview.webp" width="100%" alt="Jireh Pasteleria" loading="lazy" decoding="async" style="width: 100%; height: auto; max-height: 175px; object-fit: cover; border-radius: 10px; display: block;">
-  </a>
-  <p align="center" style="margin-top: 8px; margin-bottom: 4px;">
-    <strong>Jireh Pasteleria</strong>
-  </p>
-  <p align="center" style="margin-top: 0; margin-bottom: 10px;">
-    <sub>JIRÉH Panadería y Pastelería (Cajamarca): catálogo de tortas, &#x27;Arma tu torta&#x27; en vivo y pedidos por WhatsApp</sub>
-  </p>
-  <p align="center" style="margin-top: 4px; margin-bottom: 0;">
-    <a href="https://github.com/FrankUsqAbant/jireh-pasteleria"><img src="https://img.shields.io/badge/C%C3%B3digo-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo" loading="lazy"></a>&nbsp;&nbsp;<a href="https://jireh-pasteleria.pages.dev"><img src="https://img.shields.io/badge/Web-00d8ff?style=for-the-badge&logo=vercel&logoColor=black" alt="Web" loading="lazy"></a>
-  </p>
-</td>
-<td width="33.33%" align="center" valign="top" style="word-break: break-word;">
-  <a href="https://chavez-originals.pages.dev" target="_blank">
-    <img src="https://raw.githubusercontent.com/FrankUsqAbant/chavez-originals/main/docs/preview.webp" width="100%" alt="Chavez Originals" loading="lazy" decoding="async" style="width: 100%; height: auto; max-height: 175px; object-fit: cover; border-radius: 10px; display: block;">
-  </a>
-  <p align="center" style="margin-top: 8px; margin-bottom: 4px;">
-    <strong>Chavez Originals</strong>
-  </p>
-  <p align="center" style="margin-top: 0; margin-bottom: 10px;">
-    <sub>Chavez Originals (Cajamarca): tienda de calzado con vitrina interactiva, catálogo administrable con Supabase y pedidos por WhatsApp</sub>
-  </p>
-  <p align="center" style="margin-top: 4px; margin-bottom: 0;">
-    <a href="https://github.com/FrankUsqAbant/chavez-originals"><img src="https://img.shields.io/badge/C%C3%B3digo-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo" loading="lazy"></a>&nbsp;&nbsp;<a href="https://chavez-originals.pages.dev"><img src="https://img.shields.io/badge/Web-00d8ff?style=for-the-badge&logo=vercel&logoColor=black" alt="Web" loading="lazy"></a>
-  </p>
-</td>
-</tr>
-<tr>
-<td width="33.33%" align="center" valign="top" style="word-break: break-word;">
-  <a href="https://hostal-aguilar.pages.dev" target="_blank">
-    <img src="https://raw.githubusercontent.com/FrankUsqAbant/hostal-aguilar/main/docs/preview.webp" width="100%" alt="Hostal Aguilar" loading="lazy" decoding="async" style="width: 100%; height: auto; max-height: 175px; object-fit: cover; border-radius: 10px; display: block;">
-  </a>
-  <p align="center" style="margin-top: 8px; margin-bottom: 4px;">
-    <strong>Hostal Aguilar</strong>
-  </p>
-  <p align="center" style="margin-top: 0; margin-bottom: 10px;">
-    <sub>Hostal Aguilar (Cajamarca): web con concepto &#x27;la luz encendida&#x27;, reservas por WhatsApp y panel con Supabase</sub>
-  </p>
-  <p align="center" style="margin-top: 4px; margin-bottom: 0;">
-    <a href="https://github.com/FrankUsqAbant/hostal-aguilar"><img src="https://img.shields.io/badge/C%C3%B3digo-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo" loading="lazy"></a>&nbsp;&nbsp;<a href="https://hostal-aguilar.pages.dev"><img src="https://img.shields.io/badge/Web-00d8ff?style=for-the-badge&logo=vercel&logoColor=black" alt="Web" loading="lazy"></a>
-  </p>
-</td>
-<td width="33.33%" align="center" valign="top" style="word-break: break-word;">
-  <a href="https://frankusqabant.github.io/kasa-nord/" target="_blank">
-    <img src="https://raw.githubusercontent.com/FrankUsqAbant/kasa-nord/main/docs/hero.webp" width="100%" alt="Kasa Nord" loading="lazy" decoding="async" style="width: 100%; height: auto; max-height: 175px; object-fit: cover; border-radius: 10px; display: block;">
-  </a>
-  <p align="center" style="margin-top: 8px; margin-bottom: 4px;">
-    <strong>Kasa Nord</strong>
-  </p>
-  <p align="center" style="margin-top: 0; margin-bottom: 10px;">
-    <sub>Kasa Nord — landing de inmobiliaria de lujo en Lima. HTML/CSS/JS planos, sin build.</sub>
-  </p>
-  <p align="center" style="margin-top: 4px; margin-bottom: 0;">
-    <a href="https://github.com/FrankUsqAbant/kasa-nord"><img src="https://img.shields.io/badge/C%C3%B3digo-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo" loading="lazy"></a>&nbsp;&nbsp;<a href="https://frankusqabant.github.io/kasa-nord/"><img src="https://img.shields.io/badge/Web-00d8ff?style=for-the-badge&logo=vercel&logoColor=black" alt="Web" loading="lazy"></a>
-  </p>
-</td>
-<td width="33.33%" align="center" valign="top" style="word-break: break-word;">
-  <a href="https://extracto-roan.vercel.app" target="_blank">
-    <img src="https://raw.githubusercontent.com/FrankUsqAbant/extracto/main/public/extracto-preview.png" width="100%" alt="Extracto" loading="lazy" decoding="async" style="width: 100%; height: auto; max-height: 175px; object-fit: cover; border-radius: 10px; display: block;">
-  </a>
-  <p align="center" style="margin-top: 8px; margin-bottom: 4px;">
-    <strong>Extracto</strong>
-  </p>
-  <p align="center" style="margin-top: 0; margin-bottom: 10px;">
-    <sub>Extractor y Clasificador Inteligente de Facturas, Recibos y Contratos...</sub>
-  </p>
-  <p align="center" style="margin-top: 4px; margin-bottom: 0;">
-    <a href="https://github.com/FrankUsqAbant/extracto"><img src="https://img.shields.io/badge/C%C3%B3digo-121212?style=for-the-badge&logo=github&logoColor=white" alt="Repo" loading="lazy"></a>&nbsp;&nbsp;<a href="https://extracto-roan.vercel.app"><img src="https://img.shields.io/badge/Web-00d8ff?style=for-the-badge&logo=vercel&logoColor=black" alt="Web" loading="lazy"></a>
-  </p>
-</td>
-</tr>
-</table>
-<!-- PROJECTS:END -->
-
-<br>
-
-<img src="./assets/divider.svg" width="100%" height="2" alt="divider">
-
-<br>
-
-## 📺 Últimos Videos en YouTube
-
-<!-- YOUTUBE:START -->
-<table border="0" width="100%" cellpadding="10" cellspacing="0" style="table-layout: fixed; width: 100%;">
-<tr>
-<td align="center" colspan="3">
-<br>
-<img src="./assets/shimmer-header-yt.svg" width="100%" height="14" loading="lazy" alt="cabecera">
-<br><br>
-<img src="https://cdn.simpleicons.org/youtube/FF0000" width="52" height="52" loading="lazy" alt="YouTube">
-<br><br>
-<strong>¡Próximamente contenido en YouTube!</strong>
-<br><br>
-<sub>Estaré subiendo videos sobre desarrollo web, IA y mucho más.</sub>
-<br>
-<sub>¡Suscríbete para no perderte nada!</sub>
-<br><br>
-<a href="https://www.youtube.com/@abantofrank12">
-  <img src="https://img.shields.io/badge/🔔_Suscribirse-FF0000?style=for-the-badge&logo=youtube&logoColor=white" loading="lazy" alt="Suscribirse">
+<a href="https://abanto.pages.dev">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg">
+    <img src="assets/banner-dark.svg" width="960" alt="Frank Abanto | Dev &amp; Tech — Desarrollador Web y Automatizaciones en Cajamarca, Perú">
+  </picture>
 </a>
-<br><br>
+
+<br>
+
+<a href="https://abanto.pages.dev">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&amp;weight=700&amp;size=24&amp;duration=2600&amp;pause=900&amp;color=22D3EE&amp;center=true&amp;vCenter=true&amp;width=900&amp;lines=Frank+Abanto+%E2%80%94+Dev+%26+Tech;Desarrollador+Web+%26+Automatizaciones;Webs+y+automatizaciones+que+resuelven+problemas+reales;Construyo%2C+aprendo+y+lo+comparto." alt="Frank Abanto — Desarrollador Web y Automatizaciones">
+</a>
+
+<br>
+
+<img src="https://komarev.com/ghpvc/?username=FrankUsqAbant&amp;style=flat&amp;color=22d3ee&amp;label=visitas" alt="Visitas al perfil">
+
+</div>
+
+---
+
+## `$ whoami`
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/whoami-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/whoami-light.svg">
+    <img src="assets/whoami-dark.svg" width="960" alt="whoami — Frank Abanto, Desarrollador Web y Automatizaciones en Cajamarca">
+  </picture>
+</p>
+
+---
+
+## `$ ls proyectos/`
+
+<sub>Una selección de <strong>proyectos demo</strong> de web y herramientas para negocios: catálogos, reservas y pedidos. También desarrollo proyectos personales como Prospect Tracker / CRM, Life OS y un VPS con n8n y un bot de Telegram (API Gemini).</sub>
+
+<table>
+<tr>
+<td width="33%" align="center" valign="top">
+  <a href="https://abanto.pages.dev">
+    <img src="assets/project-portafolio.jpg" width="100%" alt="Portafolio de Frank Abanto">
+  </a>
+  <br>
+  <strong>Portafolio</strong>
+  <br>
+  <sub>Mi sitio personal: proyectos, perfil y contacto.</sub>
+  <br><br>
+  <a href="https://github.com/FrankUsqAbant/abanto.dev"><img src="https://img.shields.io/badge/C%C3%B3digo-0B1220?style=for-the-badge&logo=github&logoColor=22D3EE" alt="Código"></a>
+  <a href="https://abanto.pages.dev"><img src="https://img.shields.io/badge/Web-22D3EE?style=for-the-badge&logoColor=0B1220" alt="Web"></a>
+</td>
+<td width="33%" align="center" valign="top">
+  <a href="https://chavez-originals.pages.dev">
+    <img src="https://raw.githubusercontent.com/FrankUsqAbant/chavez-originals/main/docs/preview.webp" width="100%" alt="Chavez Originals, proyecto demo">
+  </a>
+  <br>
+  <strong>Chavez Originals</strong>
+  <br>
+  <sub>Proyecto demo. Tienda de calzado con catálogo y pedidos por WhatsApp.</sub>
+  <br><br>
+  <a href="https://github.com/FrankUsqAbant/chavez-originals"><img src="https://img.shields.io/badge/C%C3%B3digo-0B1220?style=for-the-badge&logo=github&logoColor=22D3EE" alt="Código"></a>
+  <a href="https://chavez-originals.pages.dev"><img src="https://img.shields.io/badge/Web-22D3EE?style=for-the-badge&logoColor=0B1220" alt="Web"></a>
+</td>
+<td width="33%" align="center" valign="top">
+  <a href="https://jireh-pasteleria.pages.dev">
+    <img src="https://raw.githubusercontent.com/FrankUsqAbant/jireh-pasteleria/main/docs/preview.webp" width="100%" alt="JIRÉH Pastelería, proyecto demo">
+  </a>
+  <br>
+  <strong>JIRÉH Pastelería</strong>
+  <br>
+  <sub>Proyecto demo. Catálogo de pastelería y pedidos por WhatsApp.</sub>
+  <br><br>
+  <a href="https://github.com/FrankUsqAbant/jireh-pasteleria"><img src="https://img.shields.io/badge/C%C3%B3digo-0B1220?style=for-the-badge&logo=github&logoColor=22D3EE" alt="Código"></a>
+  <a href="https://jireh-pasteleria.pages.dev"><img src="https://img.shields.io/badge/Web-22D3EE?style=for-the-badge&logoColor=0B1220" alt="Web"></a>
+</td>
+</tr>
+<tr>
+<td width="33%" align="center" valign="top">
+  <a href="https://hostal-aguilar.pages.dev">
+    <img src="https://raw.githubusercontent.com/FrankUsqAbant/hostal-aguilar/main/docs/preview.webp" width="100%" alt="Hostal Aguilar, proyecto demo">
+  </a>
+  <br>
+  <strong>Hostal Aguilar</strong>
+  <br>
+  <sub>Proyecto demo. Sitio de hospedaje con reservas por WhatsApp.</sub>
+  <br><br>
+  <a href="https://github.com/FrankUsqAbant/hostal-aguilar"><img src="https://img.shields.io/badge/C%C3%B3digo-0B1220?style=for-the-badge&logo=github&logoColor=22D3EE" alt="Código"></a>
+  <a href="https://hostal-aguilar.pages.dev"><img src="https://img.shields.io/badge/Web-22D3EE?style=for-the-badge&logoColor=0B1220" alt="Web"></a>
+</td>
+<td width="33%" align="center" valign="top">
+  <a href="https://extracto-roan.vercel.app">
+    <img src="https://raw.githubusercontent.com/FrankUsqAbant/extracto/main/public/extracto-preview.png" width="100%" alt="Extracto, proyecto demo">
+  </a>
+  <br>
+  <strong>Extracto</strong>
+  <br>
+  <sub>Proyecto demo. Extrae y clasifica facturas, recibos y contratos con IA, y exporta a Excel.</sub>
+  <br><br>
+  <a href="https://github.com/FrankUsqAbant/extracto"><img src="https://img.shields.io/badge/C%C3%B3digo-0B1220?style=for-the-badge&logo=github&logoColor=22D3EE" alt="Código"></a>
+  <a href="https://extracto-roan.vercel.app"><img src="https://img.shields.io/badge/Web-22D3EE?style=for-the-badge&logoColor=0B1220" alt="Web"></a>
+</td>
+<td width="33%" align="center" valign="top">
+  <a href="https://frankusqabant.github.io/kasa-nord/">
+    <img src="https://raw.githubusercontent.com/FrankUsqAbant/kasa-nord/main/docs/hero.webp" width="100%" alt="Kasa Nord, proyecto demo">
+  </a>
+  <br>
+  <strong>Kasa Nord</strong>
+  <br>
+  <sub>Proyecto demo. Landing HTML/CSS/JS para una inmobiliaria de lujo ficticia.</sub>
+  <br><br>
+  <a href="https://github.com/FrankUsqAbant/kasa-nord"><img src="https://img.shields.io/badge/C%C3%B3digo-0B1220?style=for-the-badge&logo=github&logoColor=22D3EE" alt="Código"></a>
+  <a href="https://frankusqabant.github.io/kasa-nord/"><img src="https://img.shields.io/badge/Web-22D3EE?style=for-the-badge&logoColor=0B1220" alt="Web"></a>
 </td>
 </tr>
 </table>
-<!-- YOUTUBE:END -->
 
-<br>
+---
 
-<img src="./assets/divider.svg" width="100%" height="2" loading="lazy" alt="divider">
-
-<br>
-
-## 🛠️ Tecnologías
-
-<!-- LANGUAGES:START -->
-<div align="center">
-  <div style="border: 2px solid #000000; border-radius: 15px; background: #0d1117; overflow: hidden; box-shadow: 0 0 12px rgba(0,0,0,0.8); display: inline-block; width: 100%;">
-    <img src="./assets/shimmer-header.svg" width="100%" height="12" alt="shimmer">
-    <div style="padding: 25px 20px;">
-      <img src="./assets/tech-stack.svg" width="90%" alt="Tech Stack">
-    </div>
-  </div>
-</div>
-<!-- LANGUAGES:END -->
-
-<br>
-
-<img src="./assets/divider.svg" width="100%" height="2" loading="lazy" alt="divider">
-
-<br>
-
-## 📊 Estadísticas de GitHub
+## `$ cat tech-stack.yaml`
 
 <div align="center">
-<div style="border: 2px solid #000000; border-radius: 15px; background: #0d1117; overflow: hidden; box-shadow: 0 0 12px rgba(0,0,0,0.8); display: inline-block; width: 100%;">
-<img src="./assets/shimmer-header.svg" width="100%" height="12" loading="lazy" alt="shimmer">
-<div style="padding: 20px 15px;">
-<p align="center" style="margin: 0 0 15px 0;">
-<img src="https://github-readme-stats-eight-theta.vercel.app/api?username=FrankUsqAbant&show_icons=true&title_color=00d8ff&icon_color=00d8ff&text_color=e6edf3&bg_color=0d1117&hide_border=true&rank_icon=github&cache_seconds=1800" alt="Frank Stats" height="175" style="max-width: 100%; height: auto;" loading="lazy">&nbsp;&nbsp;<img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=FrankUsqAbant&layout=compact&langs_count=8&title_color=00d8ff&text_color=e6edf3&bg_color=0d1117&hide_border=true&cache_seconds=1800" alt="Top Lenguajes" height="175" style="max-width: 100%; height: auto;" loading="lazy">
-</p>
-<p align="center" style="margin: 10px 0 20px 0;">
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=FrankUsqAbant&bg_color=0d1117&color=00d8ff&line=00d8ff&point=ffffff&area=true&area_color=00d8ff22&hide_border=true" width="95%" style="max-width: 100%; height: auto;" loading="lazy" alt="Gráfico de Actividad">
-</p>
-<img src="./assets/divider.svg" width="90%" height="2" loading="lazy" alt="divider">
-<p align="center" style="margin: 15px 0 10px 0;">
-<img src="./assets/snake.svg" width="95%" style="max-width: 100%; height: auto;" loading="lazy" alt="Snake Game">
-</p>
+
+<table border="1" cellpadding="14" bgcolor="#0B1220">
+  <thead>
+    <tr>
+      <th colspan="2" align="left"><code>frank@cajamarca:~$ cat tech-stack.yaml</code></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td width="50%" valign="top"><code>├─ lenguajes:</code><br><br>
+        <img src="https://skillicons.dev/icons?i=html,css,js,ts,python" alt="HTML, CSS, JavaScript, TypeScript y Python"><br>
+        <sub><code>HTML · CSS · JavaScript · TypeScript · Python</code></sub>
+      </td>
+      <td width="50%" valign="top"><code>├─ frontend:</code><br><br>
+        <img src="https://skillicons.dev/icons?i=react,vite,tailwind,nextjs,figma" alt="React, Vite, Tailwind CSS, Next.js y Figma"><br>
+        <sub><code>React · Vite · Tailwind CSS · Next.js · Figma</code></sub>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top"><code>├─ backend_y_datos:</code><br><br>
+        <img src="https://skillicons.dev/icons?i=nodejs,supabase,postgres,firebase,sqlite" alt="Node.js, Supabase, PostgreSQL, Firebase y SQLite"><br>
+        <sub><code>Node.js · Supabase · PostgreSQL · Firebase · SQLite</code></sub>
+      </td>
+      <td valign="top"><code>╰─ cloud_y_herramientas:</code><br><br>
+        <img src="https://skillicons.dev/icons?i=git,githubactions,docker,linux,cloudflare,vercel" alt="Git, GitHub Actions, Docker, Linux, Cloudflare y Vercel"><br>
+        <sub><code>Git · GitHub Actions · Docker · Linux · Cloudflare · Vercel</code></sub>
+      </td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="2">
+        <code>ia_y_automatizaciones: n8n · API Gemini&nbsp;&nbsp;·&nbsp;&nbsp;también: Render · CSS Modules</code><br>
+        <code>status: construyendo webs y automatizaciones</code>
+      </td>
+    </tr>
+  </tfoot>
+</table>
+
 </div>
-</div>
+
+---
+
+## `$ connect --redes`
+
+<div align="center">
+
+<a href="https://abanto.pages.dev">
+  <img src="https://img.shields.io/badge/Portafolio-22D3EE?style=for-the-badge&logo=cloudflarepages&logoColor=0B1220" alt="Portafolio">
+</a>&nbsp;&nbsp;
+<a href="https://github.com/FrankUsqAbant">
+  <img src="https://img.shields.io/badge/GitHub-0B1220?style=for-the-badge&logo=github&logoColor=22D3EE" alt="GitHub">
+</a>&nbsp;&nbsp;
+<a href="https://www.linkedin.com/in/frankabanto">
+  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+</a>&nbsp;&nbsp;
+<a href="https://www.instagram.com/abanto.dev">
+  <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram">
+</a>&nbsp;&nbsp;
+<a href="https://www.youtube.com/@abantofrank12">
+  <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube">
+</a>&nbsp;&nbsp;
+<a href="https://x.com/FrankUsqAbanto">
+  <img src="https://img.shields.io/badge/X-0B1220?style=for-the-badge&logo=x&logoColor=22D3EE" alt="X">
+</a>
+
 </div>
 
 <br>
 
-<!-- Botón Volver Arriba -->
-<p align="center">
-  <a href="#top">
-    <img src="https://img.shields.io/badge/⬆️_VOLVER_AL_INICIO-0D1117?style=for-the-badge&logo=github&logoColor=00D8FF&labelColor=0D1117&color=00D8FF" loading="lazy" alt="Volver al Inicio">
-  </a>
-</p>
-
-<br>
-
-<p align="center">
-  <img src="./assets/footer.svg" width="100%" height="35" loading="lazy" alt="Footer">
-</p>
-
-<p align="center" style="color: #8b949e; margin: 10px 0 5px 0;">
-  <sub>Crafted with ⚡ and passion by <strong>Franquer Abanto</strong></sub>
-  <br><br>
-  <img src="https://komarev.com/ghpvc/?username=FrankUsqAbant&color=00d8ff&style=for-the-badge&label=👁️+PROFILE+VISITS&label_color=0d1117" loading="lazy" alt="Vistas al perfil">
-</p>
+<div align="center">
+<sub>Hecho con ⚡ desde Cajamarca, Perú · Frank Abanto</sub>
+</div>
