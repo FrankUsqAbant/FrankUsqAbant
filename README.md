@@ -44,40 +44,42 @@ No usar el dominio abanto.dev (no es propio).
 
 <sub>Una selección de <strong>proyectos demo</strong> de web y herramientas para negocios: catálogos, reservas y pedidos. También desarrollo proyectos personales como Prospect Tracker / CRM, Life OS y un VPS con n8n y un bot de Telegram (API Gemini).</sub>
 
+<!-- Para que un repo nuevo salga aquí: agrégale el topic `portfolio` (o `featured`). -->
+<!-- PROJECTS:START -->
 <table>
 <tr>
 <td width="33%" align="center" valign="top">
   <a href="https://abanto.pages.dev">
-    <img src="assets/project-portafolio.jpg" width="100%" alt="Portafolio de Frank Abanto">
+    <img src="assets/projects/abanto.dev.webp" width="600" height="375" loading="lazy" alt="Portafolio">
   </a>
   <br>
   <strong>Portafolio</strong>
   <br>
-  <sub>Mi sitio personal: proyectos, perfil y contacto.</sub>
+  <sub>Portafolio de Frank Abanto: Software e IA hechos a tu medida.</sub>
   <br><br>
   <a href="https://github.com/FrankUsqAbant/abanto.dev"><img src="https://img.shields.io/badge/C%C3%B3digo-0B1220?style=for-the-badge&logo=github&logoColor=22D3EE" alt="Código"></a>
   <a href="https://abanto.pages.dev"><img src="https://img.shields.io/badge/Web-22D3EE?style=for-the-badge&logoColor=0B1220" alt="Web"></a>
 </td>
 <td width="33%" align="center" valign="top">
   <a href="https://chavez-originals.pages.dev">
-    <img src="https://raw.githubusercontent.com/FrankUsqAbant/chavez-originals/main/docs/preview.webp" width="100%" alt="Chavez Originals, proyecto demo">
+    <img src="assets/projects/chavez-originals.webp" width="600" height="375" loading="lazy" alt="Chavez Originals, proyecto demo">
   </a>
   <br>
   <strong>Chavez Originals</strong>
   <br>
-  <sub>Proyecto demo. Tienda de calzado con catálogo y pedidos por WhatsApp.</sub>
+  <sub>Chavez Originals (Cajamarca): tienda de calzado con vitrina interactiva, catálogo administrable con Supabase y pedidos por WhatsApp · Proyecto demo</sub>
   <br><br>
   <a href="https://github.com/FrankUsqAbant/chavez-originals"><img src="https://img.shields.io/badge/C%C3%B3digo-0B1220?style=for-the-badge&logo=github&logoColor=22D3EE" alt="Código"></a>
   <a href="https://chavez-originals.pages.dev"><img src="https://img.shields.io/badge/Web-22D3EE?style=for-the-badge&logoColor=0B1220" alt="Web"></a>
 </td>
 <td width="33%" align="center" valign="top">
   <a href="https://jireh-pasteleria.pages.dev">
-    <img src="https://raw.githubusercontent.com/FrankUsqAbant/jireh-pasteleria/main/docs/preview.webp" width="100%" alt="JIRÉH Pastelería, proyecto demo">
+    <img src="assets/projects/jireh-pasteleria.webp" width="600" height="375" loading="lazy" alt="JIRÉH Pastelería, proyecto demo">
   </a>
   <br>
   <strong>JIRÉH Pastelería</strong>
   <br>
-  <sub>Proyecto demo. Catálogo de pastelería y pedidos por WhatsApp.</sub>
+  <sub>JIRÉH Panadería y Pastelería (Cajamarca): catálogo de tortas, &#x27;Arma tu torta&#x27; en vivo y pedidos por WhatsApp · Proyecto demo</sub>
   <br><br>
   <a href="https://github.com/FrankUsqAbant/jireh-pasteleria"><img src="https://img.shields.io/badge/C%C3%B3digo-0B1220?style=for-the-badge&logo=github&logoColor=22D3EE" alt="Código"></a>
   <a href="https://jireh-pasteleria.pages.dev"><img src="https://img.shields.io/badge/Web-22D3EE?style=for-the-badge&logoColor=0B1220" alt="Web"></a>
@@ -86,42 +88,43 @@ No usar el dominio abanto.dev (no es propio).
 <tr>
 <td width="33%" align="center" valign="top">
   <a href="https://hostal-aguilar.pages.dev">
-    <img src="https://raw.githubusercontent.com/FrankUsqAbant/hostal-aguilar/main/docs/preview.webp" width="100%" alt="Hostal Aguilar, proyecto demo">
+    <img src="assets/projects/hostal-aguilar.webp" width="600" height="375" loading="lazy" alt="Hostal Aguilar, proyecto demo">
   </a>
   <br>
   <strong>Hostal Aguilar</strong>
   <br>
-  <sub>Proyecto demo. Sitio de hospedaje con reservas por WhatsApp.</sub>
+  <sub>Hostal Aguilar (Cajamarca): web con concepto &#x27;la luz encendida&#x27;, reservas por WhatsApp y panel con Supabase · Proyecto demo</sub>
   <br><br>
   <a href="https://github.com/FrankUsqAbant/hostal-aguilar"><img src="https://img.shields.io/badge/C%C3%B3digo-0B1220?style=for-the-badge&logo=github&logoColor=22D3EE" alt="Código"></a>
   <a href="https://hostal-aguilar.pages.dev"><img src="https://img.shields.io/badge/Web-22D3EE?style=for-the-badge&logoColor=0B1220" alt="Web"></a>
 </td>
 <td width="33%" align="center" valign="top">
-  <a href="https://extracto-roan.vercel.app">
-    <img src="https://raw.githubusercontent.com/FrankUsqAbant/extracto/main/public/extracto-preview.png" width="100%" alt="Extracto, proyecto demo">
-  </a>
-  <br>
-  <strong>Extracto</strong>
-  <br>
-  <sub>Proyecto demo. Extrae y clasifica facturas, recibos y contratos con IA, y exporta a Excel.</sub>
-  <br><br>
-  <a href="https://github.com/FrankUsqAbant/extracto"><img src="https://img.shields.io/badge/C%C3%B3digo-0B1220?style=for-the-badge&logo=github&logoColor=22D3EE" alt="Código"></a>
-  <a href="https://extracto-roan.vercel.app"><img src="https://img.shields.io/badge/Web-22D3EE?style=for-the-badge&logoColor=0B1220" alt="Web"></a>
-</td>
-<td width="33%" align="center" valign="top">
   <a href="https://frankusqabant.github.io/kasa-nord/">
-    <img src="https://raw.githubusercontent.com/FrankUsqAbant/kasa-nord/main/docs/hero.webp" width="100%" alt="Kasa Nord, proyecto demo">
+    <img src="assets/projects/kasa-nord.webp" width="600" height="375" loading="lazy" alt="Kasa Nord, proyecto demo">
   </a>
   <br>
   <strong>Kasa Nord</strong>
   <br>
-  <sub>Proyecto demo. Landing HTML/CSS/JS para una inmobiliaria de lujo ficticia.</sub>
+  <sub>Kasa Nord — landing de inmobiliaria de lujo en Lima. HTML/CSS/JS planos, sin build · Proyecto demo</sub>
   <br><br>
   <a href="https://github.com/FrankUsqAbant/kasa-nord"><img src="https://img.shields.io/badge/C%C3%B3digo-0B1220?style=for-the-badge&logo=github&logoColor=22D3EE" alt="Código"></a>
   <a href="https://frankusqabant.github.io/kasa-nord/"><img src="https://img.shields.io/badge/Web-22D3EE?style=for-the-badge&logoColor=0B1220" alt="Web"></a>
 </td>
+<td width="33%" align="center" valign="top">
+  <a href="https://extracto-roan.vercel.app">
+    <img src="assets/projects/extracto.webp" width="600" height="375" loading="lazy" alt="Extracto, proyecto demo">
+  </a>
+  <br>
+  <strong>Extracto</strong>
+  <br>
+  <sub>App de práctica: extrae y clasifica facturas, recibos y contratos con IA (Gemini) y exporta a Excel.</sub>
+  <br><br>
+  <a href="https://github.com/FrankUsqAbant/extracto"><img src="https://img.shields.io/badge/C%C3%B3digo-0B1220?style=for-the-badge&logo=github&logoColor=22D3EE" alt="Código"></a>
+  <a href="https://extracto-roan.vercel.app"><img src="https://img.shields.io/badge/Web-22D3EE?style=for-the-badge&logoColor=0B1220" alt="Web"></a>
+</td>
 </tr>
 </table>
+<!-- PROJECTS:END -->
 
 ---
 
