@@ -61,16 +61,16 @@ No usar el dominio abanto.dev (no es propio).
   <a href="https://concepto-un-dia.pages.dev"><img src="https://img.shields.io/badge/Web-22D3EE?style=for-the-badge&logoColor=0B1220" alt="Web"></a>
 </td>
 <td width="33%" align="center" valign="top">
-  <a href="https://abanto.pages.dev">
-    <img src="assets/projects/abanto.dev.webp" width="600" height="375" loading="lazy" alt="Portafolio">
+  <a href="https://jireh-pasteleria.pages.dev">
+    <img src="assets/projects/jireh-pasteleria.webp" width="600" height="375" loading="lazy" alt="JIRÉH Pastelería, proyecto demo">
   </a>
   <br>
-  <strong>Portafolio</strong>
+  <strong>JIRÉH Pastelería</strong>
   <br>
-  <sub>Portafolio de Frank Abanto: Software e IA hechos a tu medida.</sub>
+  <sub>JIRÉH Panadería y Pastelería (Cajamarca): catálogo de tortas, &#x27;Arma tu torta&#x27; en vivo y pedidos por WhatsApp · Proyecto demo</sub>
   <br><br>
-  <a href="https://github.com/FrankUsqAbant/abanto.dev"><img src="https://img.shields.io/badge/C%C3%B3digo-0B1220?style=for-the-badge&logo=github&logoColor=22D3EE" alt="Código"></a>
-  <a href="https://abanto.pages.dev"><img src="https://img.shields.io/badge/Web-22D3EE?style=for-the-badge&logoColor=0B1220" alt="Web"></a>
+  <a href="https://github.com/FrankUsqAbant/jireh-pasteleria"><img src="https://img.shields.io/badge/C%C3%B3digo-0B1220?style=for-the-badge&logo=github&logoColor=22D3EE" alt="Código"></a>
+  <a href="https://jireh-pasteleria.pages.dev"><img src="https://img.shields.io/badge/Web-22D3EE?style=for-the-badge&logoColor=0B1220" alt="Web"></a>
 </td>
 <td width="33%" align="center" valign="top">
   <a href="https://chavez-originals.pages.dev">
@@ -87,18 +87,6 @@ No usar el dominio abanto.dev (no es propio).
 </tr>
 <tr>
 <td width="33%" align="center" valign="top">
-  <a href="https://jireh-pasteleria.pages.dev">
-    <img src="assets/projects/jireh-pasteleria.webp" width="600" height="375" loading="lazy" alt="JIRÉH Pastelería, proyecto demo">
-  </a>
-  <br>
-  <strong>JIRÉH Pastelería</strong>
-  <br>
-  <sub>JIRÉH Panadería y Pastelería (Cajamarca): catálogo de tortas, &#x27;Arma tu torta&#x27; en vivo y pedidos por WhatsApp · Proyecto demo</sub>
-  <br><br>
-  <a href="https://github.com/FrankUsqAbant/jireh-pasteleria"><img src="https://img.shields.io/badge/C%C3%B3digo-0B1220?style=for-the-badge&logo=github&logoColor=22D3EE" alt="Código"></a>
-  <a href="https://jireh-pasteleria.pages.dev"><img src="https://img.shields.io/badge/Web-22D3EE?style=for-the-badge&logoColor=0B1220" alt="Web"></a>
-</td>
-<td width="33%" align="center" valign="top">
   <a href="https://hostal-aguilar.pages.dev">
     <img src="assets/projects/hostal-aguilar.webp" width="600" height="375" loading="lazy" alt="Hostal Aguilar, proyecto demo">
   </a>
@@ -109,6 +97,18 @@ No usar el dominio abanto.dev (no es propio).
   <br><br>
   <a href="https://github.com/FrankUsqAbant/hostal-aguilar"><img src="https://img.shields.io/badge/C%C3%B3digo-0B1220?style=for-the-badge&logo=github&logoColor=22D3EE" alt="Código"></a>
   <a href="https://hostal-aguilar.pages.dev"><img src="https://img.shields.io/badge/Web-22D3EE?style=for-the-badge&logoColor=0B1220" alt="Web"></a>
+</td>
+<td width="33%" align="center" valign="top">
+  <a href="https://abanto.pages.dev">
+    <img src="assets/projects/abanto.dev.webp" width="600" height="375" loading="lazy" alt="Portafolio">
+  </a>
+  <br>
+  <strong>Portafolio</strong>
+  <br>
+  <sub>Abanto.dev — sitio completo en React + TypeScript: servicios con demos, proyectos, sección «Aprende», agenda y paleta de comandos</sub>
+  <br><br>
+  <a href="https://github.com/FrankUsqAbant/abanto.dev"><img src="https://img.shields.io/badge/C%C3%B3digo-0B1220?style=for-the-badge&logo=github&logoColor=22D3EE" alt="Código"></a>
+  <a href="https://abanto.pages.dev"><img src="https://img.shields.io/badge/Web-22D3EE?style=for-the-badge&logoColor=0B1220" alt="Web"></a>
 </td>
 <td width="33%" align="center" valign="top">
   <a href="https://frankusqabant.github.io/kasa-nord/">
