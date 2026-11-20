@@ -49,6 +49,18 @@ No usar el dominio abanto.dev (no es propio).
 <table>
 <tr>
 <td width="33%" align="center" valign="top">
+  <a href="https://frank-abanto.pages.dev">
+    <img src="assets/projects/frank-abanto.webp" width="600" height="375" loading="lazy" alt="Frank Abanto">
+  </a>
+  <br>
+  <strong>Frank Abanto</strong>
+  <br>
+  <sub>Portafolio de un solo archivo: titular bordado con canvas y WebGL, y proyectos leídos de GitHub.</sub>
+  <br><br>
+  <a href="https://github.com/FrankUsqAbant/frank-abanto"><img src="https://img.shields.io/badge/C%C3%B3digo-0B1220?style=for-the-badge&logo=github&logoColor=22D3EE" alt="Código"></a>
+  <a href="https://frank-abanto.pages.dev"><img src="https://img.shields.io/badge/Web-22D3EE?style=for-the-badge&logoColor=0B1220" alt="Web"></a>
+</td>
+<td width="33%" align="center" valign="top">
   <a href="https://concepto-un-dia.pages.dev">
     <img src="https://opengraph.githubassets.com/1/FrankUsqAbant/concepto-un-dia" width="600" height="375" loading="lazy" alt="Concepto Un Dia, proyecto demo">
   </a>
@@ -72,6 +84,8 @@ No usar el dominio abanto.dev (no es propio).
   <a href="https://github.com/FrankUsqAbant/jireh-pasteleria"><img src="https://img.shields.io/badge/C%C3%B3digo-0B1220?style=for-the-badge&logo=github&logoColor=22D3EE" alt="Código"></a>
   <a href="https://jireh-pasteleria.pages.dev"><img src="https://img.shields.io/badge/Web-22D3EE?style=for-the-badge&logoColor=0B1220" alt="Web"></a>
 </td>
+</tr>
+<tr>
 <td width="33%" align="center" valign="top">
   <a href="https://chavez-originals.pages.dev">
     <img src="assets/projects/chavez-originals.webp" width="600" height="375" loading="lazy" alt="Chavez Originals, proyecto demo">
@@ -84,8 +98,6 @@ No usar el dominio abanto.dev (no es propio).
   <a href="https://github.com/FrankUsqAbant/chavez-originals"><img src="https://img.shields.io/badge/C%C3%B3digo-0B1220?style=for-the-badge&logo=github&logoColor=22D3EE" alt="Código"></a>
   <a href="https://chavez-originals.pages.dev"><img src="https://img.shields.io/badge/Web-22D3EE?style=for-the-badge&logoColor=0B1220" alt="Web"></a>
 </td>
-</tr>
-<tr>
 <td width="33%" align="center" valign="top">
   <a href="https://hostal-aguilar.pages.dev">
     <img src="assets/projects/hostal-aguilar.webp" width="600" height="375" loading="lazy" alt="Hostal Aguilar, proyecto demo">
@@ -109,18 +121,6 @@ No usar el dominio abanto.dev (no es propio).
   <br><br>
   <a href="https://github.com/FrankUsqAbant/abanto.dev"><img src="https://img.shields.io/badge/C%C3%B3digo-0B1220?style=for-the-badge&logo=github&logoColor=22D3EE" alt="Código"></a>
   <a href="https://abanto.pages.dev"><img src="https://img.shields.io/badge/Web-22D3EE?style=for-the-badge&logoColor=0B1220" alt="Web"></a>
-</td>
-<td width="33%" align="center" valign="top">
-  <a href="https://frankusqabant.github.io/kasa-nord/">
-    <img src="assets/projects/kasa-nord.webp" width="600" height="375" loading="lazy" alt="Kasa Nord, proyecto demo">
-  </a>
-  <br>
-  <strong>Kasa Nord</strong>
-  <br>
-  <sub>Kasa Nord — landing de inmobiliaria de lujo en Lima. HTML/CSS/JS planos, sin build · Proyecto demo</sub>
-  <br><br>
-  <a href="https://github.com/FrankUsqAbant/kasa-nord"><img src="https://img.shields.io/badge/C%C3%B3digo-0B1220?style=for-the-badge&logo=github&logoColor=22D3EE" alt="Código"></a>
-  <a href="https://frankusqabant.github.io/kasa-nord/"><img src="https://img.shields.io/badge/Web-22D3EE?style=for-the-badge&logoColor=0B1220" alt="Web"></a>
 </td>
 </tr>
 </table>

@@ -28,9 +28,11 @@ TIMEOUT = 8
 # Friendly titles for the current grid; new repos fall back to a prettified name.
 TITLES = {
     "abanto.dev": "Portafolio",
+    "frank-abanto": "Frank Abanto",
     "chavez-originals": "Chavez Originals",
     "jireh-pasteleria": "JIRÉH Pastelería",
     "hostal-aguilar": "Hostal Aguilar",
+    "concepto-un-dia": "Concepto Un Dia",
     "extracto": "Extracto",
     "kasa-nord": "Kasa Nord",
 }
@@ -148,6 +150,8 @@ def card_description(repo: dict) -> str:
     text = (repo.get("description") or "").strip()
     if name == "abanto.dev":
         return text or "Mi sitio personal: proyectos, perfil y contacto."
+    if name == "frank-abanto":
+        return "Portafolio de un solo archivo: titular bordado con canvas y WebGL, y proyectos leídos de GitHub."
     if not text:
         text = display_title(repo)
     low = text.lower()
@@ -179,7 +183,7 @@ def render_card(repo: dict) -> str:
     web = sanitize_homepage(repo.get("homepage"))
     thumb = thumbnail(repo)
     link = web or repo_url
-    alt = html.escape(title if name == "abanto.dev" else f"{title}, proyecto demo")
+    alt = html.escape(title if name in {"abanto.dev", "frank-abanto"} else f"{title}, proyecto demo")
     web_badge = ""
     if web:
         web_badge = (
