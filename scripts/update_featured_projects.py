@@ -32,7 +32,7 @@ TITLES = {
     "chavez-originals": "Chavez Originals",
     "jireh-pasteleria": "JIRÉH Pastelería",
     "hostal-aguilar": "Hostal Aguilar",
-    "concepto-un-dia": "Concepto Un Dia",
+    "concepto-un-dia": "Concepto Un Día",
     "extracto": "Extracto",
     "kasa-nord": "Kasa Nord",
 }
