@@ -50,7 +50,7 @@ No usar el dominio abanto.dev (no es propio).
 <tr>
 <td width="33%" align="center" valign="top">
   <a href="https://concepto-un-dia.pages.dev">
-    <img src="https://opengraph.githubassets.com/1/FrankUsqAbant/concepto-un-dia" width="600" height="375" loading="lazy" alt="Concepto Un Dia, proyecto demo">
+    <img src="assets/projects/concepto-un-dia.webp" width="600" height="375" loading="lazy" alt="Concepto Un Dia, proyecto demo">
   </a>
   <br>
   <strong>Concepto Un Dia</strong>
