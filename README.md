@@ -1,7 +1,6 @@
 <!--
 README de perfil de Frank Abanto (FrankUsqAbant).
-Sitio canónico: https://abanto.pages.dev
-No usar el dominio abanto.dev (no es propio).
+Sitio principal: https://abanto.pages.dev (junto con abanto.dev).
 -->
 
 <div align="center">
@@ -50,10 +49,10 @@ No usar el dominio abanto.dev (no es propio).
 <tr>
 <td width="33%" align="center" valign="top">
   <a href="https://concepto-un-dia.pages.dev">
-    <img src="assets/projects/concepto-un-dia.webp" width="600" height="375" loading="lazy" alt="Concepto Un Dia, proyecto demo">
+    <img src="assets/projects/concepto-un-dia.webp" width="600" height="375" loading="lazy" alt="Concepto Un Día, proyecto demo">
   </a>
   <br>
-  <strong>Concepto Un Dia</strong>
+  <strong>Concepto Un Día</strong>
   <br>
   <sub>Concepto Un día — cielo WebGL interactivo: arrastra el sol y cambia el momento del día · Proyecto demo</sub>
   <br><br>
@@ -145,18 +144,18 @@ No usar el dominio abanto.dev (no es propio).
         <sub><code>HTML · CSS · JavaScript · TypeScript · Python</code></sub>
       </td>
       <td width="50%" valign="top"><code>├─ frontend:</code><br><br>
-        <img src="https://skillicons.dev/icons?i=react,vite,tailwind,nextjs,figma" alt="React, Vite, Tailwind CSS, Next.js y Figma"><br>
-        <sub><code>React · Vite · Tailwind CSS · Next.js · Figma</code></sub>
+        <img src="https://skillicons.dev/icons?i=react,vite,tailwind,nextjs,astro,figma" alt="React, Vite, Tailwind CSS, Next.js, Astro y Figma"><br>
+        <sub><code>React · Vite · Tailwind CSS · Next.js · Astro · Figma</code></sub>
       </td>
     </tr>
     <tr>
       <td valign="top"><code>├─ backend_y_datos:</code><br><br>
-        <img src="https://skillicons.dev/icons?i=nodejs,supabase,postgres,firebase,sqlite" alt="Node.js, Supabase, PostgreSQL, Firebase y SQLite"><br>
-        <sub><code>Node.js · Supabase · PostgreSQL · Firebase · SQLite</code></sub>
+        <img src="https://skillicons.dev/icons?i=nodejs,supabase,postgres,sqlite" alt="Node.js, Supabase, PostgreSQL y SQLite"><br>
+        <sub><code>Node.js · Supabase · PostgreSQL · SQLite</code></sub>
       </td>
       <td valign="top"><code>╰─ cloud_y_herramientas:</code><br><br>
-        <img src="https://skillicons.dev/icons?i=git,githubactions,docker,linux,cloudflare,vercel" alt="Git, GitHub Actions, Docker, Linux, Cloudflare y Vercel"><br>
-        <sub><code>Git · GitHub Actions · Docker · Linux · Cloudflare · Vercel</code></sub>
+        <img src="https://skillicons.dev/icons?i=git,githubactions,linux,cloudflare,vercel" alt="Git, GitHub Actions, Linux, Cloudflare y Vercel"><br>
+        <sub><code>Git · GitHub Actions · Linux · Cloudflare · Vercel</code></sub>
       </td>
     </tr>
   </tbody>
@@ -181,8 +180,8 @@ No usar el dominio abanto.dev (no es propio).
 <a href="https://abanto.pages.dev">
   <img src="https://img.shields.io/badge/Portafolio-22D3EE?style=for-the-badge&logo=cloudflarepages&logoColor=0B1220" alt="Portafolio">
 </a>&nbsp;&nbsp;
-<a href="https://github.com/FrankUsqAbant">
-  <img src="https://img.shields.io/badge/GitHub-0B1220?style=for-the-badge&logo=github&logoColor=22D3EE" alt="GitHub">
+<a href="https://frankusqabant.github.io/">
+  <img src="https://img.shields.io/badge/Contacto-0B1220?style=for-the-badge&logo=maildotru&logoColor=22D3EE" alt="Tarjeta digital y contacto">
 </a>&nbsp;&nbsp;
 <a href="https://www.linkedin.com/in/frankabanto">
   <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
